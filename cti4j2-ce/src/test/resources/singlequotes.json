@@ -1,0 +1,88 @@
+{
+	"type": "bundle",
+	"id": "bundle--063010a4-b940-4ba3-a824-17381eef68e7",
+	"objects": [
+		{
+			"spec_version": "2.1",
+			"type": "indicator",
+			"id": "indicator--e3d16557-6ccf-4cef-9930-f873849da50e",
+			"created": "2025-02-18T15:28:50.598Z",
+			"modified": "2025-02-20T15:09:17.496Z",
+			"external_references": [
+				{
+					"source_name": "US-CERT All Advisories",
+					"url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-050a"
+				}
+			],
+			"object_marking_refs": [
+				"marking-definition--5ccebef0-83aa-4e67-938b-5b65bb61e8d1"
+			],
+			"granular_markings": [
+				{
+					"marking_ref": "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+					"selectors": [
+						"external_references.[0]"
+					]
+				}
+			],
+			"pattern": "[file:hashes.MD5 = 'DB38EF2E3D4D8CB785DF48F458B35090' AND file:name = 'sock.txt']",
+			"valid_from": "2025-02-18T15:28:50.598Z",
+			"pattern_type": "stix",
+			"created_by_ref": "identity--b3bca3c2-1f3d-4b54-b44f-dac42c3a8f01"
+		},
+		{
+			"type": "marking-definition",
+			"spec_version": "2.1",
+			"id": "marking-definition--5ccebef0-83aa-4e67-938b-5b65bb61e8d1",
+			"created": "2025-02-25T21:33:20.587Z",
+			"extensions": {
+				"extension-definition--3a65884d-005a-4290-8335-cb2d778a83ce": {
+					"extension_type": "property-extension",
+					"identifier": "isa:guide.19001.DFTA-a9bdb603-7f4f-44c6-acb0-d47f614e64b2",
+					"create_date_time": "2025-02-25T21:33:20.588Z",
+					"responsible_entity_custodian": "USA.DHS.CISA.CSD.TH",
+					"responsible_entity_originator": "USA.DHS.CISA.CSD.TH",
+					"policy_reference": "urn:isa:policy:acs:ns:v3.0?privdefault=deny&sharedefault=permit",
+					"control_set": {
+						"classification": "U",
+						"formal_determination": [
+							"INFORMATION-DIRECTLY-RELATED-TO-CYBERSECURITY-THREAT",
+							"PUBREL"
+						]
+					},
+					"authority_reference": [
+						"urn:isa:authority:ais"
+					],
+					"access_privilege": [
+						{
+							"privilege_action": "CISAUSES",
+							"rule_effect": "permit",
+							"privilege_scope": {
+								"entity": [
+									"ALL"
+								],
+								"permitted_nationalities": [
+									"US"
+								],
+								"permitted_organizations": [
+									"ALL"
+								],
+								"shareability": [
+									"ALL"
+								]
+							}
+						}
+					],
+					"further_sharing": [
+						{
+							"sharing_scope": [
+								"USA.USG"
+							],
+							"rule_effect": "permit"
+						}
+					]
+				}
+			}
+		}
+	]
+}

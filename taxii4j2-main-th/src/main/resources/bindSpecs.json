@@ -1,0 +1,125 @@
+{
+	"default_package": "com.cisa.taxii4j2",
+	"bind_specs": [
+		{
+			"contract": "method.TAXII",
+			"service": "servlet.TAXIICompose0",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "git.mirror.method.TAXIIMirror",
+			"service": "git.mirror.method.impl.TAXIIImplMirror",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "mount.TAXIIMount",
+			"service": "mount.TAXIIMountImpl",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "servlet.security.TAXIISecurityHandler",
+			"service": "servlet.security.CESecurityHandler",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "auth.method.UserAdmin",
+			"service": "servlet.store.DbUserAdmin",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "auth.method.RootCollectionRead",
+			"service": "servlet.store.DbRootCollectionRead",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "servlet.store.DbRootCollectionRead$CollectionRead",
+			"service": "binding.os.OSCollectionRead",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "auth.method.RootCollectionAdmin",
+			"service": "servlet.store.DbRootCollectionAdmin",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "auth.method.BulkAdmin",
+			"service": "servlet.store.DbBulkAdmin",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "auth.method.RoleAdmin",
+			"service": "auth.method.impl.RoleAdminImpl",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "auth.method.IssuerAdmin",
+			"service": "servlet.store.DbIssuerAdmin",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "method.impl.Nexts",
+			"service": "servlet.store.DbNexts",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "method.impl.Manifests",
+			"service": "servlet.store.DbManifests",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "method.impl.Objects",
+			"service": "binding.os.OSGroupObjects",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "method.impl.Statuses",
+			"service": "servlet.store.DbStatuses",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "method.STIXValidator",
+			"service": "method.impl.RemoteSTIXValidator",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "ext.method.SchemaRepo",
+			"service": "ext.method.FSSchemaRepo",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "method.logging.LogEntryConnector",
+			"service": "binding.os.OSLoggedConnector",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "servlet.store.DbBase",
+			"service": "binding.os.OSInstance",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "servlet.store.DbTaxii",
+			"service": "binding.os.OSTaxii",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "search.Search",
+			"service": "search.OSSearch",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "graph.Graph",
+			"service": "graph.OSGraph",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "client.admin.ClientJobAdmin",
+			"service": "client.admin.impl.ClientJobAdminImpl",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "auth.method.GroupAdmin",
+			"service": "auth.method.impl.GroupAdminImpl",
+			"scope": "jakarta.inject.Singleton"
+		}
+	]
+}

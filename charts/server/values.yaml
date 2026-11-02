@@ -1,0 +1,78 @@
+secrets:
+  create: "false"
+  a1Password: ""
+  elasticPassword: ""
+  githubToken: ""
+  kibanaPassword: ""
+  opensearchPassword: ""
+  taxiiPassword: ""
+
+dashboard:
+  app: opensearch-dashboard
+  name: opensearch-dashboard
+  replicaCount: 1
+  podSecurityContext: {}
+  securityContext: {}
+  resources: { limits: { memory: 2Gi } }
+  image: docker.io/library/opensearchproject/opensearch-dashboards
+  tag: 3.7.0
+  imagePullPolicy: Always
+  port: 5601
+  host: ""
+  disableSecurity: "true"
+
+opensearch:
+  app: opensearch
+  boostrapMemoryLock: "true"
+  discoveryType: single-node
+  image: docker.io/library/opensearch
+  imagePullPolicy: Always
+  name: opensearch
+  pathRepo: /opt/snapshots
+  pluginsSecurityDisabled: "true"
+  podSecurityContext: {}
+  port: 9200
+  reindexAllowList: "elasticsearch:9200"
+  replicaCount: 1
+  resources: { limits: { memory: 2Gi, ephemeral-storage: 4Gi } }
+  securityContext: {}
+  tag: 3.7.0
+  url: http://opensearch:9200/
+  user: ""
+
+server:
+  app: taxii-server
+  a1Host: ""
+  a1User: ""
+  image: ""
+  imagePullPolicy: Always
+  name: taxii-server
+  podSecurityContext: {}
+  port: 9443
+  replicaCount: 1
+  resources: {}
+  schemaDir: /tmp/schema
+  securityContext: {}
+  tag: v1.3.4
+  targetPort: 9443
+  type: NodePort
+  url: http://taxii4j2:9443/
+  uuid: ""
+  validIssuers:
+    - { "iss": "" }
+
+validator:
+  app: stix2-validator
+  image: ""
+  imagePullPolicy: Always
+  name: stix2-validator
+  podSecurityContext: {}
+  port: 5000
+  replicaCount: 1
+  resources: {}
+  securityContext: {}
+  tag: v1.3.4
+  url: http://localhost:5000/
+
+ingress:
+  host: ""

@@ -1,0 +1,10 @@
+{
+	"uuid": "b2440694-d18b-4b70-ae7c-2e8771ff8e88",
+	"type": "SCHEMA",
+	"includes": [
+		"extension-definition-specifications"
+	],
+	"excludes": [
+		"extension-definition-specifications/stix-1x"
+	]
+}

@@ -1,0 +1,12 @@
+{
+	"type": "OBJECT",
+	"includes": [
+		"extension-definition-specifications/tlp-2.0/examples"
+	],
+	"excludes": [
+		"extension-definition-specifications/tlp-2.0/examples/using-tlp2.0-green.json"
+	],
+	"cIds": [
+		"raw"
+	]
+}

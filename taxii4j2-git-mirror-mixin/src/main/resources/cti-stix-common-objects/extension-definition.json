@@ -1,0 +1,10 @@
+{
+	"uuid": "1a1e76b0-c328-4622-ba38-d43b71e037e3",
+	"type": "OBJECT",
+	"includes": [
+		"objects/extension-definition"
+	],
+	"cIds": [
+		"extension-definition"
+	]
+}

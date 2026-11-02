@@ -1,0 +1,97 @@
+{
+	"collections": [
+		{
+			"id": "94459486-1905-4252-9988-8af6cccd8fdf",
+			"title": "location",
+			"can_read": true,
+			"can_write": true,
+			"description": "mirrored location objects",
+			"alias": "location"
+		},
+		{
+			"id": "b4a3ed6b-6b2e-45cf-9d05-bdca9228676b",
+			"title": "extension-definition",
+			"can_read": true,
+			"can_write": true,
+			"description": "mirrored extension definitions",
+			"alias": "extension-definition"
+		},
+		{
+			"id": "ea09a733-24be-4024-bfbb-292d221ab0e6",
+			"title": "identity",
+			"can_read": true,
+			"can_write": true,
+			"description": "mirrored identities",
+			"alias": "identity"
+		},
+		{
+			"id": "f51a106c-ddfc-4de4-a50e-23aaa974c328",
+			"title": "marking-definition",
+			"can_read": true,
+			"can_write": true,
+			"description": "mirrored marking definitions",
+			"alias": "marking-definition"
+		}
+	],
+	"fragments": [
+		{
+			"fragment": "cti-stix-common-objects",
+			"apiRoot": {
+				"title": "cti-stix-common-objects",
+				"versions": [
+					"application/taxii+json;version=2.0",
+					"application/taxii+json;version=2.1"
+				],
+				"max_content_length": 524288,
+				"description": "objects mirrored from cti-stix-common-objects"
+			},
+			"rws": [
+				{
+					"cId": "94459486-1905-4252-9988-8af6cccd8fdf",
+					"readers": [
+						"imx-user"
+					],
+					"writers": [
+						"imx-git-mirror"
+					]
+				},
+				{
+					"cId": "b4a3ed6b-6b2e-45cf-9d05-bdca9228676b",
+					"readers": [
+						"imx-user"
+					],
+					"writers": [
+						"imx-git-mirror"
+					]
+				},
+				{
+					"cId": "ea09a733-24be-4024-bfbb-292d221ab0e6",
+					"readers": [
+						"imx-user"
+					],
+					"writers": [
+						"imx-git-mirror"
+					]
+				},
+				{
+					"cId": "f51a106c-ddfc-4de4-a50e-23aaa974c328",
+					"readers": [
+						"imx-user"
+					],
+					"writers": [
+						"imx-git-mirror"
+					]
+				},
+				{
+					"cId": "13a10b50-6056-4a2e-ac63-4e4a85f262bc",
+					"readers": [
+						"imx-user"
+					],
+					"writers": [
+						"imx-git-mirror"
+					]
+				}
+			]
+		}
+	]
+}

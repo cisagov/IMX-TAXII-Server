@@ -1,0 +1,30 @@
+name: taxii
+services:
+
+  proxy:
+    logging:
+      driver: local
+    build:
+      context: .
+      dockerfile: proxy.Dockerfile
+    restart: always
+    deploy:
+      replicas: 1
+    env_file: .env
+    ports:
+      - "${TAXII_EXPOSED_PORT}:${TAXII_PORT}"
+    volumes:
+      - sqlite:/opt/taxii4j2/data
+    networks:
+      - taxii-proxy
+    command:
+      - "--config"
+      - "proxy.sqlite.properties"
+
+volumes:
+  sqlite:
+    driver: local
+
+networks:
+  taxii-proxy:
+    name: taxii-proxy

@@ -1,0 +1,21 @@
+
+  {
+  "type": "threat-actor",
+  "id": "threat-actor--2ae7751c-da8c-46a7-8d18-69f32b939b75",
+  "spec_version": "2.1",
+      "confidence": 80,
+  "created_by_ref": "identity--c2360532-b8f3-4cfa-8a5d-513a553fbc59",
+  "name": "Evil Org",
+  "description": "The Evil Org threat actor group",
+  "threat_actor_types": [
+    "crime-syndicate"
+  ],
+  "created": "2025-10-02T17:57:32.773Z",
+  "modified": "2025-10-02T17:57:32.773Z",
+  "roles": [
+    "director"
+  ],
+  "sophistication": "advanced",
+  "resource_level": "team",
+  "primary_motivation": "organizational-gain"
+}

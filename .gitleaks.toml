@@ -1,0 +1,18 @@
+[extend]
+useDefault = true
+
+[[rules]]
+id = "private-hostname"
+description = "Private infrastructure hostname"
+regex = '''(?i)\b((?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:ten|internal|corp|lan))(?:[^a-z0-9_.-]|$)'''
+secretGroup = 1
+
+[[rules.allowlists]]
+description = "Docker's documented local host gateway"
+regexTarget = "secret"
+regexes = ['''^host\.docker\.internal$''']
+
+[[rules]]
+id = "private-ip-endpoint"
+description = "Private IPv4 service endpoint"
+regex = '''(?i)\b(?:https?|wss?|ssh|ftp)://(?:[^\s/@]+@)?(?:10(?:\.[0-9]{1,3}){3}|172\.(?:1[6-9]|2[0-9]|3[01])(?:\.[0-9]{1,3}){2}|192\.168(?:\.[0-9]{1,3}){2})(?::[0-9]+)?\b'''

@@ -1,0 +1,20 @@
+{
+	"type": "process",
+	"spec_version": "2.1",
+	"id": "process--3BCFB0A5-BAF5-411D-B9D0-8D4B4E09BA82",
+	"is_hidden": false,
+	"pid": 0,
+	"cwd": "C:\\Users\\jsmith.CBIS\\AppData\\Local\\",
+	"command_line": "C:\\Users\\jsmith.CBIS\\AppData\\Local\\Beacon.exe",
+	"extensions": {
+		"extension-definition--f9dbe89c-0030-4a9d-8b78-0dcd0a0de874": {
+			"extension_type": "property-extension",
+			"action": "created",
+			"user": "SP25-TARGET$",
+			"src_user": "jsmith",
+			"win_event_code": "4688"
+		}
+	},
+	"created_time": "2022-03-31T13:00:00.000Z",
+	"defanged": false
+}

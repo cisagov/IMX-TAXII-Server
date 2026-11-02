@@ -1,0 +1,10 @@
+{
+  "type": "identity",
+  "id": "identity--b1160532-b8f3-4cfa-9b7d-423e253fbc59",
+  "spec_version": "2.1",
+  "name": "test",
+  "description": "Test Identity",
+  "created_by_ref":"identity--b1160532-b8f3-4cfa-9b7d-423e253fbc59",
+  "created": "2022-09-06T22:54:13.599Z",
+  "modified": "2022-09-06T22:54:13.599Z"
+}

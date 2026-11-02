@@ -1,0 +1,32 @@
+{
+	"type": "x-oca-detector",
+	"spec_version": "2.1",
+	"id": "x-oca-detector--9441073d-119b-4ec9-aa08-8bdb1703ed56",
+	"created_by_ref": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+	"created": "2023-05-01T12:00:00.000Z",
+	"modified": "2023-05-01T12:00:00.000Z",
+	"name": "Rita",
+	"description": "A network traffic analysis tool.",
+	"cpe": "cpe:2.3:a:active_countermeasures:rita:4.7.0:*:*:*:*:*:*:*",
+	"vendor": "Active Countermeasures, Inc.",
+	"vendor_url": "https://www.activecountermeasures.com",
+	"product": "RITA",
+	"product_url": "https://github.com/activecm/rita",
+	"product_version": "4.7.0",
+	"detection_types": [
+		"beacon"
+	],
+	"detector_data_categories": [
+		"network"
+	],
+	"detector_data_sources": [
+		"zeek",
+		"pcap"
+	],
+	"valid_until": "2027-05-01T12:00:00.000Z",
+	"extensions": {
+		"extension-definition--5cccba5c-0be4-450c-8672-b66e98515754": {
+			"extension_type": "new-sdo"
+		}
+	}
+}

@@ -1,0 +1,104 @@
+{
+	"$schema": "http://json-schema.org/draft/2020-12/schema#",
+	"title": "pdf-ext",
+	"type": "object",
+	"description": "The PDF file extension specifies a default extension for capturing properties specific to PDF files.",
+	"allOf": [
+		{
+			"properties": {
+				"version": {
+					"type": "string",
+					"description": "Specifies the decimal version number of the string from the PDF header that specifies the version of the PDF specification to which the PDF file conforms. E.g., '1.4'."
+				},
+				"is_optimized": {
+					"type": "boolean",
+					"description": "Specifies whether the PDF file has been optimized."
+				},
+				"document_info_dict": {
+					"allOf": [
+						{
+							"$ref": "#/definitions/dictionary"
+						}
+					],
+					"patternProperties": {
+						"^[a-zA-Z0-9_-]{0,250}$": {
+							"type": "string"
+						}
+					},
+					"description": "Specifies details of the PDF document information dictionary (DID), which includes properties like the document creation data and producer, as a dictionary."
+				},
+				"pdfid0": {
+					"type": "string",
+					"description": "Specifies the first file identifier found for the PDF file."
+				},
+				"pdfid1": {
+					"type": "string",
+					"description": "Specifies the second file identifier found for the PDF file."
+				}
+			}
+		},
+		{
+			"anyOf": [
+				{
+					"required": [
+						"version"
+					]
+				},
+				{
+					"required": [
+						"is_optimized"
+					]
+				},
+				{
+					"required": [
+						"document_info_dict"
+					]
+				},
+				{
+					"required": [
+						"pdfid0"
+					]
+				},
+				{
+					"required": [
+						"pdfid1"
+					]
+				}
+			]
+		}
+	],
+	"definitions": {
+		"dictionary": {
+			"title": "dictionary",
+			"description": "A dictionary captures a set of key/value pairs",
+			"type": "object",
+			"minProperties": 1,
+			"patternProperties": {
+				"^[a-zA-Z0-9_-]{0,250}$": {
+					"anyOf": [
+						{
+							"type": "array",
+							"minItems": 1
+						},
+						{
+							"type": "string"
+						},
+						{
+							"type": "integer"
+						},
+						{
+							"type": "boolean"
+						},
+						{
+							"type": "number"
+						},
+						{
+							"type": "object"
+						}
+					]
+				}
+			},
+			"additionalProperties": false
+		}
+	}
+}

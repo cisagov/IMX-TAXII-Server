@@ -1,0 +1,13 @@
+{
+	"Authorization": "abc",
+	"Accept": [
+		"application/json",
+		"text/plain"
+	],
+	"X-Numbers": [
+		1,
+		2,
+		3
+	],
+	"X-One-Number": 42
+}

@@ -1,0 +1,15 @@
+{
+	"type": "extension-definition",
+	"spec_version": "2.1",
+	"id": "extension-definition--c4690e13-107e-4796-8158-0dcf1ae7bc89",
+	"created_by_ref": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+	"created": "2022-03-31T13:00:00.000Z",
+	"modified": "2022-03-31T13:00:00.000Z",
+	"name": "x-oca-detection Extension Definition",
+	"description": "This schema creates a new object type called detection, which contain queries or other actionable information that can identify an event or behavior.",
+	"schema": "https://raw.githubusercontent.com/opencybersecurityalliance/oca-iob/main/apl_reference_implementation_bundle/revision_2/schemas/sdos/detection.json",
+	"version": "1.0.0",
+	"extension_types": [
+		"new-sdo"
+	]
+}

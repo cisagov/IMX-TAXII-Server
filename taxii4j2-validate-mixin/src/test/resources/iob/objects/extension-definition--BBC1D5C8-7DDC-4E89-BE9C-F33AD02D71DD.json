@@ -1,0 +1,18 @@
+{
+	"type": "course-of-action",
+	"spec_version": "2.1",
+	"id": "course-of-action--94D890AC-3E24-4DEC-8ACB-C603FA4A7B20",
+	"created": "2022-03-31T13:00:00.000Z",
+	"modified": "2022-03-31T13:00:00.000Z",
+	"name": "Mitigate Incident",
+	"description": "Analyst mitigates the alert by blocking malicious IPs, sharing data, and/or remediating the affected system.",
+	"extensions": {
+		"extension-definition--BBC1D5C8-7DDC-4E89-BE9C-F33AD02D71DD": {
+			"extension_type": "property-extension",
+			"playbooks": {
+				"CACAO": "x-oca-playbook--AE16A784-BAC9-4334-A09F-7CB63053A6D7",
+				"BPMN": "x-oca-playbook--720E5E68-3959-4EE0-99DE-87A4EAA39F44"
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"uuid": "97f99894-b6ea-4ddc-b3e5-2d9184808f24",
+	"url": "https://api.github.com/repos/opencybersecurityalliance/oca-iob/",
+	"master": "origin/main",
+	"update_rate": "30 DAYS",
+	"mappings": [
+		{
+			"uuid": "9855a619-5a50-430b-b2cd-d6c5ddba2edc",
+			"type": "OBJECT",
+			"includes": [
+				"apl_reference_implementation_bundle/revision_4/BehaviorBundle.json"
+			],
+			"cIds": [
+				"behavior"
+			]
+		}
+	]
+}

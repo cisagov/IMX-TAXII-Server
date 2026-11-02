@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.target>17</maven.compiler.target>
+		<maven.compiler.source>17</maven.compiler.source>
+	</properties>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.cisa</groupId>
+	<version>0.1-SNAPSHOT</version>
+	<artifactId>taxii4j2-servlet-ce</artifactId>
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-compress</artifactId>
+			<version>1.27.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.inject</groupId>
+			<artifactId>jersey-hk2</artifactId>
+			<version>3.1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-json-jackson</artifactId>
+			<version>3.1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-multipart</artifactId>
+			<version>3.1.5</version> <!-- used to be 2.33 -->
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.cisa</groupId>
+			<artifactId>taxii4j2-auth-ce</artifactId>
+			<version>0.1-SNAPSHOT</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server -->
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-server</artifactId>
+			<version>12.1.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty.ee9</groupId>
+			<artifactId>jetty-ee9-servlet</artifactId>
+			<version>12.1.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty.ee9</groupId>
+			<artifactId>jetty-ee9-servlets</artifactId>
+			<version>12.1.9</version>
+		</dependency>
+	</dependencies>
+</project>

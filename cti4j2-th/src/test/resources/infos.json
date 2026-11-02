@@ -1,0 +1,48 @@
+[
+	{
+		"url": "http://localhost",
+		"username": "user",
+		"password": "pass"
+	},
+	{
+		"url": "http://localhost",
+		"username": "user",
+		"password": "pass2"
+	},
+	{
+		"url": "http://localhost"
+	},
+	{
+		"url": "http://localhost:9443"
+	},
+	{
+		"url": "http://localhost",
+		"username": "user",
+		"password": "pass",
+		"provider": "http://localhost"
+	},
+	{
+		"url": "http://localhost",
+		"username": "user",
+		"password": "pass2",
+		"provider": "http://localhost"
+	},
+	{
+		"url": "http://localhost",
+		"pkcs10": "abcd"
+	},
+	{
+		"url": "http://localhost",
+		"pkcs10": "dcba"
+	},
+	{
+		"url": "http://localhost",
+		"password": "pass",
+		"pkcs12": "abcd"
+	},
+	{
+		"url": "http://localhost",
+		"password": "pass",
+		"pkcs12": "dcba"
+	}
+]

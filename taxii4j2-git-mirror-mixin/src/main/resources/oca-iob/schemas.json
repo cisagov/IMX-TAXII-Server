@@ -1,0 +1,25 @@
+{
+	"uuid": "33049caf-2d90-4ebb-8508-cb045a410c63",
+	"url": "https://api.github.com/repos/opencybersecurityalliance/stix-extensions/",
+	"master": "origin/main",
+	"update_rate": "30 DAYS",
+	"mappings": [
+		{
+			"uuid": "e01a011e-0c0a-46ac-a26f-29d1ad6a471f",
+			"type": "OBJECT",
+			"includes": [
+				"2.x/extension-definitions"
+			],
+			"cIds": [
+				"iob-extension-definition"
+			]
+		},
+		{
+			"uuid": "97e8e277-4adf-4099-86cb-16e2090bd1b6",
+			"type": "SCHEMA",
+			"includes": [
+				"2.x/schemas"
+			]
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{
+	"owner": "opencybersecurityalliance",
+	"repo": "oca-iob",
+	"includes": [
+		"oca-iob/apl_reference_implementation_bundle/revision_3/schemas"
+	],
+	"excludes": [
+		"oca-iob/iob_use_cases",
+		"oca-iob/Presentations"
+	]
+}

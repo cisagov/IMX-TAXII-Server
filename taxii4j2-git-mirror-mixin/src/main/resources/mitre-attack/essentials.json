@@ -1,0 +1,38 @@
+{
+	"uuid": "7125a928-35bd-46a5-8954-df495334f84e",
+	"url": "https://api.github.com/repos/mitre-attack/attack-stix-data/",
+	"master": "origin/master",
+	"update_rate": "30 DAYS",
+	"mappings": [
+		{
+			"uuid": "9730e08f-74e0-4bb4-90a2-e62f7559c206",
+			"type": "OBJECT",
+			"includes": [
+				"enterprise-attack/enterprise-attack.json"
+			],
+			"cIds": [
+				"enterprise-attack"
+			]
+		},
+		{
+			"uuid": "d015cb43-2fe6-455e-b27b-c51cddea9388",
+			"type": "OBJECT",
+			"includes": [
+				"ics-attack/ics-attack.json"
+			],
+			"cIds": [
+				"ics-attack"
+			]
+		},
+		{
+			"uuid": "58116ced-e3cc-4c2a-a9a6-ee3e50dff3c4",
+			"type": "OBJECT",
+			"includes": [
+				"mobile-attack/mobile-attack.json"
+			],
+			"cIds": [
+				"mobile-attack"
+			]
+		}
+	]
+}

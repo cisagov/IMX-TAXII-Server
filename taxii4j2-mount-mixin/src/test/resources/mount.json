@@ -1,0 +1,8 @@
+{
+	"mp": "localhost9443",
+	"info": {
+		"username": "imx-admin",
+		"password": "imxAdminPassword",
+		"url": "https://localhost:9443/taxii/v2.1-os/"
+	}
+}

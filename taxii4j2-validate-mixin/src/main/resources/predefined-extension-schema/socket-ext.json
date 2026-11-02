@@ -1,0 +1,101 @@
+{
+	"$schema": "http://json-schema.org/draft/2020-12/schema#",
+	"title": "socket-ext",
+	"type": "object",
+	"description": "The Network Socket extension specifies a default extension for capturing network traffic properties associated with network sockets.",
+	"properties": {
+		"address_family": {
+			"type": "string",
+			"description": "Specifies the address family (AF_*) that the socket is configured for.",
+			"enum": [
+				"AF_UNSPEC",
+				"AF_INET",
+				"AF_IPX",
+				"AF_APPLETALK",
+				"AF_NETBIOS",
+				"AF_INET6",
+				"AF_IRDA",
+				"AF_BTH"
+			]
+		},
+		"is_blocking": {
+			"type": "boolean",
+			"description": "Specifies whether the socket is in blocking mode."
+		},
+		"is_listening": {
+			"type": "boolean",
+			"description": "Specifies whether the socket is in listening mode."
+		},
+		"options": {
+			"allOf": [
+				{
+					"$ref": "#/definitions/dictionary"
+				}
+			],
+			"description": "Specifies any options (SO_*) that may be used by the socket, as a dictionary.",
+			"patternProperties": {
+				"^(SO|ICMP|ICMP6|IP|IPV6|MCAST|TCP|IRLMP)(_[A-Z]+)+$": {
+					"type": "integer"
+				}
+			},
+			"additionalProperties": false
+		},
+		"socket_type": {
+			"type": "string",
+			"description": "Specifies the type of the socket.",
+			"enum": [
+				"SOCK_STREAM",
+				"SOCK_DGRAM",
+				"SOCK_RAW",
+				"SOCK_RDM",
+				"SOCK_SEQPACKET"
+			]
+		},
+		"socket_descriptor": {
+			"type": "integer",
+			"minimum": 0,
+			"description": "Specifies the socket file descriptor value associated with the socket, as a non-negative integer."
+		},
+		"socket_handle": {
+			"type": "integer",
+			"description": "Specifies the handle or inode value associated with the socket."
+		}
+	},
+	"required": [
+		"address_family"
+	],
+	"definitions": {
+		"dictionary": {
+			"title": "dictionary",
+			"description": "A dictionary captures a set of key/value pairs",
+			"type": "object",
+			"minProperties": 1,
+			"patternProperties": {
+				"^[a-zA-Z0-9_-]{0,250}$": {
+					"anyOf": [
+						{
+							"type": "array",
+							"minItems": 1
+						},
+						{
+							"type": "string"
+						},
+						{
+							"type": "integer"
+						},
+						{
+							"type": "boolean"
+						},
+						{
+							"type": "number"
+						},
+						{
+							"type": "object"
+						}
+					]
+				}
+			},
+			"additionalProperties": false
+		}
+	}
+}

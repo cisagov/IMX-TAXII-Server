@@ -1,0 +1,51 @@
+{
+	"uuid": "32ca1953-45fa-4a22-a81e-d8a7d1b97595",
+	"path": "/opt/repos/cti-stix-common-objects/",
+	"master": "origin/main",
+	"update_rate": "1 DAYS",
+	"mappings": [
+		{
+			"uuid": "1a1e76b0-c328-4622-ba38-d43b71e037e3",
+			"type": "OBJECT",
+			"includes": [
+				"objects/extension-definition"
+			],
+			"cIds": [
+				"extension-definition"
+			],
+			"overrides": [
+				"cti-stix-common-objects/extension-definition-overrides.json"
+			]
+		},
+		{
+			"uuid": "b9985efb-7d4c-40ff-8dcd-3dd27cc4e04f",
+			"type": "OBJECT",
+			"includes": [
+				"objects/identity"
+			],
+			"cIds": [
+				"identity"
+			]
+		},
+		{
+			"uuid": "af062974-7640-4676-bcf1-d3de14edf5f7",
+			"type": "OBJECT",
+			"includes": [
+				"objects/location"
+			],
+			"cIds": [
+				"location"
+			]
+		},
+		{
+			"uuid": "dafa04d6-3c5b-43f9-91e6-298ec92816af",
+			"type": "OBJECT",
+			"includes": [
+				"objects/marking-definition"
+			],
+			"cIds": [
+				"marking-definition"
+			]
+		}
+	]
+}

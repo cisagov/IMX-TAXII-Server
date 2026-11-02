@@ -1,0 +1,57 @@
+	[
+		{
+			"type": "identity",
+			"name": "CISA",
+			"identity_class": "organization",
+			"id": "identity--7594a7a3-5da8-455c-8ebb-83059b7f3a57",
+			"spec_version": "2.1",
+			"created": "2022-05-18T12:34:56.000Z",
+			"modified": "2022-05-18T12:34:56.000Z",
+			"created_by_ref": "identity--7594a7a3-5da8-455c-8ebb-83059b7f3a57"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--cadd4d85-4ba3-5dd2-9e67-b7bf80bfc471",
+			"spec_version": "2.1",
+			"name": "Bad IP Subnets",
+			"created_by_ref": "identity--7594a7a3-5da8-455c-8ebb-83059b7f3a57",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[ ipv4-addr:value ISSUBSET '198.51.100.0/24' OR ipv4-addr:value ISSUBSET '196.45.200.0/24' ]",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--57ec1fb8-7a4d-52ef-a18a-4018996dfbba",
+			"spec_version": "2.1",
+			"name": "Bad IP CIDR",
+			"created_by_ref": "identity--7594a7a3-5da8-455c-8ebb-83059b7f3a57",
+			"created": "2018-01-18T11:11:13.000Z",
+			"modified": "2018-01-18T11:11:13.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[ ipv4-addr:value ISSUBSET '198.51.100.0/24' ]",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--57ec1fb8-7a4d-52ef-a18a-4018996dfbba",
+			"spec_version": "2.1",
+			"name": "Bad IP CIDR",
+			"created_by_ref": "identity--7594a7a3-5da8-455c-8ebb-83059b7f3a57",
+			"created": "2018-01-18T11:11:13.000Z",
+			"modified": "2022-05-18T12:34:56.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[ ipv4-addr:value ISSUBSET '198.51.100.0/24' ]",
+			"pattern_type": "stix"
+		}
+	]

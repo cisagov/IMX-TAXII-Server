@@ -1,0 +1,15 @@
+{
+	"type": "extension-definition",
+	"spec_version": "2.1",
+	"id": "extension-definition--809C4D84-7A6E-4039-97B4-DA9FEA03FCF9",
+	"created_by_ref": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+	"created": "2022-03-31T13:00:00.000Z",
+	"modified": "2022-03-31T13:00:00.000Z",
+	"name": "x-oca-playbook Extension Definition",
+	"description": "This schema creates a new object type called x-oca-playbook.",
+	"schema": "https://raw.githubusercontent.com/opencybersecurityalliance/oca-iob/main/apl_reference_implementation_bundle/revision_2/schemas/sdos/playbook.json",
+	"version": "1.0.0",
+	"extension_types": [
+		"new-sdo"
+	]
+}

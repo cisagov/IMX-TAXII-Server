@@ -1,0 +1,74 @@
+include:
+  - project: eos/cde/elm/ops
+    ref: main
+    file: /ci-templates/gitleaks.yml
+  - project: eos/cde/elm/ops
+    ref: main
+    file: /ci-templates/trivy_fs.yml
+  - project: eos/cde/elm/ops
+    ref: main
+    file: /ci-templates/trivy_sbom.yml
+  - project: eos/cde/elm/ops
+    ref: main
+    file: /ci-templates/build_image.yml
+  - project: eos/cde/elm/ops
+    ref: main
+    file: /ci-templates/semantic_release.yml
+
+variables:
+  MAVEN_OPTS: "-Dmaven.repo.local=$CI_PROJECT_DIR/.m2/repository"
+
+cache:
+  key:
+    files:
+      - pom.xml
+  paths:
+    - ".m2/repository"
+
+stages:
+  - security
+  - lint
+  - test
+  - build
+  - release
+
+dependencies:
+  image: maven:3.6.3-openjdk-17-slim
+  stage: .pre
+  script:
+    - mvn package dependency:go-offline -DskipTests
+
+gitleaks:
+  variables:
+    GIT_DEPTH: 0
+  script:
+    - gitleaks detect --source . --redact --verbose --no-banner --log-opts="--full-history -m HEAD" --report-path gitleaks-report.json
+
+.semantic-release:
+  variables:
+    GIT_AUTHOR_EMAIL: "semantic-release-bot@martynus.net"
+    GIT_COMMITTER_EMAIL: "semantic-release-bot@martynus.net"
+
+trivy-fs:
+  allow_failure: true
+
+build-server:
+  extends: .build-image
+  variables:
+    PROJECT_NAME: "taxii"
+    IMAGE_NAME: "server"
+
+build-proxy:
+  extends: .build-image
+  variables:
+    PROJECT_NAME: "taxii"
+    IMAGE_NAME: "proxy"
+    DOCKERFILE_PATH: "proxy.Dockerfile"
+
+build-validator:
+  extends: .build-image
+  variables:
+    PROJECT_NAME: "taxii"
+    IMAGE_NAME: "stix2-validator"
+    CONTEXT_DIR: "stix2-validator"
+    DOCKERFILE_PATH: "./stix2-validator/Dockerfile"

@@ -1,0 +1,54 @@
+{
+	"collections": [
+		{
+			"id": "9dbedd04-c5f0-49f6-bfc6-550d0fa164ad",
+			"title": "behavior",
+			"can_read": true,
+			"can_write": true,
+			"description": "oca-iob behavior bundle contents",
+			"alias": "behavior"
+		},
+		{
+			"id": "ca489f7e-898d-4b40-af72-5e3805c849cd",
+			"title": "iob extension-definition",
+			"can_read": true,
+			"can_write": true,
+			"description": "oca-iob extension definitions",
+			"alias": "iob-extension-definition"
+		}
+	],
+	"fragments": [
+		{
+			"fragment": "oca-iob",
+			"apiRoot": {
+				"title": "oca-iob",
+				"versions": [
+					"application/taxii+json;version=2.0",
+					"application/taxii+json;version=2.1"
+				],
+				"max_content_length": 524288,
+				"description": "objects mirrored from oca-iob"
+			},
+			"rws": [
+				{
+					"cId": "9dbedd04-c5f0-49f6-bfc6-550d0fa164ad",
+					"readers": [
+						"imx-user"
+					],
+					"writers": [
+						"imx-git-mirror"
+					]
+				},
+				{
+					"cId": "ca489f7e-898d-4b40-af72-5e3805c849cd",
+					"readers": [
+						"imx-user"
+					],
+					"writers": [
+						"imx-git-mirror"
+					]
+				}
+			]
+		}
+	]
+}

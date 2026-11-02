@@ -1,0 +1,56 @@
+[tools]
+prek = "latest"
+
+[tasks.install]
+description = "Setup hooks and install all deps"
+run = """
+prek install
+"""
+
+[tasks.init]
+description = "init env and build"
+run = """
+cp .env.example .env
+docker compose up -d --build
+"""
+
+[tasks.init-proxy]
+description = "init env and build"
+run = """
+cp .env.proxy.example .env
+docker compose -f docker-compose.proxy.yml up -d --build
+"""
+
+[tasks.build]
+description = "Rebuild TAXII Server"
+run = """
+docker compose up -d --build
+"""
+
+[tasks.build-proxy]
+description = "Rebuild TAXII Proxy"
+run = """
+docker compose -f docker-compose.proxy.yml up -d --build
+"""
+
+[tasks.trivy-server]
+description = "Scan server image"
+run = """
+docker build -t tie/taxii/server:test .
+trivy image tie/taxii/server:test
+"""
+
+[tasks.trivy-validator]
+description = "Scan server image"
+run = """
+cd stix2-validator
+docker build -t tie/taxii/stix2-validator:test .
+trivy image tie/taxii/stix2-validator:test
+"""
+
+[tasks.trivy-proxy]
+description = "Scan proxy image"
+run = """
+docker build -t tie/taxii/proxy:test -f proxy.Dockerfile .
+trivy image tie/taxii/proxy:test
+"""

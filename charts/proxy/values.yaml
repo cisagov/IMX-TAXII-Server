@@ -1,0 +1,29 @@
+secrets:
+  create: "false"
+  clientPassword: ""
+  taxiiPassword: ""
+
+name: tie-taxii-proxy
+app: tie-taxii-proxy
+replicaCount: 1
+podSecurityContext: {}
+resources: {}
+image: ""
+imagePullPolicy: Always
+
+uuid: ""
+sqliteUrl: jdbc:sqlite:/opt/taxii4j2/data/taxii4j2.db
+taxiiUrl: http://taxii4j2:8080/
+javaToolOptions: -agentlib:jdwp=transport=dt_socket,address=*:8000,server=y,suspend=n
+
+clientUrl: ""
+clientUser: ""
+
+service:
+  type: NodePort
+  port: 8080
+  targetPort: 8080
+
+tag: v1.3.4
+ingress:
+  host: ""

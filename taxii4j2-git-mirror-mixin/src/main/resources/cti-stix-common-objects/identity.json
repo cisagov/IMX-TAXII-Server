@@ -1,0 +1,10 @@
+{
+	"uuid": "b9985efb-7d4c-40ff-8dcd-3dd27cc4e04f",
+	"type": "OBJECT",
+	"includes": [
+		"objects/identity"
+	],
+	"cIds": [
+		"identity"
+	]
+}

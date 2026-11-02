@@ -1,0 +1,48 @@
+{
+  "branches": [
+    "main"
+  ],
+  "tagFormat": "v${version}",
+  "plugins": [
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        "preset": "conventionalcommits"
+      }
+    ],
+    [
+      "@semantic-release/release-notes-generator",
+      {
+        "preset": "conventionalcommits",
+        "linkCompare": false,
+        "linkReferences": false,
+        "presetConfig": {
+          "issueUrlFormat": "/{{owner}}/{{repository}}/issues/{{id}}",
+          "userUrlFormat": "/{{user}}"
+        }
+      }
+    ],
+    [
+      "@semantic-release/changelog",
+      {
+        "changeLogFile": "CHANGELOG.md"
+      }
+    ],
+    [
+      "@semantic-release/gitlab",
+      {
+        "successComment": false,
+        "failComment": false
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "CHANGELOG.md"
+        ],
+        "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
+      }
+    ]
+  ]
+}

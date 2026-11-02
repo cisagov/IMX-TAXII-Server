@@ -1,0 +1,22 @@
+{
+	"type": "network-traffic",
+	"spec_version": "2.1",
+	"id": "network-traffic--15a157a8-26e3-56e0-820b-0c2a8e553a2c",
+	"src_ref": "ipv4-addr--57a33521-9761-54a9-81de-3c11e441d86b",
+	"src_port": 443,
+	"dst_ref": "ipv4-addr--bba1d187-08fb-5000-aed1-ef055c1dfd24",
+	"dst_port": 443,
+	"protocols": [
+		"ipv4",
+		"tcp",
+		"http",
+		"https"
+	],
+	"extensions": {
+		"extension-definition--3b7505ce-2a18-496e-aa58-311dac6c1473": {
+			"connections": 4022,
+			"score": 0.834,
+			"extension_type": "property-extension"
+		}
+	}
+}

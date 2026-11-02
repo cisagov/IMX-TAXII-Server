@@ -1,0 +1,153 @@
+{
+  "response": [
+    {
+      "Event": {
+        "id": "1",
+        "orgc_id": "1",
+        "org_id": "1",
+        "date": "2024-07-09",
+        "threat_level_id": "4",
+        "info": "STIX 2.1 Bundle imported with the MISP-STIX import feature.",
+        "published": true,
+        "uuid": "71356f2b-eefe-48db-a93a-4aa2233e3a59",
+        "attribute_count": "4",
+        "analysis": "0",
+        "timestamp": "1720532423",
+        "distribution": "1",
+        "proposal_email_lock": false,
+        "locked": false,
+        "publish_timestamp": "1720532423",
+        "sharing_group_id": "0",
+        "disable_correlation": false,
+        "extends_uuid": "",
+        "protected": null,
+        "event_creator_email": "admin@admin.test",
+        "Org": {
+          "id": "1",
+          "name": "ADMIN",
+          "uuid": "91ce467d-116c-4f02-b7a0-bee9278f268c",
+          "local": true
+        },
+        "Orgc": {
+          "id": "1",
+          "name": "ADMIN",
+          "uuid": "91ce467d-116c-4f02-b7a0-bee9278f268c",
+          "local": true
+        },
+        "Attribute": [
+          {
+            "id": "1",
+            "type": "domain|ip",
+            "category": "Network activity",
+            "to_ids": true,
+            "uuid": "726f90e2-2ad6-44a2-b345-c05e55e850e5",
+            "event_id": "1",
+            "distribution": "5",
+            "timestamp": "1603642920",
+            "comment": "Domain|ip test attribute",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "first_seen": null,
+            "last_seen": null,
+            "value": "circl.lu|149.13.33.14",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "2",
+            "type": "filename",
+            "category": "Payload delivery",
+            "to_ids": true,
+            "uuid": "02de0847-dccf-481a-a96a-6a7654328658",
+            "event_id": "1",
+            "distribution": "5",
+            "timestamp": "1603642920",
+            "comment": "Filename test attribute",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "first_seen": null,
+            "last_seen": null,
+            "value": "test_file_name",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          }
+        ],
+        "ShadowAttribute": [],
+        "RelatedEvent": [],
+        "Galaxy": [],
+        "Object": [
+          {
+            "id": "1",
+            "name": "original-imported-file",
+            "meta-category": "file",
+            "description": "Object describing the original file used to import data in MISP.",
+            "template_uuid": "4cd560e9-2cfe-40a1-9964-7b2e797ecac5",
+            "template_version": "2",
+            "event_id": "1",
+            "uuid": "3ad7abaa-c5d4-4575-a99b-f0708b2a2492",
+            "timestamp": "1720532423",
+            "distribution": "5",
+            "sharing_group_id": "0",
+            "comment": "",
+            "deleted": false,
+            "first_seen": null,
+            "last_seen": null,
+            "ObjectReference": [],
+            "Attribute": [
+              {
+                "id": "3",
+                "type": "attachment",
+                "category": "External analysis",
+                "to_ids": false,
+                "uuid": "0e47c573-dbf3-4b80-a01d-a7b75ac54f25",
+                "event_id": "1",
+                "distribution": "5",
+                "timestamp": "1720532423",
+                "comment": "",
+                "sharing_group_id": "0",
+                "deleted": false,
+                "disable_correlation": true,
+                "object_id": "1",
+                "object_relation": "imported-sample",
+                "first_seen": null,
+                "last_seen": null,
+                "value": "test_event2_stix21.json",
+                "Galaxy": [],
+                "ShadowAttribute": []
+              },
+              {
+                "id": "4",
+                "type": "text",
+                "category": "Other",
+                "to_ids": false,
+                "uuid": "9d015e3a-a757-4b31-8f5d-85f338fdd4e1",
+                "event_id": "1",
+                "distribution": "5",
+                "timestamp": "1720532423",
+                "comment": "",
+                "sharing_group_id": "0",
+                "deleted": false,
+                "disable_correlation": true,
+                "object_id": "1",
+                "object_relation": "format",
+                "first_seen": null,
+                "last_seen": null,
+                "value": "2.1",
+                "Galaxy": [],
+                "ShadowAttribute": []
+              }
+            ]
+          }
+        ],
+        "EventReport": [],
+        "CryptographicKey": []
+      }
+    }
+  ]
+}

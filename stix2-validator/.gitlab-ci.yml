@@ -1,0 +1,12 @@
+include:
+  - project: eos/cde/elm/ops
+    ref: main
+    file: /ci-templates/build_image.yml
+
+stages: [build]
+
+build:
+  extends: .build-image
+  variables:
+    PROJECT_NAME: taxii
+    IMAGE_NAME: stix2-validator

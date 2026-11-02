@@ -1,0 +1,10 @@
+{
+	"uuid": "dafa04d6-3c5b-43f9-91e6-298ec92816af",
+	"type": "OBJECT",
+	"includes": [
+		"objects/marking-definition"
+	],
+	"cIds": [
+		"marking-definition"
+	]
+}

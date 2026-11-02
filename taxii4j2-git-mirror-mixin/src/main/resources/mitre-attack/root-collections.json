@@ -1,0 +1,71 @@
+{
+	"collections": [
+		{
+			"id": "0058825f-c8f8-4893-be58-2d991376039d",
+			"title": "enterprise-attack",
+			"can_read": true,
+			"can_write": true,
+			"description": "enterprise-attack dataset",
+			"alias": "enterprise-attack"
+		},
+		{
+			"id": "702befe9-7594-4438-80e2-9ec6ee476596",
+			"title": "ics-attack",
+			"can_read": true,
+			"can_write": true,
+			"description": "ics-attack dataset",
+			"alias": "ics-attack"
+		},
+		{
+			"id": "23f212d5-1dbd-40dc-b78b-20421bf145c0",
+			"title": "mobile-attack",
+			"can_read": true,
+			"can_write": true,
+			"description": "mobile-attack dataset",
+			"alias": "mobile-attack"
+		}
+	],
+	"fragments": [
+		{
+			"fragment": "mitre-attack",
+			"apiRoot": {
+				"title": "mitre-attack",
+				"versions": [
+					"application/taxii+json;version=2.0",
+					"application/taxii+json;version=2.1"
+				],
+				"max_content_length": 5242880,
+				"description": "objects mirrored from mitre-attack/attack-stix-data"
+			},
+			"rws": [
+				{
+					"cId": "702befe9-7594-4438-80e2-9ec6ee476596",
+					"readers": [
+						"imx-user"
+					],
+					"writers": [
+						"imx-git-mirror"
+					]
+				},
+				{
+					"cId": "0058825f-c8f8-4893-be58-2d991376039d",
+					"readers": [
+						"imx-user"
+					],
+					"writers": [
+						"imx-git-mirror"
+					]
+				},
+				{
+					"cId": "23f212d5-1dbd-40dc-b78b-20421bf145c0",
+					"readers": [
+						"imx-user"
+					],
+					"writers": [
+						"imx-git-mirror"
+					]
+				}
+			]
+		}
+	]
+}

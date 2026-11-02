@@ -1,0 +1,114 @@
+{
+	"collections": [
+	   	{
+			"id": "707c3e4b-1508-427d-9a53-7c4ca84b43ae",
+			"title": "read-only-collection",
+			"can_read": true,
+			"can_write": false,
+			"description": "Read Only collection",
+			"alias": "read-only-collection"
+		},
+		{
+			"id": "70c88233-8da8-4277-b1c6-eed29823e3e3",
+			"title": "write-only-collection",
+			"can_read": false,
+			"can_write": true,
+			"description": "Write Only collection",
+			"alias": "write-only-collection"
+		},
+		{
+		    "id": "d43d5185-4d3f-4911-8b95-e2d2179efe20",
+		    "title": "no-read-write-collection",
+		    "can_read": false,
+		    "can_write": false,
+		    "description": "No Read or Write",
+		    "alias": "no-read-write-collection"
+		},
+		{
+		    "id": "ec4dfc60-246c-461d-a4c5-596a406947ef",
+		    "title": "test-collection-1",
+		    "can_read": true,
+		    "can_write": true,
+		    "description": "",
+		    "alias": "test-collection-1"
+		},
+		{
+		    "id": "98991511-5ffe-4ce7-a680-22885e052c6c",
+		    "title": "empty_collection",
+		    "can_read": true,
+		    "can_write": true,
+		    "description": "Empty collection",
+		    "alias": "empty_collection"
+		}
+	],
+	"fragments": [
+		{
+			"fragment": "test-root",
+			"apiRoot": {
+				"title": "test-root",
+				"versions": [
+					"application/taxii+json;version=2.0",
+					"application/taxii+json;version=2.1"
+				],
+				"max_content_length": 4194304,
+				"description": "API root for testing"
+			},
+			"rws": [
+				{
+					"cId": "ec4dfc60-246c-461d-a4c5-596a406947ef",
+					"readers": [
+						"imx-user"
+					],
+					"writers": [
+						"imx-user"
+					]
+				},
+				{
+					"cId": "98991511-5ffe-4ce7-a680-22885e052c6c",
+					"readers": [
+						"imx-user"
+					],
+					"writers": [
+						"imx-user"
+					]
+				},
+				{
+					"cId": "707c3e4b-1508-427d-9a53-7c4ca84b43ae",
+					"readers": [
+						"imx-user"
+					],
+					"writers": [ ]
+				},
+				{
+					"cId": "70c88233-8da8-4277-b1c6-eed29823e3e3",
+					"readers": [ ],
+					"writers": [
+						"imx-user"
+					]
+				},
+				{
+					"cId": "d43d5185-4d3f-4911-8b95-e2d2179efe20",
+					"readers": [ ],
+					"writers": [ ]
+				}
+			]
+		}
+	],
+	"users": [
+		{
+			"user": "admin_user",
+			"password": "testing",
+			"roles": [
+				"imx-admin",
+				"imx-user"
+			]
+		},
+		{
+			"user": "test_user",
+			"password": "testing",
+			"roles": [
+				"imx-user"
+			]
+		}
+	]
+}

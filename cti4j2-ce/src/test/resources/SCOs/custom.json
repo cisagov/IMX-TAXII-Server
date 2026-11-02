@@ -1,0 +1,14 @@
+[
+	{
+	"type": "my-favorite-sco",
+		"spec_version": "2.1",
+		"id": "my-favorite-sco--f9dbe89c-0030-4a9d-8b78-0dcd0a0de874",
+		"name": "This is the name of my favorite SCO",
+		"some_network_protocol_field": "value",
+		"extensions": {
+			"extension-definition--c5333451-c08c-4c48-be5e-9ad4c947776a": {
+				"extension_type": "new-sco"
+			}
+		}
+	}
+]

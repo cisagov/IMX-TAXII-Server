@@ -1,0 +1,93 @@
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: taxii-proxy-pv-claim
+  labels:
+    app: {{ .Values.app }}
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.name }}
+spec:
+  strategy:
+    type: Recreate
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Values.app }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.app }}
+    spec:
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      imagePullSecrets:
+        - name: regcred
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: taxii-proxy-pv-claim
+      containers:
+        - name: {{ .Values.name }}
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+          image: "{{ .Values.image }}:{{ .Values.tag }}"
+          imagePullPolicy: "{{ .Values.imagePullPolicy }}"
+          args:
+            - '--config'
+            - proxy.sqlite.properties
+
+          env:
+            - name: TAXII_XUUID
+              value: {{ .Values.uuid | quote }}
+
+            - name: SQLITE_URL
+              value: {{ .Values.sqliteUrl | quote }}
+
+            - name: TAXII_PORT
+              value: {{ .Values.service.port | quote }}
+
+            - name: TAXII_EXPOSED_PORT
+              value: {{ .Values.service.port | quote }}
+
+            - name: TAXII_URL
+              value: {{ .Values.taxiiUrl | quote }}
+
+            - name: JAVA_TOOL_OPTIONS
+              value: {{ .Values.javaToolOptions | quote }}
+
+            - name: CLIENT_URL
+              value: {{ .Values.clientUrl | quote }}
+
+            - name: CLIENT_USERNAME
+              value: {{ .Values.clientUser | quote }}
+
+            - name: TAXII_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: taxii-proxy-secrets
+                  key: TAXII_PASSWORD
+
+            - name: CLIENT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: taxii-proxy-secrets
+                  key: CLIENT_PASSWORD
+
+          ports:
+            - containerPort: {{ .Values.service.port }}
+
+          volumeMounts:
+            - name: data
+              mountPath: /opt/taxii4j2/data

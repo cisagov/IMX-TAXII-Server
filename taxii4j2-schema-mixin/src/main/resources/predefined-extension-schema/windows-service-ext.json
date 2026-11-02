@@ -1,0 +1,150 @@
+{
+	"$schema": "http://json-schema.org/draft/2020-12/schema#",
+	"title": "windows-service-ext",
+	"type": "object",
+	"description": "The Windows Service extension specifies a default extension for capturing properties specific to Windows services.",
+	"properties": {
+		"service_name": {
+			"type": "string",
+			"description": "Specifies the name of the service."
+		},
+		"descriptions": {
+			"type": "array",
+			"description": "Specifies the descriptions defined for the service.",
+			"items": {
+				"type": "string"
+			},
+			"minItems": 1
+		},
+		"display_name": {
+			"type": "string",
+			"description": "Specifies the displayed name of the service in Windows GUI controls."
+		},
+		"group_name": {
+			"type": "string",
+			"description": "Specifies the name of the load ordering group of which the service is a member."
+		},
+		"start_type": {
+			"type": "string",
+			"description": "Specifies the start options defined for the service. windows-service-start-enum",
+			"enum": [
+				"SERVICE_AUTO_START",
+				"SERVICE_BOOT_START",
+				"SERVICE_DEMAND_START",
+				"SERVICE_DISABLED",
+				"SERVICE_SYSTEM_ALERT"
+			]
+		},
+		"service_dll_refs": {
+			"type": "array",
+			"description": "Specifies the DLLs loaded by the service, as a reference to one or more File Objects.",
+			"items": {
+				"type": "string"
+			},
+			"minItems": 1
+		},
+		"service_type": {
+			"type": "string",
+			"description": "Specifies the type of the service. windows-service-enum",
+			"enum": [
+				"SERVICE_KERNEL_DRIVER",
+				"SERVICE_FILE_SYSTEM_DRIVER",
+				"SERVICE_WIN32_OWN_PROCESS",
+				"SERVICE_WIN32_SHARE_PROCESS"
+			]
+		},
+		"service_status": {
+			"type": "string",
+			"description": "Specifies the current status of the service. windows-service-status-enum",
+			"enum": [
+				"SERVICE_CONTINUE_PENDING",
+				"SERVICE_PAUSE_PENDING",
+				"SERVICE_PAUSED",
+				"SERVICE_RUNNING",
+				"SERVICE_START_PENDING",
+				"SERVICE_STOP_PENDING",
+				"SERVICE_STOPPED"
+			]
+		}
+	},
+	"anyOf": [
+		{
+			"required": [
+				"service_name"
+			]
+		},
+		{
+			"required": [
+				"descriptions"
+			]
+		},
+		{
+			"required": [
+				"display_name"
+			]
+		},
+		{
+			"required": [
+				"group_name"
+			]
+		},
+		{
+			"required": [
+				"start_type"
+			]
+		},
+		{
+			"required": [
+				"service_dll_refs"
+			]
+		},
+		{
+			"required": [
+				"service_type"
+			]
+		},
+		{
+			"required": [
+				"service_status"
+			]
+		}
+	],
+	"additionalProperties": {
+		"$ref": "#/definitions/dictionary",
+		"description": "Custom file extension"
+	},
+	"definitions": {
+		"dictionary": {
+			"title": "dictionary",
+			"description": "A dictionary captures a set of key/value pairs",
+			"type": "object",
+			"minProperties": 1,
+			"patternProperties": {
+				"^[a-zA-Z0-9_-]{0,250}$": {
+					"anyOf": [
+						{
+							"type": "array",
+							"minItems": 1
+						},
+						{
+							"type": "string"
+						},
+						{
+							"type": "integer"
+						},
+						{
+							"type": "boolean"
+						},
+						{
+							"type": "number"
+						},
+						{
+							"type": "object"
+						}
+					]
+				}
+			},
+			"additionalProperties": false
+		}
+	}
+}

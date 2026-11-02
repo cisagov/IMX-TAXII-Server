@@ -1,0 +1,6 @@
+apiVersion: v2
+name: taxii-proxy
+description: TAXII Proxy service to remote TAXII Servers
+type: application
+version: 0.1.0
+appVersion: "1.16.0"

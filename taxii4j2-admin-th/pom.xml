@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.cisa</groupId>
+	<artifactId>taxii4j2-admin-th</artifactId>
+	<version>0.1-SNAPSHOT</version>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>com.cisa</groupId>
+			<artifactId>taxii4j2-logging-th</artifactId>
+			<version>0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.cisa</groupId>
+			<artifactId>taxii4j2-servlet-th</artifactId>
+			<version>0.1-SNAPSHOT</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>io.swagger.core.v3</groupId>
+			<artifactId>swagger-jaxrs2-jakarta</artifactId>
+			<version>2.2.22</version>
+		</dependency>
+
+	</dependencies>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>io.swagger.core.v3</groupId>
+				<artifactId>swagger-maven-plugin-jakarta</artifactId>
+				<version>2.2.22</version>
+				<configuration>
+					<outputFileName>openapi</outputFileName>
+					<outputPath>${project.build.directory}/generatedtest</outputPath>
+					<outputFormat>JSONANDYAML</outputFormat>
+					<resourcePackages>
+						<package>com.cisa.taxii4j2.auth.method</package>
+					</resourcePackages>
+					<prettyPrint>TRUE</prettyPrint>
+					<sortOutput>TRUE</sortOutput>
+					<configurationFilePath>${project.basedir}/swagger-config.yaml</configurationFilePath>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>compile</phase>
+						<goals>
+							<goal>resolve</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+
+</project>

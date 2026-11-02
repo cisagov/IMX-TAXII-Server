@@ -1,0 +1,11 @@
+{
+	"owner": "oasis-open",
+	"repo": "cti-stix-common-objects",
+	"includes": [
+		"cti-stix-common-objects/extension-definition-specifications"
+	],
+	"excludes": [
+		"cti-stix-common-objects/objects/vulnerability",
+		"cti-stix-common-objects/extension-definition-specifications/acs-marking-definition-3a6"
+	]
+}

@@ -1,0 +1,10 @@
+{
+      "type": "campaign",
+      "spec_version": "2.1",
+      "confidence": 90,
+      "id": "campaign--208f342f-1f18-48a1-a898-0a66b04f1b7d",
+      "created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+      "created": "2020-04-06T20:03:00.000Z",
+      "modified": "2020-04-06T20:03:00.000Z",
+      "name": "Brown Group Attacks Against Commerce"
+    }

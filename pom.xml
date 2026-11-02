@@ -1,0 +1,74 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.cisa</groupId>
+	<artifactId>taxii4j2-th-es</artifactId>
+	<version>0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<modules>
+		<module>cti4j2-ce</module>
+		<module>cti4j2-th</module>
+		<module>taxii4j2-a1-mixin</module>
+		<module>taxii4j2-admin-th</module>
+		<module>taxii4j2-api-ce</module>
+		<module>taxii4j2-auth-ce</module>
+		<module>taxii4j2-best-practices-mixin</module>
+		<module>taxii4j2-binding-es-ce</module>
+		<module>taxii4j2-binding-es-th</module>
+		<module>taxii4j2-binding-sqlite-ce</module>
+		<module>taxii4j2-binding-sqlite-th</module>
+		<module>taxii4j2-client-th</module>
+		<module>taxii4j2-graph-mixin</module>
+		<module>taxii4j2-git-api</module>
+		<module>taxii4j2-git-mirror-mixin</module>
+		<module>taxii4j2-logging-th</module>
+		<module>taxii4j2-main-th</module>
+		<module>taxii4j2-mount-mixin</module>
+		<module>taxii4j2-misp-mixin</module>
+		<module>taxii4j2-proxy-th</module>
+		<module>taxii4j2-schema-mixin</module>
+		<module>taxii4j2-search-mixin</module>
+		<module>taxii4j2-servlet-ce</module>
+		<module>taxii4j2-servlet-th</module>
+		<module>taxii4j2-validate-mixin</module>
+		<module>taxii4j2-util-mixin</module>
+	</modules>
+
+  <build>
+    <!-- To define the plugin version in your parent POM -->
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>license-maven-plugin</artifactId>
+          <version>2.7.1</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <!-- To use the plugin goals in your POM or parent POM -->
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>license-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>license-maven-plugin</artifactId>
+        <version>2.7.1</version>
+      </plugin>
+    </plugins>
+  </reporting>
+
+</project>

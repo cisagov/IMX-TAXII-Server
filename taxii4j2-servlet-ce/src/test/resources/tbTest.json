@@ -1,0 +1,3631 @@
+	[
+		{
+			"type": "identity",
+			"name": "ACME Corp, Inc.",
+			"identity_class": "organization",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"created": "2020-01-20T12:34:56.000Z",
+			"modified": "2020-01-20T12:34:56.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "attack-pattern",
+			"spec_version": "2.1",
+			"id": "attack-pattern--0c7b5b88-8ff7-4a4d-aa9d-feb398cd0061",
+			"created": "2016-05-12T08:17:27.000Z",
+			"modified": "2016-05-12T08:17:27.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"name": "Spear Phishing",
+			"external_references": [
+				{
+					"source_name": "capec",
+					"external_id": "CAPEC-163"
+				}
+			],
+			"kill_chain_phases": [
+				{
+					"kill_chain_name": "example-kill-chain",
+					"phase_name": "lateral-movement"
+				}
+			]
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "attack-pattern",
+			"spec_version": "2.1",
+			"id": "attack-pattern--0c7b5b88-8ff7-4a4d-aa9d-feb398cd0061",
+			"created": "2016-05-12T08:17:27.000Z",
+			"modified": "2016-05-12T08:17:27.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"name": "Spear Phishing",
+			"external_references": [
+				{
+					"source_name": "capec",
+					"external_id": "CAPEC-163"
+				}
+			],
+			"kill_chain_phases": [
+				{
+					"kill_chain_name": "example-kill-chain",
+					"phase_name": "lateral-movement"
+				}
+			]
+		},
+		{
+			"type": "vulnerability",
+			"id": "vulnerability--99f01020-864f-4713-84d2-d1eff88a843f",
+			"spec_version": "2.1",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"name": "CVE-2017-0199",
+			"external_references": [
+				{
+					"source_name": "cve",
+					"external_id": "CVE-2017-0199"
+				}
+			]
+		},
+		{
+			"type": "relationship",
+			"id": "relationship--f0afbb80-20a1-404b-a165-01dd45b32239",
+			"spec_version": "2.1",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"source_ref": "attack-pattern--0c7b5b88-8ff7-4a4d-aa9d-feb398cd0061",
+			"target_ref": "vulnerability--99f01020-864f-4713-84d2-d1eff88a843f",
+			"relationship_type": "targets"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"spec_version": "2.1",
+			"id": "indicator--0c7e22ad-b099-4dc3-b0df-2ea3f49ae2e6",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2019-05-12T08:17:27.000Z",
+			"modified": "2019-05-12T08:17:27.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[url:value = 'http://badsite.com/foo' OR url:value = 'http://badsite.com/bar']",
+			"pattern_type": "stix",
+			"valid_from": "2019-01-01T00:00:00Z"
+		},
+		{
+			"type": "attack-pattern",
+			"spec_version": "2.1",
+			"id": "attack-pattern--7e33a43e-e34b-40ec-89da-36c9bb2cacd5",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2019-05-12T08:17:27.000Z",
+			"modified": "2019-05-12T08:17:27.000Z",
+			"name": "Spear Phishing as Practiced by Adversary X",
+			"description": "Spear phishing where the attacker includes personal details in the email and claims that the target had won a contest.",
+			"external_references": [
+				{
+					"source_name": "capec",
+					"external_id": "CAPEC-163"
+				}
+			]
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--57b56a43-b8b0-4cba-9deb-34e3e1faed9e",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2019-05-12T08:17:27.000Z",
+			"modified": "2019-05-12T08:17:27.000Z",
+			"relationship_type": "indicates",
+			"source_ref": "indicator--0c7e22ad-b099-4dc3-b0df-2ea3f49ae2e6",
+			"target_ref": "attack-pattern--7e33a43e-e34b-40ec-89da-36c9bb2cacd5"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "malware",
+			"spec_version": "2.1",
+			"id": "malware--1121ffbc-364f-457a-9987-92fbcff24aba",
+			"created": "2019-05-12T08:17:27.000Z",
+			"modified": "2019-05-12T08:17:27.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"name": "Cryptolocker",
+			"description": "A variant of the cryptolocker family",
+			"malware_types": [
+				"ransomware"
+			],
+			"is_family": false
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--11220001-3940-2405-90ff-1029b0bc9223",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2020-01-16T18:52:24.277Z",
+			"modified": "2020-01-16T18:52:24.277Z",
+			"relationship_type": "uses",
+			"source_ref": "malware--1121ffbc-364f-857a-9987-92fbcff24ab",
+			"target_ref": "attack-pattern--b80d107d-fa0d-4b60-9684-b0433e8bdba0",
+			"object_marking_refs": [
+				"marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+			]
+		},
+		{
+			"type": "attack-pattern",
+			"id": "attack-pattern--b80d107d-fa0d-4b60-9684-b0433e8bdba0",
+			"spec_version": "2.1",
+			"created": "2019-03-15T13:59:30.390Z",
+			"modified": "2019-03-15T13:59:30.390Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"kill_chain_phases": [
+				{
+					"kill_chain_name": "mitre-attack",
+					"phase_name": "impact"
+				}
+			],
+			"name": "Data Encrypted for Impact",
+			"description": "Adversaries may encrypt data on target systems or on large numbers of systems in a network to interrupt availability to system and network resources…"
+		},
+		{
+			"type": "identity",
+			"id": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "The MITRE Corporation",
+			"created": "2017-06-01T00:00:00.000Z",
+			"modified": "2017-06-01T00:00:00.000Z",
+			"created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+		},
+		{
+			"type": "attack-pattern",
+			"id": "attack-pattern--b80d107d-fa0d-4b60-9684-b0433e8bdba0",
+			"spec_version": "2.1",
+			"created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"created": "2019-03-15T13:59:30.390Z",
+			"modified": "2019-07-19T14:35:12.349Z",
+			"name": "Data Encrypted for Impact",
+			"description": "Adversaries may encrypt data on target systems or on large numbers of systems in a network to interrupt availability to system and network resources...",
+			"kill_chain_phases": [
+				{
+					"kill_chain_name": "mitre-attack",
+					"phase_name": "impact"
+				}
+			],
+			"external_references": [
+				{
+					"source_name": "mitre-attack",
+					"external_id": "T1486",
+					"url": "https://attack.mitre.org/techniques/T1486"
+				},
+				{
+					"source_name": "US-CERT Ransomware 2016",
+					"description": "US-CERT. (2016, March 31). Alert (TA16-091A): Ransomware and Recent Variants. Retrieved March 15, 2019.",
+					"url": "https://www.us-cert.gov/ncas/alerts/TA16-091A"
+				}
+			]
+		},
+		{
+			"type": "identity",
+			"name": "ACME Corp, Inc.",
+			"identity_class": "organization",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"created": "2015-01-20T12:34:56.000Z",
+			"modified": "2015-01-20T12:34:56.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "campaign",
+			"spec_version": "2.1",
+			"id": "campaign--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2016-04-06T20:03:00.000Z",
+			"modified": "2016-04-06T20:03:00.000Z",
+			"name": "Green Group Attacks Against Finance"
+		},
+		{
+			"type": "identity",
+			"name": "ACME Corp, Inc.",
+			"identity_class": "organization",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"created": "2015-01-20T12:34:56.000Z",
+			"modified": "2015-01-20T12:34:56.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "campaign",
+			"spec_version": "2.1",
+			"id": "campaign--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2016-04-06T20:03:00.000Z",
+			"modified": "2016-04-06T20:03:00.000Z",
+			"name": "Green Group Attacks Against Finance"
+		},
+		{
+			"type": "intrusion-set",
+			"id": "intrusion-set--9352cbaf-b3b8-4be5-9304-5bd7a8400255",
+			"spec_version": "2.1",
+			"created": "2015-01-20T12:34:56.000Z",
+			"modified": "2015-01-20T12:34:56.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"name": "Cheetah Breakin",
+			"resource_level": "club",
+			"primary_motivation": "notoriety"
+		},
+		{
+			"type": "relationship",
+			"id": "relationship--7f6bb959-6288-417d-9fd6-bac8cf994bcc",
+			"spec_version": "2.1",
+			"created": "2015-01-20T12:34:56.000Z",
+			"modified": "2015-01-20T12:34:56.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"source_ref": "campaign--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+			"target_ref": "intrusion-set--9352cbaf-b3b8-4be5-9304-5bd7a8400255",
+			"relationship_type": "attributed-to"
+		},
+		{
+			"type": "identity",
+			"id": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"spec_version": "2.1",
+			"created": "2015-04-14T13:07:49.812Z",
+			"modified": "2015-04-14T13:07:49.812Z",
+			"name": "Oscorp Industries",
+			"identity_class": "organization",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c"
+		},
+		{
+			"type": "campaign",
+			"spec_version": "2.1",
+			"id": "campaign--e5268b6e-4931-42f1-b379-87f48eb41b1e",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2016-08-08T15:50:10.983Z",
+			"modified": "2016-08-08T15:50:10.983Z",
+			"name": "Operation Bran Flakes",
+			"description": "A concerted effort to insert false information into the BPP's web pages.",
+			"aliases": [
+				"OBF"
+			],
+			"first_seen": "2016-01-08T12:50:40.123Z",
+			"objective": "Hack www.bpp.bn"
+		},
+		{
+			"type": "attack-pattern",
+			"spec_version": "2.1",
+			"id": "attack-pattern--19da6e1c-71ab-4c2f-886d-d620d09d3b5a",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2016-08-08T15:50:10.983Z",
+			"modified": "2017-01-30T21:15:04.127Z",
+			"name": "Content Spoofing",
+			"external_references": [
+				{
+					"source_name": "capec",
+					"url": "https://capec.mitre.org/data/definitions/148.html",
+					"external_id": "CAPEC-148"
+				}
+			]
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--33c22977-d104-45d8-be19-273f7ab03de1",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2020-02-29T17:41:44.940Z",
+			"modified": "2020-02-29T17:41:44.940Z",
+			"relationship_type": "uses",
+			"source_ref": "campaign--e5268b6e-4931-42f1-b379-87f48eb41b1e",
+			"target_ref": "attack-pattern--19da6e1c-71ab-4c2f-886d-d620d09d3b5a"
+		},
+		{
+			"type": "identity",
+			"id": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"spec_version": "2.1",
+			"created": "2015-04-14T13:07:49.812Z",
+			"modified": "2015-04-14T13:07:49.812Z",
+			"name": "Oscorp Industries",
+			"identity_class": "organization",
+			"contact_information": "norman@oscorp.com",
+			"sectors": [
+				"technology"
+			]
+		},
+		{
+			"type": "campaign",
+			"spec_version": "2.1",
+			"id": "campaign--e5268b6e-4931-42f1-b379-87f48eb41b1e",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2016-08-08T15:50:10.983Z",
+			"modified": "2016-08-08T15:50:10.983Z",
+			"name": "Operation Bran Flakes",
+			"description": "A concerted effort to insert false information into the BPP's web pages.",
+			"aliases": [
+				"OBF"
+			],
+			"first_seen": "2016-01-08T12:50:40.123Z",
+			"objective": "Hack www.bpp.bn"
+		},
+		{
+			"type": "threat-actor",
+			"spec_version": "2.1",
+			"id": "threat-actor--9a8a0d25-7636-429b-a99e-b2a73cd0f11f",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2015-05-07T14:22:14.760Z",
+			"modified": "2015-05-07T14:22:14.760Z",
+			"name": "Adversary Bravo",
+			"description": "Adversary Bravo is known to use phishing attacks to deliver remote access malware to the targets.",
+			"threat_actor_types": [
+				"spy",
+				"criminal"
+			]
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--33c22977-d104-45d8-be19-273f7ab03de1",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2020-02-29T17:41:44.940Z",
+			"modified": "2020-02-29T17:41:44.940Z",
+			"relationship_type": "attributed-to",
+			"source_ref": "campaign--e5268b6e-4931-42f1-b379-87f48eb41b1e",
+			"target_ref": "threat-actor--9a8a0d25-7636-429b-a99e-b2a73cd0f11f"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--76fa276c-1984-4bb1-938f-7834a6b30090",
+			"spec_version": "2.1",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2020-02-06T20:03:48.000Z",
+			"modified": "2020-02-06T20:03:48.000Z",
+			"confidence": 85,
+			"indicator_types": [
+				"benign"
+			],
+			"name": "Benign site",
+			"pattern": "[ url:value = 'http://weibo.com']",
+			"pattern_type": "stix",
+			"valid_from": "2020-01-01T00:00:00Z"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"spec_version": "2.1",
+			"id": "indicator--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2019-04-06T20:03:48.000Z",
+			"modified": "2019-04-06T20:03:48.000Z",
+			"confidence": 95,
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"name": "Poison Ivy Malware",
+			"description": "This file is part of Poison Ivy",
+			"pattern": "[ file:hashes.'SHA-256' = '4bac27393bdd9777ce02453256c5577cd02275510b2227f473d03f533924f877' ]",
+			"pattern_type": "stix",
+			"valid_from": "2019-01-01T00:00:00Z"
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--44298a74-ba52-4f0c-87a3-1824e67d7fad",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2019-04-06T20:06:37.000Z",
+			"modified": "2019-04-06T20:06:37.000Z",
+			"confidence": 90,
+			"relationship_type": "indicates",
+			"source_ref": "indicator--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+			"target_ref": "malware--31b940d4-6f7f-459a-80ea-9c1f17b5891b"
+		},
+		{
+			"type": "malware",
+			"spec_version": "2.1",
+			"id": "malware--31b940d4-6f7f-459a-80ea-9c1f17b5891b",
+			"created": "2019-04-06T20:07:09.000Z",
+			"modified": "2019-04-06T20:07:09.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"name": "Poison Ivy",
+			"malware_types": [
+				"trojan"
+			],
+			"is_family": false
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "campaign",
+			"id": "campaign--12a111f0-b824-4baf-a224-83b80237a094",
+			"lang": "en",
+			"spec_version": "2.1",
+			"created": "2017-02-08T21:31:22.007Z",
+			"modified": "2017-02-08T21:31:22.007Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"name": "Bank Attack",
+			"description": "More information about bank attack"
+		},
+		{
+			"type": "language-content",
+			"id": "language-content--b86bd89f-98bb-4fa9-8cb2-9ad421da981d",
+			"spec_version": "2.1",
+			"created": "2017-02-08T21:31:22.007Z",
+			"modified": "2017-02-08T21:31:22.007Z",
+			"confidence": 100,
+			"object_ref": "campaign--12a111f0-b824-4baf-a224-83b80237a094",
+			"object_modified": "2017-02-08T21:31:22.007Z",
+			"contents": {
+				"de": {
+					"name": "Bank Angriff",
+					"description": "Weitere Informationen über Banküberfall"
+				}
+			}
+		},
+		{
+			"type": "language-content",
+			"id": "language-content--a2cd6c46-d999-4a79-95ae-0c6cb2fc0648",
+			"spec_version": "2.1",
+			"created": "2017-02-08T21:31:22.007Z",
+			"modified": "2017-02-08T21:31:22.007Z",
+			"confidence": 90,
+			"object_ref": "campaign--12a111f0-b824-4baf-a224-83b80237a094",
+			"object_modified": "2017-02-08T21:31:22.007Z",
+			"contents": {
+				"fr": {
+					"name": "Attaque Bank",
+					"description": "Plus d'informations sur la crise bancaire"
+				}
+			}
+		},
+		{
+			"type": "language-content",
+			"id": "language-content--fe76d222-40f1-4c7d-8dd1-643681356df7",
+			"spec_version": "2.1",
+			"created": "2017-02-08T21:31:22.007Z",
+			"modified": "2017-02-08T21:31:22.007Z",
+			"confidence": 95,
+			"object_ref": "campaign--12a111f0-b824-4baf-a224-83b80237a094",
+			"object_modified": "2017-02-08T21:31:22.007Z",
+			"contents": {
+				"ja": {
+					"name": "銀行への攻撃",
+					"description": "銀行への攻撃の追加情報"
+				}
+			}
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "campaign",
+			"spec_version": "2.1",
+			"id": "campaign--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2019-04-06T20:03:00.000Z",
+			"modified": "2019-04-06T20:03:00.000Z",
+			"confidence": 70,
+			"name": "Green Group Attacks Against Finance",
+			"description": "Campaign by Green Group against a series of targets in the financial services sector."
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp Sighting, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "course-of-action",
+			"id": "course-of-action--97250bf1-7ab6-4c79-b8c0-b59f6fc62e9d",
+			"spec_version": "2.1",
+			"name": "Add TCP port 80 Filter Rule to the existing Block UDP 1434 Filter",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp Sighting, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "course-of-action",
+			"id": "course-of-action--17ce1618-0aab-4366-a93a-9d290282995e",
+			"spec_version": "2.1",
+			"name": "Add TCP port 80 Filter Rule to the existing Block UDP 1434 Filter",
+			"description": "This is how to add a filter rule to block inbound access to TCP port 80 to the existing UDP 1434 filter..",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z"
+		},
+		{
+			"type": "relationship",
+			"id": "relationship--1d79e2b8-c4e2-4f64-a9b3-739de42bc1c6",
+			"spec_version": "2.1",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"source_ref": "course-of-action--17ce1618-0aab-4366-a93a-9d290282995e",
+			"target_ref": "indicator--bc7a2301-d711-465d-a8bf-97d50e1cb68f",
+			"relationship_type": "mitigates"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--bc7a2301-d711-465d-a8bf-97d50e1cb68f",
+			"spec_version": "2.1",
+			"name": "Poison Ivy Malware",
+			"description": "Popular remote access tool.",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[file:hashes.MD5 = '3773a88f65a5e780c8dff9cdc3a056f3']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp Sighting, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"name": "Bad IP1",
+			"id": "indicator--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+			"spec_version": "2.1",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"object_marking_refs": [
+				"marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+			],
+			"pattern": "[ipv4-addr:value = '198.51.100.1']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp Sighting, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"name": "Bad IP2",
+			"id": "indicator--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+			"spec_version": "2.1",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"object_marking_refs": [
+				"marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+			],
+			"pattern": "[ipv4-addr:value = '198.51.102.2']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp Sighting, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--2713b690-877e-4d25-a992-6e80efefa49f",
+			"spec_version": "2.1",
+			"name": "Bad IP Subnets",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"object_marking_refs": [
+				"marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+			],
+			"pattern": "[ipv4-addr:value ISSUBSET '198.51.100.0/24' OR ipv4-addr:value ISSUBSET '196.45.200.0/24']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp Sighting, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--c6b3dbc6-f279-4193-90c2-2967a0a16485",
+			"spec_version": "2.1",
+			"name": "Bad IPv6-1",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[ipv6-addr:value = '2001:0db8:85a3:0000:0000:8a2e:0370:7334']",
+			"object_marking_refs": [
+				"marking-definition--5e57c739-391a-4eb3-b6be-7d15ca92d5ed"
+			],
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp Sighting, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--c6b3dbc6-f279-4193-90c2-2967a0a16485",
+			"spec_version": "2.1",
+			"name": "Bad IPv6-1",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[ipv6-addr:value = '2001:0db8:85a3:0000:0000:8a2e:0370:7334']",
+			"object_marking_refs": [
+				"marking-definition--3556db42-ad8e-47ec-a696-9b1695d7760f"
+			],
+			"pattern_type": "stix"
+		},
+		{
+			"type": "marking-definition",
+			"spec_version": "2.1",
+			"id": "marking-definition--3556db42-ad8e-47ec-a696-9b1695d7760f",
+			"created": "2021-01-01T00:00:00.000Z",
+			"definition_type": "statement",
+			"definition": {
+				"statement": "Copyright 2021, Example Corp"
+			}
+		},
+		{
+			"type": "identity",
+			"name": "ACME Corp, Inc.",
+			"identity_class": "organization",
+			"id": "identity--a463ffb3-1bd9-4d94-b02d-74e4f1658283",
+			"spec_version": "2.1",
+			"created": "2012-01-20T12:34:56.000Z",
+			"modified": "2012-01-20T12:34:56.000Z",
+			"created_by_ref": "identity--a463ffb3-1bd9-4d94-b02d-74e4f1658283"
+		},
+		{
+			"type": "grouping",
+			"spec_version": "2.1",
+			"id": "grouping--84e4d88f-44ea-4bcd-bbf3-b2c1c320bcb3",
+			"created_by_ref": "identity--a463ffb3-1bd9-4d94-b02d-74e4f1658283",
+			"created": "2015-12-21T19:59:11.000Z",
+			"modified": "2015-12-21T19:59:11.000Z",
+			"context": "suspicious-activity",
+			"object_refs": [
+				"indicator--26ffb872-1dd9-446e-b6f5-d58527e5b5d2"
+			]
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--26ffb872-1dd9-446e-b6f5-d58527e5b5d2",
+			"spec_version": "2.1",
+			"name": "Bad IP1",
+			"created_by_ref": "identity--a463ffb3-1bd9-4d94-b02d-74e4f1658283",
+			"created": "2014-01-17T11:11:13.000Z",
+			"modified": "2014-01-17T11:11:13.000Z",
+			"valid_from": "2013-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[ipv4-addr:value = '198.51.100.1']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--a463ffb3-1bd9-4d94-b02d-74e4f1658283",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--a463ffb3-1bd9-4d94-b02d-74e4f1658283"
+		},
+		{
+			"type": "grouping",
+			"spec_version": "2.1",
+			"id": "grouping--84e4d88f-44ea-4bcd-bbf3-b2c1c320bcb3",
+			"created_by_ref": "identity--a463ffb3-1bd9-4d94-b02d-74e4f1658283",
+			"created": "2020-04-21T19:59:11.000Z",
+			"modified": "2020-04-21T19:59:11.000Z",
+			"name": "Suspicious event Grouping",
+			"context": "suspicious-activity",
+			"object_refs": [
+				"observed-data--26ffb872-1dd9-446e-b6f5-d58527e5b5d2",
+				"observed-data--83422c77-904c-4dc1-aff5-5c38f3a2c55c"
+			]
+		},
+		{
+			"type": "observed-data",
+			"spec_version": "2.1",
+			"id": "observed-data--26ffb872-1dd9-446e-b6f5-d58527e5b5d2",
+			"created_by_ref": "identity--a463ffb3-1bd9-4d94-b02d-74e4f1658283",
+			"created": "2020-04-18T09:34:11.000Z",
+			"modified": "2020-04-18T09:34:11.000Z",
+			"first_observed": "2020-04-18T06:14:10.000Z",
+			"last_observed": "2020-04-18T09:12:31.000Z",
+			"number_observed": 50,
+			"object_refs": [
+				"ipv4-address--efcd5e80-570d-4131-b213-62cb18eaa6a8",
+				"domain-name--ecb120bf-2694-4902-a737-62b74539a41b"
+			]
+		},
+		{
+			"type": "domain-name",
+			"spec_version": "2.1",
+			"id": "domain-name--ecb120bf-2694-4902-a737-62b74539a41b",
+			"value": "suspiciousplace.com",
+			"resolves_to_refs": [
+				"ipv4-addr--efcd5e80-570d-4131-b213-62cb18eaa6a8"
+			]
+		},
+		{
+			"type": "sighting",
+			"spec_version": "2.1",
+			"id": "sighting--49247b1f-6158-480f-ad26-6a2f9303f22b",
+			"created_by_ref": "identity--a463ffb3-1bd9-4d94-b02d-74e4f1658283",
+			"created": "2020-04-22T03:51:01.000Z",
+			"modified": "2020-04-22T03:51:01.000Z",
+			"sighting_of_ref": "grouping--84e4d88f-44ea-4bcd-bbf3-b2c1c320bcb3",
+			"observed_data_refs": [
+				"observed-data--83422c77-904c-4dc1-aff5-5c38f3a2c55c"
+			]
+		},
+		{
+			"type": "ipv4-addr",
+			"spec_version": "2.1",
+			"id": "ipv4-addr--efcd5e80-570d-4131-b213-62cb18eaa6a8",
+			"value": "198.51.100.3"
+		},
+		{
+			"type": "observed-data",
+			"spec_version": "2.1",
+			"id": "observed-data--83422c77-904c-4dc1-aff5-5c38f3a2c55c",
+			"created_by_ref": "identity--a463ffb3-1bd9-4d94-b02d-74e4f1658283",
+			"created": "2020-04-21T03:51:01.000Z",
+			"modified": "2020-04-21T03:51:01.000Z",
+			"first_observed": "2020-04-21T02:11:01.000Z",
+			"last_observed": "2020-04-21T02:11:01.000Z",
+			"number_observed": 1,
+			"object_refs": [
+				"network-traffic--2568d22a-8998-58eb-99ec-3c8ca74f527d"
+			]
+		},
+		{
+			"type": "ipv4-addr",
+			"spec_version": "2.1",
+			"id": "ipv4-addr--4d22aae0-2bf9-5427-8819-e4f6abf20a53",
+			"value": "128.29.99.14"
+		},
+		{
+			"type": "network-traffic",
+			"spec_version": "2.1",
+			"id": "network-traffic--2568d22a-8998-58eb-99ec-3c8ca74f527d",
+			"src_ref": "ipv4-addr--efcd5e80-570d-4131-b213-62cb18eaa6a8",
+			"dst_ref": "ipv4-addr--4d22aae0-2bf9-5427-8819-e4f6abf20a53",
+			"protocols": [
+				"tcp"
+			]
+		},
+		{
+			"type": "identity",
+			"id": "identity--a463ffb3-1bd9-4d94-b02d-74e4f1658283",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z"
+		},
+		{
+			"type": "grouping",
+			"spec_version": "2.1",
+			"id": "grouping--83745900-3485-1204-a495-34958ff94b22",
+			"created_by_ref": "identity--a463ffb3-1bd9-4d94-b02d-74e4f1658283",
+			"created": "2020-05-05T19:59:11.000Z",
+			"modified": "2020-05-05T19:59:11.000Z",
+			"name": "Malware Analysis Grouping",
+			"context": "malware-analysis",
+			"object_refs": [
+				"malware--bd839453-0334-12bb-acde-18473be4d73f",
+				"malware-analysis--8475bdef-0345-34be-3921-3847bef26a78",
+				"relationship--3746283c-cde7-be73-2736-e8df93f92001"
+			]
+		},
+		{
+			"type": "malware",
+			"spec_version": "2.1",
+			"id": "malware--bd839453-0334-12bb-acde-18473be4d73f",
+			"created_by_ref": "identity--a463ffb3-1bd9-4d94-b02d-74e4f1658283",
+			"created": "2018-08-18T23:55:56.000Z",
+			"modified": "2018-09-03T05:38:32.000Z",
+			"name": "zeus",
+			"malware_types": [
+				"password-stealer"
+			],
+			"is_family": true,
+			"sample_refs": [
+				"file--32d46183-b04a-53f4-a610-fbb4be60c4f6"
+			]
+		},
+		{
+			"type": "file",
+			"id": "file--32d46183-b04a-53f4-a610-fbb4be60c4f6",
+			"spec_version": "2.1",
+			"size": 95744,
+			"hashes": {
+				"SHA-256": "d912d711520f9b44a249cc098f05f9618731f84d922a9c30916db6d6ba73fe22",
+				"SHA-1": "dcab07b13eb4eb5b90a2bc5f947ddf0f7d8ad6f9"
+			}
+		},
+		{
+			"type": "malware-analysis",
+			"spec_version": "2.1",
+			"id": "malware-analysis--8475bdef-0345-34be-8921-3847bef26a78",
+			"created_by_ref": "identity--a463ffb3-1bd9-4d94-b02d-74e4f1658283",
+			"created": "2020-03-16T18:52:24.277Z",
+			"modified": "2020-03-16T18:52:24.277Z",
+			"product": "av-tool",
+			"analysis_engine_version": "5.1.0",
+			"analysis_definition_version": "053514-0062",
+			"analysis_started": "2020-03-16T06:12:00Z",
+			"analysis_ended": "2020-03-16T06:14:08Z",
+			"result": "malicious",
+			"sample_ref": "file--32d46183-b04a-53f4-a610-fbb4be60c4f6"
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--3746283c-cde7-be73-a736-e8df93f92001",
+			"created": "2020-05-04T08:25:26.000Z",
+			"modified": "2020-05-04T08:25:26.000Z",
+			"created_by_ref": "identity--a463ffb3-1bd9-4d94-b02d-74e4f1658283",
+			"relationship_type": "static-analysis-of",
+			"source_ref": "malware-analysis--8475bdef-0345-34be-3921-3847bef26a78",
+			"target_ref": "malware--bd839453-0334-12bb-acde-18473be4d73f"
+		},
+		{
+			"type": "grouping",
+			"spec_version": "2.1",
+			"id": "grouping--84e4d88f-44ea-4bcd-bbf3-b2c1c320bcb3",
+			"created_by_ref": "identity--a463ffb3-1bd9-4d94-b02d-74e4f1658283",
+			"created": "2020-04-21T19:59:11.000Z",
+			"modified": "2020-04-21T19:59:11.000Z",
+			"name": "Sighting Grouping",
+			"description": "The referenced Sightings are duplicates and represent a single sighting",
+			"context": "duplicate-of",
+			"object_refs": [
+				"sighting--613f2e26-407d-48c7-9eca-b8e91df99dc9",
+				"sighting--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+				"sighting--37362738-fe00-342b-3451-8748338deee9",
+				"sighting--f88d31f6-486f-44da-b317-01333bde0b82"
+			]
+		},
+		{
+			"type": "indicator",
+			"spec_version": "2.1",
+			"id": "indicator--b3d72224-232f-459d-a5b9-3ffb5ea97d12",
+			"created": "2019-12-01T00:00:00.000Z",
+			"modified": "2019-12-01T00:00:00.000Z",
+			"valid_from": "2020-02-20T22:28:19.313Z",
+			"pattern": "[file:hashes.MD5 = 'd41d8cd98f00b204e9800998ecf8427e']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "indicator",
+			"spec_version": "2.1",
+			"id": "indicator--74654fff-2435-463b-bd41-36444453febd",
+			"created": "2019-12-01T00:00:00.000Z",
+			"modified": "2019-12-01T00:00:00.000Z",
+			"valid_from": "2020-02-20T22:28:19.313Z",
+			"pattern": "[file:hashes.MD5 = '79054025255fb1a26e4bc422aef54eb4']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--73737483-3212-1495-95bb-03b4b23b43bd",
+			"spec_version": "2.1",
+			"created": "2019-08-11T15:07:09.000Z",
+			"modified": "2019-08-11T15:07:09.000Z",
+			"name": "ISAO",
+			"description": "An ISAO",
+			"identity_class": "organization"
+		},
+		{
+			"type": "identity",
+			"id": "identity--aba6bee2-6715-495b-a9ed-736ab02e6966",
+			"spec_version": "2.1",
+			"created": "2017-11-11T10:07:12.000Z",
+			"modified": "2017-11-11T10:07:12.000Z",
+			"name": "Vendor",
+			"description": "A threat intel vendor",
+			"identity_class": "organization"
+		},
+		{
+			"type": "identity",
+			"id": "identity--74756489-bed8-3e0a-ad23-abe9d90ed126",
+			"spec_version": "2.1",
+			"created": "2018-06-08T08:07:00.000Z",
+			"modified": "2018-06-08T08:07:00.000Z",
+			"name": "Researcher",
+			"description": "A threat intel researcher",
+			"identity_class": "organization"
+		},
+		{
+			"type": "identity",
+			"id": "identity--b4b23b43-0002-374b-3876-befd647a4200",
+			"spec_version": "2.1",
+			"created": "2017-12-29T15:05:19.000Z",
+			"modified": "2017-12-29T15:05:19.000Z",
+			"name": "SIEM",
+			"description": "A SIEM tool",
+			"identity_class": "organization"
+		},
+		{
+			"type": "sighting",
+			"id": "sighting--613f2e26-407d-48c7-9eca-b8e91df99dc9",
+			"spec_version": "2.1",
+			"created_by_ref": "identity--73737483-3212-0495-45bb-03b4b23b43bd",
+			"created": "2020-03-01T09:11:13.000Z",
+			"modified": "2020-03-01T09:11:13.000Z",
+			"sighting_of_ref": "indicator--b3d72224-232f-459d-a5b9-3ffb5ea97d12",
+			"count": 10
+		},
+		{
+			"type": "sighting",
+			"id": "sighting--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+			"spec_version": "2.1",
+			"created_by_ref": "identity--aba6bee2-6715-495b-a9ed-736ab02e6966",
+			"created": "2020-03-02T07:15:58.160Z",
+			"modified": "2020-03-02T07:15:58.160Z",
+			"sighting_of_ref": "indicator--b3d72224-232f-459d-a5b9-3ffb5ea97d12",
+			"count": 20
+		},
+		{
+			"type": "sighting",
+			"id": "sighting--37362738-fe00-342b-8451-8748338deee9",
+			"spec_version": "2.1",
+			"created_by_ref": "identity--74756489-bed8-de0a-ad23-abe9d90ed126",
+			"created": "2020-03-03T11:14:35.000Z",
+			"modified": "2020-03-03T11:14:35.000Z",
+			"sighting_of_ref": "indicator--74654fff-2435-463b-bd41-36444453febd",
+			"count": 30
+		},
+		{
+			"type": "sighting",
+			"id": "sighting--f88d31f6-486f-44da-b317-01333bde0b82",
+			"spec_version": "2.1",
+			"created_by_ref": "identity--b4b23b43-0002-374b-3876-befd647a4200",
+			"created": "2020-03-01T10:04:20.244Z",
+			"modified": "2020-03-01T10:04:20.244Z",
+			"sighting_of_ref": "indicator--b3d72224-232f-459d-a5b9-3ffb5ea97d12",
+			"count": 40
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--12fd1bad-8306-4ed4-8c9b-7dfdd8ad5eb8",
+			"spec_version": "2.1",
+			"name": "Bad IP1",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[ipv4-addr:value = '198.51.100.1']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--86449d6c-c47a-4320-bb94-2eb7340928e8",
+			"spec_version": "2.1",
+			"name": "Bad IP CIDR",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[ipv4-addr:value ISSUBSET '198.51.100.0/24']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--1b0eb2d2-cce4-4c18-a58d-cf238ceea505",
+			"spec_version": "2.1",
+			"name": "Bad IP Subnets",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[ipv4-addr:value ISSUBSET '198.51.100.0/24' OR ipv4-addr:value ISSUBSET '196.45.200.0/24']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--919974fa-2461-4476-91ae-dd033c700f49",
+			"spec_version": "2.1",
+			"name": "Bad IPv6-1",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[ipv6-addr:value = '2001:0db8:85a3:0000:0000:8a2e:0370:7334']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--b5dcc585-bf19-4ace-aa56-1e004448ee2a",
+			"spec_version": "2.1",
+			"name": "Bad IPv6-CIDR",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[ipv6-addr:value ISSUBSET '2001:DB8::0/120']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--674aae52-d49b-412e-ab61-514e31f8021e",
+			"spec_version": "2.1",
+			"name": "Bad IP Subnets",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[ipv4-addr:value ISSUBSET '198.51.100.0/24' OR ipv4-addr:value ISSUBSET '196.45.200.0/24']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--e40f9107-9a76-4c92-89c0-d512fde1c120",
+			"spec_version": "2.1",
+			"name": "Bad IP1",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[ipv4-addr:value = '198.51.100.12']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--69a4eedb-05c5-463b-ba59-65257d652cf4",
+			"spec_version": "2.1",
+			"name": "Bad Domain",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[domain-name:value = 'www.5z8.info']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--21edc30b-11c9-406d-867a-42fb4bdeedda",
+			"spec_version": "2.1",
+			"name": "Bad URL",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[url:value = 'https://www.5z8.info/foo']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--81090d66-3036-4ff9-8032-c5facb50b20f",
+			"spec_version": "2.1",
+			"name": "Bad URL or Domain",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[url:value = 'https://www.5z8.info/foo' OR domain-name:value = 'www.5z8.info']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--0cddd4c0-411a-47a7-8ccc-d0473d690a6f",
+			"spec_version": "2.1",
+			"name": "Bad File1",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[file:hashes.'SHA-256' = 'bf07a7fbb825fc0aae7bf4a1177b2b31fcf8a3feeaf7092761e18c859ee52a9c' OR file:hashes.MD5 = 'cead3f77f6cda6ec00f57d76c9a6879f']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--0cddd4c0-411a-47a7-8ccc-d0473d690a6f",
+			"spec_version": "2.1",
+			"name": "Bad File1",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"description": "This is an Indicator associated with malicious activity, with the included SHA-256 hash",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[file:hashes.'SHA-256' = 'bf07a7fbb825fc0aae7bf4a1177b2b31fcf8a3feeaf7092761e18c859ee52a9c' OR file:hashes.MD5 = 'cead3f77f6cda6ec00f57d76c9a6879f']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp Sighting, Inc.",
+			"created": "2015-01-20T12:34:56.000Z",
+			"modified": "2015-01-20T12:34:56.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"spec_version": "2.1",
+			"id": "indicator--a5b23aa5-76cc-45ca-9b06-be2d65defabc",
+			"created_by_ref": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"created": "2015-01-21T12:34:56.000Z",
+			"modified": "2015-01-21T12:34:56.000Z",
+			"description": "Example of what a TIP Indicator Consumer can do",
+			"valid_from": "2015-01-01T00:00:00.000Z",
+			"pattern": "[ipv4-addr:value = '198.51.100.1']",
+			"pattern_type": "stix",
+			"indicator_types": [
+				"compromised"
+			]
+		},
+		{
+			"type": "identity",
+			"id": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp Sighting, Inc.",
+			"created": "2015-01-20T12:34:56.000Z",
+			"modified": "2015-01-20T12:34:56.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"spec_version": "2.1",
+			"id": "indicator--aaabbbcc-cddd-2eef-aff6-be2d65defabc",
+			"created_by_ref": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"created": "2015-01-21T12:34:56.000Z",
+			"description": "Example of what a TMS Indicator Consumer can do",
+			"modified": "2015-01-21T12:34:56.000Z",
+			"valid_from": "2015-01-01T00:00:00.000Z",
+			"pattern": "[file:hashes.'SHA-256' = '112233443bdd9777ce02453256c5577cd02275510b2227f473d03f533924f877']",
+			"pattern_type": "stix",
+			"indicator_types": [
+				"malicious-activity"
+			]
+		},
+		{
+			"type": "identity",
+			"id": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp Sighting, Inc.",
+			"created": "2015-01-20T12:34:56.000Z",
+			"modified": "2015-01-20T12:34:56.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"spec_version": "2.1",
+			"id": "indicator--abcabcab-cdef-4efd-9f12-342d65defabc",
+			"created_by_ref": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"created": "2015-01-21T12:34:56.000Z",
+			"description": "Example of what a TDS Indicator Consumer can do",
+			"modified": "2015-01-21T12:34:56.000Z",
+			"valid_from": "2015-01-01T00:00:00.000Z",
+			"pattern": "[domain-name:value = 'www.fake-acme-corp.info']",
+			"pattern_type": "stix",
+			"indicator_types": [
+				"anomalous-activity"
+			]
+		},
+		{
+			"type": "identity",
+			"id": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp Sighting, Inc.",
+			"created": "2015-01-20T12:34:56.000Z",
+			"modified": "2015-01-20T12:34:56.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"spec_version": "2.1",
+			"id": "indicator--baeabcaa-cdef-defd-af12-342d65defabc",
+			"created_by_ref": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"created": "2015-01-21T12:34:56.000Z",
+			"description": "Example of what a TIS Indicator Consumer can do",
+			"modified": "2015-01-21T12:34:56.000Z",
+			"valid_from": "2015-01-01T00:00:00.000Z",
+			"pattern": "[ipv6-addr:value = '2001:0db8:85a3:0000:0000:8a2e:0370:7334']",
+			"pattern_type": "stix",
+			"indicator_types": [
+				"anomalous-activity"
+			]
+		},
+		{
+			"type": "identity",
+			"id": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp Sighting, Inc.",
+			"created": "2015-01-20T12:34:56.000Z",
+			"modified": "2015-01-20T12:34:56.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"spec_version": "2.1",
+			"id": "indicator--baeabcaa-cdef-defd-ef12-342d65defabc",
+			"created_by_ref": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"created": "2015-01-21T12:34:56.000Z",
+			"description": "Example of what a SIEM Indicator Consumer can do",
+			"modified": "2015-01-21T12:34:56.000Z",
+			"valid_from": "2015-01-01T00:00:00.000Z",
+			"pattern": "[url:value = 'https://www.evilsite.info/foo']",
+			"pattern_type": "stix",
+			"indicator_types": [
+				"malicious-activity"
+			]
+		},
+		{
+			"type": "identity",
+			"name": "ACME Corp, Inc.",
+			"identity_class": "organization",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"created": "2020-01-20T12:34:56.000Z",
+			"modified": "2020-01-20T12:34:56.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "infrastructure",
+			"spec_version": "2.1",
+			"id": "infrastructure--38c47d93-d984-4fd9-b87b-d69d0841628d",
+			"created": "2016-05-07T11:22:30.000Z",
+			"modified": "2016-05-07T11:22:30.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"name": "Poison Ivy C2",
+			"infrastructure_types": [
+				"command-and-control"
+			]
+		},
+		{
+			"type": "identity",
+			"spec_version": "2.1",
+			"id": "identity--c00275a5-4423-46c6-bb79-235654096f8a",
+			"created": "2019-02-15T13:29:42.904Z",
+			"modified": "2019-09-19T20:21:59.961Z",
+			"name": "Example Shodan Inferred Vulnerability",
+			"identity_class": "organization",
+			"created_by_ref": "identity--c00275a5-4423-46c6-bb79-235654096f8a"
+		},
+		{
+			"spec_version": "2.1",
+			"type": "vulnerability",
+			"id": "vulnerability--fa4ca8dd-1248-5fef-8828-1bd2d935fa58",
+			"created": "2019-07-22T12:34:02.602Z",
+			"modified": "2019-07-22T12:34:02.602Z",
+			"created_by_ref": "identity--c00275a5-4423-46c6-bb79-235654096f8a",
+			"name": "CVE-2019-1234",
+			"external_references": [
+				{
+					"source_name": "cve",
+					"external_id": "CVE-2019-1234",
+					"url": "https://nvd.nist.gov/vuln/detail/CVE-1019-1234"
+				}
+			]
+		},
+		{
+			"type": "infrastructure",
+			"spec_version": "2.1",
+			"id": "infrastructure--a927d4b3-3396-5c01-998b-08733784ab5e",
+			"created": "2019-07-22T12:34:02.602Z",
+			"modified": "2019-07-22T12:34:02.602Z",
+			"created_by_ref": "identity--c00275a5-4423-46c6-bb79-235654096f8a",
+			"name": "93.184.216.34",
+			"infrastructure_types": [
+				"exfiltration"
+			]
+		},
+		{
+			"type": "ipv4-addr",
+			"id": "ipv4-addr--a927d4b3-3396-5c01-998b-08733784ab5e",
+			"spec_version": "2.1",
+			"value": "93.184.216.34"
+		},
+		{
+			"type": "domain-name",
+			"id": "domain-name--98e751b4-e47f-56f1-9d5d-f60001e5ac84",
+			"spec_version": "2.1",
+			"value": "example.com"
+		},
+		{
+			"spec_version": "2.1",
+			"type": "relationship",
+			"id": "relationship--a502bd26-42d1-4020-b652-70ec37797cb6",
+			"created": "2019-07-22T12:34:02.602Z",
+			"modified": "2019-07-22T12:34:02.602Z",
+			"created_by_ref": "identity--c00275a5-4423-46c6-bb79-235654096f8a",
+			"relationship_type": "has",
+			"source_ref": "infrastructure--a927d4b3-3396-5c01-998b-08733784ab5e",
+			"target_ref": "vulnerability--fa4ca8dd-1248-5fef-8828-1bd2d935fa58"
+		},
+		{
+			"spec_version": "2.1",
+			"type": "relationship",
+			"id": "relationship--91420849-09b2-4ba4-8769-30d258749ae8",
+			"created": "2019-07-22T12:34:02.602Z",
+			"modified": "2019-07-22T12:34:02.602Z",
+			"created_by_ref": "identity--c00275a5-4423-46c6-bb79-235654096f8a",
+			"relationship_type": "consists-of",
+			"source_ref": "infrastructure--a927d4b3-3396-5c01-998b-08733784ab5e",
+			"target_ref": "ipv4-addr--a927d4b3-3396-5c01-998b-08733784ab5e"
+		},
+		{
+			"spec_version": "2.1",
+			"type": "relationship",
+			"id": "relationship--8371387d-2e54-443a-8aec-99e763e1a0d8",
+			"created": "2019-07-22T12:34:02.602Z",
+			"modified": "2019-07-22T12:34:02.602Z",
+			"created_by_ref": "identity--c00275a5-4423-46c6-bb79-235654096f8a",
+			"relationship_type": "resolves-to",
+			"source_ref": "domain-name--98e751b4-e47f-56f1-9d5d-f60001e5ac84",
+			"target_ref": "ipv4-addr--a927d4b3-3396-5c01-998b-08733784ab5e"
+		},
+		{
+			"type": "identity",
+			"spec_version": "2.1",
+			"id": "identity--93607fcf-a0cc-572f-bcc6-92082f856b37",
+			"created": "2017-02-15T13:29:42.904Z",
+			"modified": "2017-02-15T13:29:42.904Z",
+			"name": "HelloInteropWorld Inc.",
+			"identity_class": "organization",
+			"created_by_ref": "identity--93607fcf-a0cc-572f-bcc6-92082f856b37"
+		},
+		{
+			"spec_version": "2.1",
+			"type": "infrastructure",
+			"id": "infrastructure--bb054b70-d97e-5451-aa68-e31c72c791d1",
+			"created": "2019-11-10T10:01:15.000Z",
+			"modified": "2019-11-10T10:01:15.000Z",
+			"created_by_ref": "identity--93607fcf-a0cc-572f-bcc6-92082f856b37",
+			"infrastructure_types": [
+				"c2"
+			],
+			"name": "c2--https://corpcougar.com/mexzi/Panel/five/fre.php"
+		},
+		{
+			"spec_version": "2.1",
+			"type": "malware",
+			"id": "malware--77362faf-ac50-5479-a9ec-d70dfc830850",
+			"created": "2018-10-18T09:26:03.235Z",
+			"modified": "2019-02-11T01:46:23.000Z",
+			"created_by_ref": "identity--93607fcf-a0cc-572f-bcc6-92082f856b37",
+			"name": "LOKIBOT",
+			"is_family": true,
+			"malware_types": [
+				"bot"
+			],
+			"external_references": [
+				{
+					"source_name": "FireEye",
+					"external_id": "17-00005991",
+					"description": "LokiBot Malware Overview"
+				}
+			]
+		},
+		{
+			"spec_version": "2.1",
+			"type": "url",
+			"id": "url--7c9374bc-0ccf-511d-a8f2-0af7965fe06e",
+			"value": "https://corpcougar.com/mexzi/Panel/five/fre.php"
+		},
+		{
+			"spec_version": "2.1",
+			"type": "indicator",
+			"id": "indicator--2b254bc2-5da2-56c0-9e24-d19342934f63",
+			"created": "2019-11-11T10:01:15.000Z",
+			"modified": "2019-11-11T10:01:15.000Z",
+			"created_by_ref": "identity--93607fcf-a0cc-572f-bcc6-92082f856b37",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern_type": "stix",
+			"pattern": "[url:value='https://corpcougar.com/mexzi/Panel/five/fre.php']",
+			"valid_from": "2019-11-16T10:00:57.147Z",
+			"valid_until": "2019-11-23T10:00:57.000Z"
+		},
+		{
+			"spec_version": "2.1",
+			"type": "relationship",
+			"id": "relationship--445ba3b4-1e46-48cd-9e31-3491894373b5",
+			"created": "2019-11-16T10:01:15.001Z",
+			"modified": "2019-11-16T10:01:15.001Z",
+			"created_by_ref": "identity--93607fcf-a0cc-572f-bcc6-92082f856b37",
+			"relationship_type": "delivers",
+			"target_ref": "infrastructure--bb054b70-d97e-5451-aa68-e31c72c791d1",
+			"source_ref": "malware--77362faf-ac50-5479-a9ec-d70dfc830850"
+		},
+		{
+			"spec_version": "2.1",
+			"type": "relationship",
+			"id": "relationship--13d8a9d0-d968-446d-b9e3-9f18b208ebbb",
+			"created": "2019-11-16T10:01:15.002Z",
+			"modified": "2019-11-16T10:01:15.002Z",
+			"created_by_ref": "identity--93607fcf-a0cc-572f-bcc6-92082f856b37",
+			"relationship_type": "indicates",
+			"source_ref": "indicator--2b254bc2-5da2-56c0-9e24-d19342934f63",
+			"target_ref": "infrastructure--bb054b70-d97e-5451-aa68-e31c72c791d1"
+		},
+		{
+			"spec_version": "2.1",
+			"type": "relationship",
+			"id": "relationship--1f6bd915-0548-4ea0-8c4e-e20f20b994c7",
+			"created": "2019-11-16T10:01:15.005Z",
+			"modified": "2019-11-16T10:01:15.005Z",
+			"created_by_ref": "identity--93607fcf-a0cc-572f-bcc6-92082f856b37",
+			"relationship_type": "consists-of",
+			"source_ref": "infrastructure--bb054b70-d97e-5451-aa68-e31c72c791d1",
+			"target_ref": "url--7c9374bc-0ccf-511d-a8f2-0af7965fe06e"
+		},
+		{
+			"type": "identity",
+			"name": "ACME Corp, Inc.",
+			"identity_class": "organization",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"created": "2020-01-20T12:34:56.000Z",
+			"modified": "2020-01-20T12:34:56.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "intrusion-set",
+			"spec_version": "2.1",
+			"id": "intrusion-set--4e78f46f-a023-4e5f-bc24-71b3ca22ec29",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2016-04-06T20:03:48.000Z",
+			"modified": "2016-04-06T20:03:48.000Z",
+			"name": "Bobcat Breakin",
+			"resource_level": "organization",
+			"primary_motivation": "ideology"
+		},
+		{
+			"type": "identity",
+			"id": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"spec_version": "2.1",
+			"created": "2015-04-14T13:07:49.812Z",
+			"modified": "2015-04-14T13:07:49.812Z",
+			"name": "Oscorp Industries",
+			"identity_class": "organization"
+		},
+		{
+			"type": "intrusion-set",
+			"spec_version": "2.1",
+			"id": "intrusion-set--4e78f46f-a023-4e5f-bc24-71b3ca22ec29",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2016-04-06T20:03:48.000Z",
+			"modified": "2016-04-06T20:03:48.000Z",
+			"name": "Bobcat Breakin",
+			"description": "Incidents usually feature a shared TTP of a bobcat being released within the building containing network access, scaring users to leave their computers without locking them first. Still determining where the threat actors are getting the bobcats."
+		},
+		{
+			"type": "infrastructure",
+			"spec_version": "2.1",
+			"id": "infrastructure--e5268b6e-4931-42f1-b379-87f48eb41b1e",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2016-08-08T15:50:10.983Z",
+			"modified": "2016-08-08T15:50:10.983Z",
+			"name": "Bobcat Infrastructure",
+			"description": "A C2 server for computers that were accessed after bobcats were released.",
+			"infrastructure_types": [
+				"command-and-control"
+			]
+		},
+		{
+			"type": "ipv4-addr",
+			"spec_version": "2.1",
+			"id": "ipv4-addr--b4e29b62-2053-47c4-bab4-bbce39e5ed67",
+			"value": "198.51.100.3"
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--a6e9345f-5a15-4c29-8bb3-7dcc5d168d64",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2020-02-29T17:41:44.940Z",
+			"modified": "2020-02-29T17:41:44.940Z",
+			"relationship_type": "owns",
+			"source_ref": "intrusion-set--4e78f46f-a023-4e5f-bc24-71b3ca22ec29",
+			"target_ref": "infrastructure--e5268b6e-4931-42f1-b379-87f48eb41b1e"
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--7aebe2f0-28d6-48a2-9c3e-b0aaa60266ef",
+			"created": "2016-09-09T08:17:27.000Z",
+			"modified": "2016-09-09T08:17:27.000Z",
+			"relationship_type": "consists-of",
+			"source_ref": "infrastructure--e5268b6e-4931-42f1-b379-87f48eb41b1e",
+			"target_ref": "ipv4-addr--b4e29b62-2053-47c4-bab4-bbce39e5ed67"
+		},
+		{
+			"type": "identity",
+			"id": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"spec_version": "2.1",
+			"created": "2015-04-14T13:07:49.812Z",
+			"modified": "2015-04-14T13:07:49.812Z",
+			"name": "Oscorp Industries",
+			"identity_class": "organization"
+		},
+		{
+			"type": "intrusion-set",
+			"spec_version": "2.1",
+			"id": "intrusion-set--4e78f46f-a023-4e5f-bc24-71b3ca22ec29",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2016-04-06T20:03:48.000Z",
+			"modified": "2016-04-06T20:03:48.000Z",
+			"name": "Bobcat Breakin",
+			"description": "Incidents usually feature a shared TTP of a bobcat being released within the building containing network access, scaring users to leave their computers without locking them first. Still determining where the threat actors are getting the bobcats."
+		},
+		{
+			"type": "location",
+			"spec_version": "2.1",
+			"id": "location--a6e9345f-5a15-4c29-8bb3-7dcc5d168d64",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2016-04-06T20:03:00.000Z",
+			"modified": "2016-04-06T20:03:00.000Z",
+			"region": "northern-america"
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--a6e9345f-5a15-4c29-8bb3-7dcc5d168d64",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2020-02-29T17:41:44.940Z",
+			"modified": "2020-02-29T17:41:44.940Z",
+			"relationship_type": "originates-from",
+			"source_ref": "intrusion-set--4e78f46f-a023-4e5f-bc24-71b3ca22ec29",
+			"target_ref": "location--a6e9345f-5a15-4c29-8bb3-7dcc5d168d64"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2016-01-17T11:11:13.000Z",
+			"modified": "2016-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "location",
+			"spec_version": "2.1",
+			"id": "location--a6e9345f-5a15-4c29-8bb3-7dcc5d168d64",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2016-04-06T20:03:00.000Z",
+			"modified": "2016-04-06T20:03:00.000Z",
+			"region": "south-eastern-asia"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2016-01-17T11:11:13.000Z",
+			"modified": "2016-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "location",
+			"spec_version": "2.1",
+			"id": "location--a6e9345f-5a15-4c29-8bb3-7dcc5d168d64",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2016-04-06T20:03:00.000Z",
+			"modified": "2016-04-06T20:03:00.000Z",
+			"region": "caribbean"
+		},
+		{
+			"type": "infrastructure",
+			"id": "infrastructure--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2016-04-06T20:03:00.000Z",
+			"modified": "2016-04-06T20:03:00.000Z",
+			"name": "Annoying Botnet",
+			"infrastructure_types": [
+				"botnet"
+			]
+		},
+		{
+			"type": "relationship",
+			"id": "relationship--e827b109-377b-45e0-aa1c-6a4751cac7dd",
+			"spec_version": "2.1",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2016-04-06T20:03:00.000Z",
+			"modified": "2016-04-06T20:03:00.000Z",
+			"source_ref": "infrastructure--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"target_ref": "location--a6e9345f-5a15-4c29-8bb3-7dcc5d168d64",
+			"relationship_type": "located-at"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2016-01-17T11:11:13.000Z",
+			"modified": "2016-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "location",
+			"spec_version": "2.1",
+			"id": "location--a6e9345f-5a15-4c29-8bb3-7dcc5d168d64",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2016-04-06T20:03:00.000Z",
+			"modified": "2016-04-06T20:03:00.000Z",
+			"region": "south-eastern-asia",
+			"country": "TH"
+		},
+		{
+			"type": "threat-actor",
+			"spec_version": "2.1",
+			"id": "threat-actor--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2016-04-06T20:03:48.000Z",
+			"modified": "2016-04-06T20:03:48.000Z",
+			"threat_actor_types": [
+				"crime-syndicate"
+			],
+			"name": "Evil Org"
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--014841f8-eb38-4673-9904-70f67c92dd8b",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2016-04-06T20:08:00.000Z",
+			"modified": "2016-04-06T20:08:00.000Z",
+			"relationship_type": "targets",
+			"source_ref": "threat-actor--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+			"target_ref": "location--a6e9345f-5a15-4c29-8bb3-7dcc5d168d64"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2016-01-17T11:11:13.000Z",
+			"modified": "2016-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "location",
+			"spec_version": "2.1",
+			"id": "location--a6e9345f-5a15-4c29-8bb3-7dcc5d168d64",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2016-04-06T06:03:00.000Z",
+			"modified": "2016-04-06T06:03:00.000Z",
+			"country": "CN"
+		},
+		{
+			"type": "malware",
+			"spec_version": "2.1",
+			"id": "malware--0c7b5b88-8ff7-4a4d-aa9d-feb398cd0061",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2016-05-12T08:17:27.000Z",
+			"modified": "2016-05-12T08:17:27.000Z",
+			"name": "UglyRAT",
+			"malware_types": [
+				"rootkit"
+			],
+			"is_family": false
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--014841f8-eb38-4673-9904-70f67c92dd8b",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2016-05-12T08:20:27.000Z",
+			"modified": "2016-05-12T08:20:27.000Z",
+			"relationship_type": "originates-from",
+			"source_ref": "malware--0c7b5b88-8ff7-4a4d-aa9d-feb398cd0061",
+			"target_ref": "location--a6e9345f-5a15-4c29-8bb3-7dcc5d168d64"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2016-01-17T11:11:13.000Z",
+			"modified": "2016-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "location",
+			"spec_version": "2.1",
+			"id": "location--b222345f-5a15-4c29-8bb3-7dcc5d168d64",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2016-04-06T06:03:00.000Z",
+			"modified": "2016-04-06T06:03:00.000Z",
+			"country": "US"
+		},
+		{
+			"type": "campaign",
+			"spec_version": "2.1",
+			"id": "campaign--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2016-05-12T08:17:27.000Z",
+			"modified": "2016-05-12T08:17:27.000Z",
+			"name": "Blue Attacks Against Farmers"
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--014841f8-eb38-4673-9904-70f67c92dd8b",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2016-05-12T08:20:27.000Z",
+			"modified": "2016-05-12T08:20:27.000Z",
+			"relationship_type": "targets",
+			"source_ref": "campaign--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+			"target_ref": "location--b222345f-5a15-4c29-8bb3-7dcc5d168d64"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "location",
+			"spec_version": "2.1",
+			"id": "location--8db2245f-5a15-223d-8bb3-7dcc5d1600cc",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2020-01-16T21:00:00.000Z",
+			"modified": "2020-02-01T08:05:00.000Z",
+			"latitude": 33.8567944,
+			"longitude": 151.2152967
+		},
+		{
+			"type": "identity",
+			"id": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "XYZA Corp, Inc.",
+			"created": "2017-01-17T11:11:13.000Z",
+			"modified": "2017-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+		},
+		{
+			"type": "malware",
+			"spec_version": "2.1",
+			"id": "malware--1121ffbc-364f-557a-9987-92fbcff24aba",
+			"created": "2019-05-12T08:17:27.000Z",
+			"modified": "2019-05-12T08:17:27.000Z",
+			"created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"name": "Cryptolocker",
+			"malware_types": [
+				"ransomware"
+			],
+			"is_family": false,
+			"capabilities": [
+				"anti-vm"
+			],
+			"first_seen": "2017-01-18T11:11:13.000Z",
+			"last_seen": "2017-01-18T11:11:13.000Z",
+			"implementation_languages": [
+				"python",
+				"c"
+			],
+			"architecture_execution_envs": [
+				"mips",
+				"x86"
+			]
+		},
+		{
+			"type": "identity",
+			"id": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "XYZA Corp, Inc.",
+			"created": "2017-01-17T11:11:13.000Z",
+			"modified": "2017-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+		},
+		{
+			"type": "malware",
+			"spec_version": "2.1",
+			"id": "malware--417757e7-01f9-5464-bf88-6fda0644d1e9",
+			"created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"created": "2018-08-18T23:55:56.000Z",
+			"modified": "2018-09-03T05:38:32.000Z",
+			"name": "zeus",
+			"malware_types": [
+				"password-stealer"
+			],
+			"is_family": true
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--404b4404-8461-55e3-a6e5-1b685b98bdcd",
+			"created": "2018-08-31T00:32:04.000Z",
+			"modified": "2018-08-31T00:32:04.000Z",
+			"created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"relationship_type": "indicates",
+			"source_ref": "indicator--63863f0b-44ed-5ec4-8b7c-1bba50a8ae0e",
+			"target_ref": "malware--417757e7-01f9-5464-bf88-6fda0644d1e9"
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--73339fd6-b3f5-5876-af09-d4ba3c75345a",
+			"created": "2018-08-29T08:25:26.000Z",
+			"modified": "2018-08-29T08:25:26.000Z",
+			"created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"relationship_type": "communicates-with",
+			"source_ref": "malware--417757e7-01f9-5464-bf88-6fda0644d1e9",
+			"target_ref": "url--76820a5f-a2d4-56b8-ae2d-16334b195b19"
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--f88d31f6-486f-44da-b317-01333bde0b82",
+			"created": "2018-08-31T00:32:04.000Z",
+			"modified": "2018-08-31T00:32:04.000Z",
+			"created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"relationship_type": "communicates-with",
+			"source_ref": "malware--417757e7-01f9-5464-bf88-6fda0644d1e9",
+			"target_ref": "ipv4-addr--c9f929f7-21e4-5fa1-8d55-b4d739f451fb"
+		},
+		{
+			"type": "indicator",
+			"spec_version": "2.1",
+			"id": "indicator--63863f0b-44ed-5ec4-8b7c-1bba50a8ae0e",
+			"created": "2018-08-15T05:12:40.000Z",
+			"modified": "2018-08-15T05:12:40.000Z",
+			"created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[ipv4-addr:value='113.11.194.167']",
+			"pattern_type": "stix",
+			"valid_from": "2018-08-15T05:12:40.000Z",
+			"valid_until": "2019-01-14T00:12:22.000Z"
+		},
+		{
+			"type": "url",
+			"spec_version": "2.1",
+			"id": "url--76820a5f-a2d4-56b8-ae2d-16334b195b19",
+			"value": "http://xiaofamily.instantfreesite.com/update.bin"
+		},
+		{
+			"type": "ipv4-addr",
+			"spec_version": "2.1",
+			"id": "ipv4-addr--c9f929f7-21e4-5fa1-8d55-b4d739f451fb",
+			"value": "216.59.18.11"
+		},
+		{
+			"type": "identity",
+			"name": "ACME Corp, Inc.",
+			"identity_class": "organization",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"created": "2018-01-20T12:34:56.000Z",
+			"modified": "2018-01-20T12:34:56.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "malware-analysis",
+			"spec_version": "2.1",
+			"id": "malware-analysis--d25167b7-fed0-4068-9ccd-a73dd2c5b07c",
+			"created": "2020-01-16T18:52:24.277Z",
+			"modified": "2020-01-16T18:52:24.277Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"product": "microsoft",
+			"version": "5.1.0",
+			"submitted": "2020-01-15T18:52:24.277Z",
+			"analysis_started": "2020-01-11T08:36:14Z",
+			"analysis_ended": "2020-01-11T08:36:14Z",
+			"result": "malicious"
+		},
+		{
+			"type": "identity",
+			"name": "ACME Corp, Inc.",
+			"identity_class": "organization",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"created": "2018-01-20T12:34:56.000Z",
+			"modified": "2018-01-20T12:34:56.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "malware-analysis",
+			"spec_version": "2.1",
+			"id": "malware-analysis--d25167b7-fed0-4068-9ccd-a73dd2c5b07c",
+			"created": "2020-01-16T18:52:24.277Z",
+			"modified": "2020-01-16T18:52:24.277Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"product": "microsoft",
+			"analysis_engine_version": "5.1.0",
+			"analysis_definition_version": "053514-0062",
+			"analysis_started": "2020-01-11T08:36:14Z",
+			"analysis_ended": "2020-01-11T08:36:14Z",
+			"result": "malicious",
+			"analysis_sco_refs": [
+				"file--1190f2c9-166f-55f1-9706-eea3971d8082"
+			]
+		},
+		{
+			"type": "file",
+			"id": "file--1190f2c9-166f-55f1-9706-eea3971d8082",
+			"spec_version": "2.1",
+			"size": 77312,
+			"name": "a92e5b2bae.exe"
+		},
+		{
+			"type": "identity",
+			"id": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"spec_version": "2.1",
+			"created": "2017-04-14T13:07:49.812Z",
+			"modified": "2017-04-14T13:07:49.812Z",
+			"name": "Oscorp Industries",
+			"identity_class": "organization",
+			"contact_information": "norman@oscorp.com",
+			"sectors": [
+				"technology"
+			]
+		},
+		{
+			"type": "malware",
+			"spec_version": "2.1",
+			"id": "malware--8bcf14e9-2ba2-44ef-9e32-fbbc9d2608b2",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2020-01-16T18:52:24.277Z",
+			"modified": "2020-01-16T18:52:24.277Z",
+			"name": "a92e5b2bae.exe",
+			"malware_types": [
+				"unknown"
+			],
+			"is_family": false,
+			"sample_refs": [
+				"file--1190f2c9-166f-55f1-9706-eea3971d8082"
+			]
+		},
+		{
+			"type": "malware-analysis",
+			"spec_version": "2.1",
+			"id": "malware-analysis--b67d30ff-02ac-498a-92f9-32f845f448cf",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2020-01-16T18:52:24.277Z",
+			"modified": "2020-01-16T18:52:24.277Z",
+			"product": "microsoft",
+			"analysis_engine_version": "5.1.0",
+			"analysis_definition_version": "053514-0062",
+			"analysis_started": "2012-02-11T08:36:14Z",
+			"analysis_ended": "2012-02-11T08:36:14Z",
+			"result": "malicious",
+			"analysis_sco_refs": [
+				"file--1190f2c9-166f-55f1-9706-eea3971d8082",
+				"directory--255cb0e4-8bdb-5d63-bb32-9c6f0b733ab2"
+			],
+			"sample_ref": "file--1190f2c9-166f-55f1-9706-eea3971d8082"
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--014841f8-eb38-4673-9904-70f67c92dd8b",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2020-01-16T18:52:24.277Z",
+			"modified": "2020-01-16T18:52:24.277Z",
+			"relationship_type": "analysis-of",
+			"source_ref": "malware-analysis--d25167b7-fed0-4068-9ccd-a73dd2c5b07c",
+			"target_ref": "malware--8bcf14e9-2ba2-44ef-9e32-fbbc9d2608b2"
+		},
+		{
+			"type": "file",
+			"id": "file--1190f2c9-166f-55f1-9706-eea3971d8082",
+			"spec_version": "2.1",
+			"hashes": {
+				"MD5": "a92e5b2bae0b4b3a3d81c85610b95cd4",
+				"SHA-1": "5374e08903744ceeaedd8f5e1bfc06b2c4688e76"
+			},
+			"size": 77312,
+			"name": "a92e5b2bae.exe",
+			"parent_directory_ref": "directory--255cb0e4-8bdb-5d63-bb32-9c6f0b733ab2"
+		},
+		{
+			"type": "directory",
+			"id": "directory--255cb0e4-8bdb-5d63-bb32-9c6f0b733ab2",
+			"spec_version": "2.1",
+			"path": "C:\\"
+		},
+		{
+			"type": "identity",
+			"id": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"spec_version": "2.1",
+			"created": "2017-04-14T13:07:49.812Z",
+			"modified": "2017-04-14T13:07:49.812Z",
+			"name": "Oscorp Industries",
+			"identity_class": "organization",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c"
+		},
+		{
+			"type": "note",
+			"spec_version": "2.1",
+			"id": "note--0c7b5b88-8ff7-4a4d-aa9d-feb398cd0061",
+			"created": "2016-05-12T08:17:27.000Z",
+			"modified": "2016-05-12T08:17:27.000Z",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"content": "This note indicates the various steps taken by the threat actor to instigate particular attacks. Step 1) Do a scan 2) Review scanned results for identified hosts not known by external intel…etc.",
+			"object_refs": [
+				"threat-actor--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f"
+			]
+		},
+		{
+			"type": "threat-actor",
+			"spec_version": "2.1",
+			"id": "threat-actor--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2016-04-06T20:03:48.000Z",
+			"modified": "2016-04-06T20:03:48.000Z",
+			"threat_actor_types": [
+				"crime-syndicate"
+			],
+			"name": "Evil Org",
+			"roles": [
+				"director"
+			],
+			"sophistication": "advanced",
+			"resource_level": "team",
+			"primary_motivation": "organizational-gain"
+		},
+		{
+			"type": "identity",
+			"id": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"spec_version": "2.1",
+			"created": "2017-04-14T13:07:49.812Z",
+			"modified": "2017-04-14T13:07:49.812Z",
+			"name": "Oscorp Industries",
+			"identity_class": "organization",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c"
+		},
+		{
+			"type": "identity",
+			"id": "identity--7865b6d2-a4af-45c5-b582-afe5ec376c33",
+			"spec_version": "2.1",
+			"created": "2017-04-14T13:07:49.812Z",
+			"modified": "2017-04-14T13:07:49.812Z",
+			"name": "Pym Technologies",
+			"identity_class": "organization",
+			"created_by_ref": "identity--7865b6d2-a4af-45c5-b582-afe5ec376c33"
+		},
+		{
+			"type": "malware",
+			"id": "malware--ae560258-a5cb-4be8-8f05-013d6712295f",
+			"spec_version": "2.1",
+			"created_by_ref": "identity--7865b6d2-a4af-45c5-b582-afe5ec376c33",
+			"created": "2014-02-20T09:16:08.989Z",
+			"modified": "2014-02-20T09:16:08.989Z",
+			"name": "Online Job Site Trojan",
+			"description": "Trojan that is disguised as the executable file resume.pdf., it also creates a registry key.",
+			"malware_types": [
+				"remote-access-trojan"
+			],
+			"is_family": false
+		},
+		{
+			"type": "sighting",
+			"id": "sighting--779c4ae8-e134-4180-baa4-03141095d971",
+			"spec_version": "2.1",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2017-02-28T19:37:11.213Z",
+			"modified": "2017-02-28T19:37:11.213Z",
+			"first_seen": "2017-02-28T19:07:24.856Z",
+			"last_seen": "2017-02-28T19:07:24.856Z",
+			"count": 1,
+			"sighting_of_ref": "malware--ae560258-a5cb-4be8-8f05-013d6712295f"
+		},
+		{
+			"type": "note",
+			"id": "note--8db2245f-5a15-123d-8bb3-7dcc5d1600cc",
+			"spec_version": "2.1",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2017-02-28T19:37:11.213Z",
+			"modified": "2017-02-28T19:37:11.213Z",
+			"content": "This is a high-priority sighting that needs to be investigated immediately by threat analysis teams.",
+			"object_refs": [
+				"sighting--779c4ae8-e134-4180-baa4-03141095d971"
+			]
+		},
+		{
+			"type": "identity",
+			"id": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"spec_version": "2.1",
+			"created": "2015-04-14T13:07:49.812Z",
+			"modified": "2015-04-14T13:07:49.812Z",
+			"name": "Oscorp Industries",
+			"identity_class": "organization",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c"
+		},
+		{
+			"type": "observed-data",
+			"id": "observed-data--cf8eaa41-6f4c-482e-89b9-9cd2d6a83cb1",
+			"spec_version": "2.1",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2017-02-28T19:37:11.213Z",
+			"modified": "2017-02-28T19:37:11.213Z",
+			"first_observed": "2017-02-27T21:37:11.213Z",
+			"last_observed": "2017-02-27T21:37:11.213Z",
+			"number_observed": 1,
+			"object_refs": [
+				"file--e277603e-1060-5ad4-9937-c26c97f1ca68"
+			]
+		},
+		{
+			"type": "file",
+			"spec_version": "2.1",
+			"id": "file--e277603e-1060-5ad4-9937-c26c97f1ca68",
+			"hashes": {
+				"SHA-256": "fe90a7e910cb3a4739bed9180e807e93fa70c90f25a8915476f5e4bfbac681db"
+			},
+			"size": 25536,
+			"name": "foo.dll"
+		},
+		{
+			"type": "identity",
+			"id": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"spec_version": "2.1",
+			"created": "2017-04-14T13:07:49.812Z",
+			"modified": "2017-04-14T13:07:49.812Z",
+			"name": "Oscorp Industries",
+			"identity_class": "organization",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c"
+		},
+		{
+			"type": "observed-data",
+			"spec_version": "2.1",
+			"id": "observed-data--b67d30ff-02ac-498a-92f9-32f845f448cf",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2016-04-06T19:58:16.000Z",
+			"modified": "2016-04-06T19:58:16.000Z",
+			"first_observed": "2015-12-21T19:00:00Z",
+			"last_observed": "2015-12-21T19:00:00Z",
+			"number_observed": 50,
+			"object_refs": [
+				"ipv4-address--efcd5e80-570d-4131-b213-62cb18eaa6a8",
+				"domain-name--ecb120bf-2694-4902-a737-62b74539a41b",
+				"relationship--7ca2d678-c8c7-4947-a730-bfbc2cc5aa0a"
+			]
+		},
+		{
+			"type": "domain-name",
+			"spec_version": "2.1",
+			"id": "domain-name--ecb120bf-2694-4902-a737-62b74539a41b",
+			"value": "example.com",
+			"resolves_to_refs": [
+				"ipv4-addr--efcd5e80-570d-4131-b213-62cb18eaa6a8"
+			]
+		},
+		{
+			"type": "ipv4-addr",
+			"spec_version": "2.1",
+			"id": "ipv4-addr--efcd5e80-570d-4131-b213-62cb18eaa6a8",
+			"value": "198.51.100.3"
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--7ca2d678-c8c7-4947-a730-bfbc2cc5aa0a",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2016-04-06T19:58:16.000Z",
+			"modified": "2016-04-06T19:58:16.000Z",
+			"source_ref": "domain-name--ecb120bf-2694-4902-a737-62b74539a41b",
+			"target_ref": "ipv4-addr--efcd5e80-570d-4131-b213-62cb18eaa6a8",
+			"relationship_type": "resolves-to"
+		},
+		{
+			"type": "identity",
+			"id": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"spec_version": "2.1",
+			"created": "2017-04-14T13:07:49.812Z",
+			"modified": "2017-04-14T13:07:49.812Z",
+			"name": "Oscorp Industries",
+			"identity_class": "organization",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c"
+		},
+		{
+			"type": "observed-data",
+			"spec_version": "2.1",
+			"id": "observed-data--359d9ff7-1d08-4af6-92e4-e9df5b1bad88",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2016-04-06T19:58:16.000Z",
+			"modified": "2016-04-06T19:58:16.000Z",
+			"first_observed": "2015-12-21T19:00:00Z",
+			"last_observed": "2015-12-21T19:00:00Z",
+			"number_observed": 50,
+			"object_refs": [
+				"ipv4-addr--ea9484e7-673d-4756-bcd6-844749024a27",
+				"ipv6-addr--3d4f0428-0f9c-430f-b1ab-16a795f1894e",
+				"domain-name--0c248491-69e9-43e5-8e90-23f5ce22e3e7",
+				"relationship--cb878d74-1d04-4707-88a1-e1d90eb85737"
+			]
+		},
+		{
+			"type": "ipv6-addr",
+			"spec_version": "2.1",
+			"id": "ipv6-addr--3d4f0428-0f9c-430f-b1ab-16a795f1894e",
+			"value": "2001:0db8:85a3:0000:0000:8a2e:0370:7334"
+		},
+		{
+			"type": "domain-name",
+			"spec_version": "2.1",
+			"id": "domain-name--0c248491-69e9-43e5-8e90-23f5ce22e3e7",
+			"value": "forinstance.com",
+			"resolves_to_refs": [
+				"ipv4-addr--ea9484e7-673d-4756-bcd6-844749024a27"
+			]
+		},
+		{
+			"type": "ipv4-addr",
+			"spec_version": "2.1",
+			"id": "ipv4-addr--ea9484e7-673d-4756-bcd6-844749024a27",
+			"value": "202.1.24.9"
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--cb878d74-1d04-4707-88a1-e1d90eb85737",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"created": "2016-04-06T19:58:16.000Z",
+			"modified": "2016-04-06T19:58:16.000Z",
+			"source_ref": "domain-name--0c248491-69e9-43e5-8e90-23f5ce22e3e7",
+			"target_ref": "ipv4-addr--ea9484e7-673d-4756-bcd6-844749024a27",
+			"relationship_type": "resolves-to"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "identity",
+			"id": "identity--a562f809-377b-45e0-aa1c-6a4751abc5dd",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "EMCA Corp, Inc.",
+			"created": "2016-02-29T12:34:56.000Z",
+			"modified": "2016-02-29T12:34:56.000Z",
+			"created_by_ref": "identity--a562f809-377b-45e0-aa1c-6a4751abc5dd"
+		},
+		{
+			"type": "indicator",
+			"spec_version": "2.1",
+			"id": "indicator--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-04-06T20:03:48.000Z",
+			"modified": "2018-04-06T20:03:48.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"name": "Malicious Domain Name",
+			"pattern": "[ domain-name:value = 'www.example.com']",
+			"pattern_type": "stix",
+			"valid_from": "2016-01-01T00:00:00Z"
+		},
+		{
+			"type": "opinion",
+			"spec_version": "2.1",
+			"id": "opinion--b01efc25-77b4-4003-b18b-f6e24b5cd9f7",
+			"created_by_ref": "identity--a562f809-377b-45e0-aa1c-6a4751abc5dd",
+			"created": "2019-05-12T08:17:27.000Z",
+			"modified": "2019-05-12T08:17:27.000Z",
+			"object_refs": [
+				"indicator--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f"
+			],
+			"opinion": "strongly-disagree"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "identity",
+			"id": "identity--7e4e8c59-b592-47fd-b90b-4827370e088a",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "BDNF Corp, Inc.",
+			"created": "2019-01-17T11:11:13.000Z",
+			"modified": "2019-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--7e4e8c59-b592-47fd-b90b-4827370e088a"
+		},
+		{
+			"type": "opinion",
+			"spec_version": "2.1",
+			"id": "opinion--037754a3-cbc4-472e-a258-ddd91e767aa5",
+			"created_by_ref": "identity--7e4e8c59-b592-47fd-b90b-4827370e088a",
+			"created": "2019-07-22T10:05:02.000Z",
+			"modified": "2019-07-22T10:05:02.000Z",
+			"object_refs": [
+				"malware--bf781134-1da9-4058-8faa-d5a58a181805"
+			],
+			"opinion": "disagree"
+		},
+		{
+			"type": "malware",
+			"spec_version": "2.1",
+			"id": "malware--bf781134-1da9-4058-8faa-d5a58a181805",
+			"created": "2019-06-27T15:03:11.000Z",
+			"modified": "2019-06-27T15:03:11.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"name": "Foobot",
+			"malware_types": [
+				"trojan"
+			],
+			"is_family": false,
+			"capabilities": [
+				"accesses-remote-machines",
+				"determines-c2-server"
+			],
+			"first_seen": "2019-05-27T15:03:11.000Z",
+			"last_seen": "2019-06-26T15:03:11.000Z",
+			"implementation_languages": [
+				"python"
+			],
+			"architecture_execution_envs": [
+				"mips"
+			]
+		},
+		{
+			"type": "identity",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "identity",
+			"id": "identity--a562f809-377b-45e0-aa1c-6a4751abc5dd",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "EMCA Corp, Inc.",
+			"created": "2016-02-29T12:34:56.000Z",
+			"modified": "2016-02-29T12:34:56.000Z",
+			"created_by_ref": "identity--a562f809-377b-45e0-aa1c-6a4751abc5dd"
+		},
+		{
+			"type": "indicator",
+			"spec_version": "2.1",
+			"id": "indicator--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-04-06T20:03:48.000Z",
+			"modified": "2018-04-06T20:03:48.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"name": "Malicious Domain Name",
+			"pattern": "[ domain-name:value = 'www.example.com']",
+			"pattern_type": "stix",
+			"valid_from": "2016-01-01T00:00:00Z"
+		},
+		{
+			"type": "opinion",
+			"spec_version": "2.1",
+			"id": "opinion--b01efc25-77b4-4003-b18b-f6e24b5cd9f7",
+			"created_by_ref": "identity--a562f809-377b-45e0-aa1c-6a4751abc5dd",
+			"created": "2019-05-12T08:17:27.000Z",
+			"modified": "2019-05-12T08:17:27.000Z",
+			"object_refs": [
+				"indicator--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f"
+			],
+			"opinion": "strongly-disagree",
+			"explanation": "This doesn't seem like it is feasible. We've seen how PandaCat has attacked Spanish infrastructure over the last 3 years, so this change in targeting seems too great to be viable. The methods used are more commonly associated with the FlameDragonCrew.",
+			"authors": [
+				"Alice",
+				"Bob"
+			]
+		},
+		{
+			"type": "identity",
+			"id": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "XYZA Corp, Inc.",
+			"created": "2017-01-17T11:11:13.000Z",
+			"modified": "2017-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+		},
+		{
+			"type": "report",
+			"spec_version": "2.1",
+			"id": "report--84e4d88f-44ea-4bcd-bbf3-b2c1c320bcbd",
+			"created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"created": "2019-12-21T19:59:11.000Z",
+			"modified": "2019-12-21T19:59:11.000Z",
+			"name": "Glass Gazelle Campaign",
+			"published": "2020-01-20T17:00:00Z",
+			"report_types": [
+				"campaign"
+			],
+			"object_refs": [
+				"indicator--26ffb872-1dd9-446e-b6f5-d58527e5b5d2"
+			]
+		},
+		{
+			"type": "indicator",
+			"spec_version": "2.1",
+			"id": "indicator--26ffb872-1dd9-446e-b6f5-d58527e5b5d2",
+			"created": "2019-12-21T19:59:17.000Z",
+			"modified": "2020-05-21T19:59:17.000Z",
+			"name": "Some indicator",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[ file:hashes.MD5 = '3773a88f65a5e780c8dff9cdc3a056f3' ]",
+			"pattern_type": "stix",
+			"valid_from": "2015-12-21T19:59:17Z",
+			"created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+		},
+		{
+			"type": "identity",
+			"id": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "XYZA Corp, Inc.",
+			"created": "2017-01-17T11:11:13.000Z",
+			"modified": "2017-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+		},
+		{
+			"type": "report",
+			"spec_version": "2.1",
+			"id": "report--84e4d88f-44ea-4bcd-bbf3-b2c1c320bcbd",
+			"created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"created": "2019-12-21T19:59:11.000Z",
+			"modified": "2019-12-21T19:59:11.000Z",
+			"name": "Glass Gazelle Campaign",
+			"description": "This report includes details related to the Glass Gazelle campaign, including a key indicator.",
+			"published": "2020-01-20T17:00:00Z",
+			"report_types": [
+				"campaign"
+			],
+			"object_refs": [
+				"indicator--26ffb872-1dd9-446e-b6f5-d58527e5b5d2",
+				"campaign--83422c77-904c-4dc1-aff5-5c38f3a2c55c",
+				"relationship--f82356ae-fe6c-437c-9c24-6b64314ae68a"
+			]
+		},
+		{
+			"type": "indicator",
+			"spec_version": "2.1",
+			"id": "indicator--26ffb872-1dd9-446e-b6f5-d58527e5b5d2",
+			"created": "2019-12-21T19:59:17.000Z",
+			"modified": "2020-05-21T19:59:17.000Z",
+			"name": "Some indicator",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[ file:hashes.MD5 = '3773a88f65a5e780c8dff9cdc3a056f3' ]",
+			"pattern_type": "stix",
+			"valid_from": "2015-12-21T19:59:17Z",
+			"created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+		},
+		{
+			"type": "campaign",
+			"spec_version": "2.1",
+			"id": "campaign--83422c77-904c-4dc1-aff5-5c38f3a2c55c",
+			"created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"created": "2019-12-21T19:59:17.000Z",
+			"modified": "2020-05-21T19:59:17.000Z",
+			"name": "Glass Gazelle Campaign"
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--f82356ae-fe6c-437c-9c24-6b64314ae68a",
+			"created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"created": "2015-12-21T19:59:17.000Z",
+			"modified": "2015-12-21T19:59:17.000Z",
+			"source_ref": "indicator--26ffb872-1dd9-446e-b6f5-d58527e5b5d2",
+			"target_ref": "campaign--26ffb872-1dd9-446e-b6f5-d58527e5b5d2",
+			"relationship_type": "indicates"
+		},
+		{
+			"type": "identity",
+			"id": "identity--826d4837-a92b-44a3-91c9-107ec7982c1d",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "XYZA Corp, Inc.",
+			"created": "2017-01-17T11:11:13.000Z",
+			"modified": "2017-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--826d4837-a92b-44a3-91c9-107ec7982c1d"
+		},
+		{
+			"type": "report",
+			"spec_version": "2.1",
+			"id": "report--980275a5-4423-46c6-bb79-235654096f8a",
+			"created_by_ref": "identity--826d4837-a92b-44a3-91c9-107ec7982c1d",
+			"created": "2020-01-24T19:59:11.000Z",
+			"modified": "2020-01-24T19:59:11.000Z",
+			"name": "Malware Analysis Report",
+			"description": "This report contains analysis results of the ReallyBad banking trojan.",
+			"published": "2020-01-25T17:00:00Z",
+			"report_types": [
+				"malware"
+			],
+			"object_refs": [
+				"malware--bb4ca8dd-1248-5fef-8828-9bd2d935fa58",
+				"malware-analysis--332ca8f0-1888-1bef-8828-54d2d935fb27",
+				"malware-analysis--bf43a8f0-0078-134f-a828-735dfb15f008",
+				"malware-analysis--bd32a072-bf32-445f-a828-111dfb15fbba",
+				"file--876275a5-b223-2394-b009-8384fc2536ba",
+				"domain-name--b67d30ff-02ac-498a-92f9-32f845f448cf",
+				"ipv4-addr--2320065d-2555-424f-ad9e-0f8428623c33",
+				"url--9020065d-b255-114b-a33e-0394fc243ab4",
+				"relationship--93049345-93bc-3920-a93b-032bc238ad23",
+				"relationship--9403bd85-35dd-19dd-a91d-9302fb23ae9e",
+				"relationship--bc238ad2-3b32-14ff-a023-74bdf3811882"
+			]
+		},
+		{
+			"type": "malware",
+			"spec_version": "2.1",
+			"id": "malware--bb4ca8dd-1248-5fef-8828-9bd2d935fa58",
+			"created_by_ref": "identity--826d4837-a92b-44a3-91c9-107ec7982c1d",
+			"created": "2020-01-16T18:52:24.277Z",
+			"modified": "2020-01-16T18:52:24.277Z",
+			"name": "a92e5b2bae.exe",
+			"first_seen": "2019-03-16T18:52:24.277Z",
+			"last_seen": "2020-01-01T23:52:24.277Z",
+			"malware_types": [
+				"unknown"
+			],
+			"is_family": false,
+			"sample_refs": [
+				"file--876275a5-b223-2394-b009-8384fc2536ba"
+			]
+		},
+		{
+			"type": "malware-analysis",
+			"spec_version": "2.1",
+			"id": "malware-analysis--332ca8f0-1888-1bef-8828-54d2d935fb27",
+			"created_by_ref": "identity--826d4837-a92b-44a3-91c9-107ec7982c1d",
+			"created": "2020-01-16T18:52:24.277Z",
+			"modified": "2020-01-16T18:52:24.277Z",
+			"product": "av-analysis-tool",
+			"version": "1.3",
+			"analysis_started": "2020-02-11T09:36:14Z",
+			"analysis_ended": "2020-02-11T09:36:14Z",
+			"result": "malicious",
+			"sample_ref": "file--876275a5-b223-2394-b009-8384fc2536ba"
+		},
+		{
+			"type": "malware-analysis",
+			"spec_version": "2.1",
+			"id": "malware-analysis--bf43a8f0-0078-134f-a828-735dfb15f008",
+			"created_by_ref": "identity--826d4837-a92b-44a3-91c9-107ec7982c1d",
+			"created": "2020-01-16T18:52:24.277Z",
+			"modified": "2020-01-16T18:52:24.277Z",
+			"product": "static-analysis-tool",
+			"version": "1.2.3",
+			"analysis_sco_refs": [
+				"file--876275a5-b223-2394-b009-8384fc2536ba"
+			],
+			"sample_ref": "file--876275a5-b223-2394-b009-8384fc2536ba"
+		},
+		{
+			"type": "malware-analysis",
+			"spec_version": "2.1",
+			"id": "malware-analysis--bd32a072-bf32-445f-a828-111dfb15fbba",
+			"created_by_ref": "identity--826d4837-a92b-44a3-91c9-107ec7982c1d",
+			"created": "2020-01-16T18:52:24.277Z",
+			"modified": "2020-01-16T18:52:24.277Z",
+			"product": "dynamic-analysis-tool",
+			"version": "3.2.1",
+			"analysis_started": "2020-01-24T10:23:40Z",
+			"analysis_ended": "2020-01-24T10:24:08Z",
+			"result": "malicious",
+			"analysis_sco_refs": [
+				"domain-name--b67d30ff-02ac-498a-92f9-32f845f448cf",
+				"ipv4-addr--2320065d-2555-424f-ad9e-0f8428623c33",
+				"url--9020065d-b255-114b-a33e-0394fc243ab4"
+			],
+			"sample_ref": "file--876275a5-b223-2394-b009-8384fc2536ba"
+		},
+		{
+			"type": "file",
+			"id": "file--876275a5-b223-2394-b009-8384fc2536ba",
+			"spec_version": "2.1",
+			"name": "badtrojan.exe"
+		},
+		{
+			"type": "domain-name",
+			"spec_version": "2.1",
+			"id": "domain-name--b67d30ff-02ac-498a-92f9-32f845f448cf",
+			"value": "badplace.com",
+			"resolves_to_refs": [
+				"ipv4-addr--2320065d-2555-424f-ad9e-0f8428623c33"
+			]
+		},
+		{
+			"type": "ipv4-addr",
+			"spec_version": "2.1",
+			"id": "ipv4-addr--2320065d-2555-424f-ad9e-0f8428623c33",
+			"value": "198.192.1.3"
+		},
+		{
+			"type": "url",
+			"spec_version": "2.1",
+			"id": "url--9020065d-b255-114b-a33e-0394fc243ab4",
+			"value": "http://badplace.com/index.html"
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--93049345-93bc-3920-a93b-032bc238ad23",
+			"created_by_ref": "identity--826d4837-a92b-44a3-91c9-107ec7982c1d",
+			"created": "2020-01-16T18:52:24.277Z",
+			"modified": "2020-01-16T18:52:24.277Z",
+			"relationship_type": "av-analysis-of",
+			"source_ref": "malware-analysis--332ca8f0-1888-1bef-8828-54d2d935fb27",
+			"target_ref": "malware--bb4ca8dd-1248-5fef-8828-9bd2d935fa58"
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--9403bd85-35dd-19dd-a91d-9302fb23ae9e",
+			"created_by_ref": "identity--826d4837-a92b-44a3-91c9-107ec7982c1d",
+			"created": "2020-01-16T18:52:24.277Z",
+			"modified": "2020-01-16T18:52:24.277Z",
+			"relationship_type": "static-analysis-of",
+			"source_ref": "malware-analysis--bf43a8f0-0078-134f-a828-735dfb15f008",
+			"target_ref": "malware--bb4ca8dd-1248-5fef-8828-9bd2d935fa58"
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--bc238ad2-3b32-14ff-a023-74bdf3811882",
+			"created_by_ref": "identity--826d4837-a92b-44a3-91c9-107ec7982c1d",
+			"created": "2020-01-16T18:52:24.277Z",
+			"modified": "2020-01-16T18:52:24.277Z",
+			"relationship_type": "dynamic-analysis-of",
+			"source_ref": "malware-analysis--bd32a072-bf32-445f-a828-111dfb15fbba",
+			"target_ref": "malware--bb4ca8dd-1248-5fef-8828-9bd2d935fa58"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp Sighting, Inc.",
+			"created": "2015-01-20T12:34:56.000Z",
+			"modified": "2015-01-20T12:34:56.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--12fd1bad-8306-4ed4-8c9b-7dfdd8ad5eb8",
+			"spec_version": "2.1",
+			"created": "2018-05-20T12:34:56.000Z",
+			"modified": "2018-05-20T12:34:56.000Z",
+			"created_by_ref": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"valid_from": "2017-12-21T19:00:00.000Z",
+			"name": "Poison Ivy Malware",
+			"pattern": "[ file:hashes.'SHA-256' = '4bac27393bdd9777ce02453256c5577cd02275510b2227f473d03f533924f877']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "sighting",
+			"id": "sighting--ee20065d-2555-424f-ad9e-0f8428623c75",
+			"spec_version": "2.1",
+			"created_by_ref": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"created": "2021-01-17T11:11:13.000Z",
+			"modified": "2021-01-17T11:11:13.000Z",
+			"first_seen": "2017-12-21T19:00:00.000Z",
+			"last_seen": "2018-01-06T19:00:00.000Z",
+			"count": 50,
+			"sighting_of_ref": "indicator--12fd1bad-8306-4ed4-8c9b-7dfdd8ad5eb8"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp Sighting, Inc.",
+			"created": "2015-01-20T12:34:56.000Z",
+			"modified": "2015-01-20T12:34:56.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "sighting",
+			"spec_version": "2.1",
+			"id": "sighting--ee20065d-2555-424f-ad9e-0f8428623c75",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2016-04-06T20:08:31.000Z",
+			"modified": "2016-04-06T20:08:31.000Z",
+			"first_seen": "2015-12-21T19:00:00Z",
+			"last_seen": "2015-12-21T19:00:00Z",
+			"count": 50,
+			"sighting_of_ref": "indicator--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+			"observed_data_refs": [
+				"observed-data--b67d30ff-02ac-498a-92f9-32f845f448cf"
+			],
+			"where_sighted_refs": [
+				"identity--b67d30ff-02ac-498a-92f9-32f845f448ff"
+			]
+		},
+		{
+			"type": "observed-data",
+			"spec_version": "2.1",
+			"id": "observed-data--b67d30ff-02ac-498a-92f9-32f845f448cf",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2016-04-06T19:58:16.000Z",
+			"modified": "2016-04-06T19:58:16.000Z",
+			"first_observed": "2015-12-21T19:00:00Z",
+			"last_observed": "2016-04-06T19:58:16Z",
+			"number_observed": 50,
+			"object_refs": [
+				"file--30038539-3eb6-44bc-a59e-d0d3fe84695a"
+			]
+		},
+		{
+			"type": "file",
+			"spec_version": "2.1",
+			"id": "file--30038539-3eb6-44bc-a59e-d0d3fe84695a",
+			"hashes": {
+				"SHA-256": "fe90a7e910cb3a4739bed9180e807e93fa70c90f25a8915476f5e4bfbac681db"
+			},
+			"size": 25536,
+			"name": "foo.dll"
+		},
+		{
+			"type": "identity",
+			"name": "ACME Corp, Inc.",
+			"identity_class": "organization",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"created": "2020-01-20T12:34:56.000Z",
+			"modified": "2020-01-20T12:34:56.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "threat-actor",
+			"spec_version": "2.1",
+			"id": "threat-actor--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2016-04-06T20:03:48.000Z",
+			"modified": "2016-04-06T20:03:48.000Z",
+			"threat_actor_types": [
+				"crime-syndicate"
+			],
+			"name": "Evil Org",
+			"description": "The Evil Org threat actor group",
+			"roles": [
+				"director"
+			],
+			"sophistication": "advanced",
+			"resource_level": "team",
+			"primary_motivation": "organizational-gain"
+		},
+		{
+			"type": "identity",
+			"name": "ACME Corp, Inc.",
+			"identity_class": "organization",
+			"id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"spec_version": "2.1",
+			"created": "2020-01-20T12:34:56.000Z",
+			"modified": "2020-01-20T12:34:56.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "threat-actor",
+			"spec_version": "2.1",
+			"id": "threat-actor--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2016-04-06T20:03:48.000Z",
+			"modified": "2016-04-06T20:03:48.000Z",
+			"threat_actor_types": [
+				"crime-syndicate"
+			],
+			"name": "Evil Org",
+			"roles": [
+				"director"
+			],
+			"sophistication": "advanced",
+			"resource_level": "team",
+			"primary_motivation": "organizational-gain"
+		},
+		{
+			"type": "campaign",
+			"spec_version": "2.1",
+			"id": "campaign--555d5f47-5a6a-442d-915a-04097ca98a73",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2016-04-06T20:03:00.000Z",
+			"modified": "2016-04-06T20:03:00.000Z",
+			"name": "Green Group Attacks Against Finance"
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--12bb26f9-ceb7-46f4-952f-b24f7b1f78c0",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2016-04-06T20:03:00.000Z",
+			"modified": "2016-04-06T20:03:00.000Z",
+			"source_ref": "campaign--555d5f47-5a6a-442d-915a-04097ca98a73",
+			"target_ref": "threat-actor--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+			"relationship_type": "attributed-to"
+		},
+		{
+			"type": "identity",
+			"id": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"spec_version": "2.1",
+			"created": "2015-04-14T13:07:49.812Z",
+			"modified": "2015-04-14T13:07:49.812Z",
+			"name": "Oscorp Industries",
+			"identity_class": "organization"
+		},
+		{
+			"type": "threat-actor",
+			"spec_version": "2.1",
+			"id": "threat-actor--56f3f0db-b5d5-431c-ae56-c18f02caf500",
+			"created": "2016-08-08T15:50:10.983Z",
+			"modified": "2016-08-08T15:50:10.983Z",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"name": "Fake BPP (Branistan Peoples Party)",
+			"threat_actor_types": [
+				"nation-state"
+			],
+			"roles": [
+				"director"
+			],
+			"goals": [
+				"Influence the election in Branistan"
+			],
+			"sophistication": "strategic",
+			"resource_level": "government",
+			"primary_motivation": "ideology",
+			"secondary_motivations": [
+				"dominance"
+			]
+		},
+		{
+			"type": "identity",
+			"spec_version": "2.1",
+			"id": "identity--8c6af861-7b20-41ef-9b59-6344fd872a8f",
+			"created": "2016-08-08T15:50:10.983Z",
+			"modified": "2016-08-08T15:50:10.983Z",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"name": "Franistan Intelligence",
+			"identity_class": "organization"
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--4bd67b9e-d112-4ea6-98bb-080a051667c7",
+			"created": "2020-02-29T17:41:44.941Z",
+			"modified": "2020-02-29T17:41:44.941Z",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"relationship_type": "attributed-to",
+			"source_ref": "threat-actor--56f3f0db-b5d5-431c-ae56-c18f02caf500",
+			"target_ref": "identity--8c6af861-7b20-41ef-9b59-6344fd872a8f"
+		},
+		{
+			"type": "identity",
+			"id": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"spec_version": "2.1",
+			"created": "2015-04-14T13:07:49.812Z",
+			"modified": "2015-04-14T13:07:49.812Z",
+			"name": "Oscorp Industries",
+			"identity_class": "organization"
+		},
+		{
+			"type": "threat-actor",
+			"spec_version": "2.1",
+			"id": "threat-actor--9a8a0d25-7636-429b-a99e-b2a73cd0f11f",
+			"created": "2015-05-07T14:22:14.760Z",
+			"modified": "2015-05-07T14:22:14.760Z",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"name": "Adversary Bravo",
+			"description": "Adversary Bravo is known to use phishing attacks to deliver remote access malware to the targets.",
+			"threat_actor_types": [
+				"spy",
+				"criminal"
+			]
+		},
+		{
+			"type": "malware",
+			"spec_version": "2.1",
+			"id": "malware--d1c612bc-146f-4b65-b7b0-9a54a14150a4",
+			"created": "2015-04-23T11:12:34.760Z",
+			"modified": "2015-04-23T11:12:34.760Z",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"name": "Poison Ivy Variant d1c6",
+			"malware_types": [
+				"remote-access-trojan"
+			],
+			"is_family": false,
+			"kill_chain_phases": [
+				{
+					"kill_chain_name": "mandiant-attack-lifecycle-model",
+					"phase_name": "initial-compromise"
+				}
+			]
+		},
+		{
+			"type": "relationship",
+			"spec_version": "2.1",
+			"id": "relationship--d44019b6-b8f7-4cb3-837e-7fd3c5724b87",
+			"created": "2020-02-29T17:41:44.941Z",
+			"modified": "2020-02-29T17:41:44.941Z",
+			"created_by_ref": "identity--987eeee1-413a-44ac-96cc-0a8acdcc2f2c",
+			"relationship_type": "uses",
+			"source_ref": "threat-actor--9a8a0d25-7636-429b-a99e-b2a73cd0f11f",
+			"target_ref": "malware--d1c612bc-146f-4b65-b7b0-9a54a14150a4"
+		},
+		{
+			"type": "identity",
+			"id": "identity--826d4837-a92b-44a3-91c9-107ec7982c1d",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "XYZA Corp, Inc.",
+			"created": "2017-01-17T11:11:13.000Z",
+			"modified": "2017-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--826d4837-a92b-44a3-91c9-107ec7982c1d"
+		},
+		{
+			"type": "tool",
+			"spec_version": "2.1",
+			"id": "tool--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+			"created_by_ref": "identity--826d4837-a92b-44a3-91c9-107ec7982c1d",
+			"created": "2020-04-06T20:03:48.000Z",
+			"modified": "2020-04-06T20:03:48.000Z",
+			"tool_types": [
+				"remote-access"
+			],
+			"name": "VNC"
+		},
+		{
+			"type": "identity",
+			"id": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "XYZA Corp, Inc.",
+			"created": "2017-01-17T11:11:13.000Z",
+			"modified": "2017-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+		},
+		{
+			"type": "tool",
+			"spec_version": "2.1",
+			"id": "tool--44322d2b-ffd4-21bf-a23f-008e46b3cd12",
+			"created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"created": "2019-04-06T20:03:48.000Z",
+			"modified": "2019-04-06T20:03:48.000Z",
+			"tool_types": [
+				"remote-access"
+			],
+			"name": "ftp"
+		},
+		{
+			"type": "malware",
+			"spec_version": "2.1",
+			"id": "malware--bbb757e7-9bf9-3364-bf88-29dc0644d1e9",
+			"created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"created": "2018-08-18T23:55:56.000Z",
+			"modified": "2018-09-03T05:38:32.000Z",
+			"name": "zeus",
+			"malware_types": [
+				"password-stealer"
+			],
+			"is_family": true
+		},
+		{
+			"spec_version": "2.1",
+			"type": "relationship",
+			"id": "relationship--a502bd26-42d1-4020-b652-70ec37797cb6",
+			"created": "2019-07-22T12:34:02.602Z",
+			"modified": "2019-07-22T12:34:02.602Z",
+			"created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"relationship_type": "drops",
+			"source_ref": "tool--44322d2b-ffd4-21bf-a23f-008e46b3cd12",
+			"target_ref": "malware--bbb757e7-9bf9-3364-bf88-29dc0644d1e9"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp Sighting, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--6cd5cd4f-ff42-4d67-8402-02aad22f8b63",
+			"spec_version": "2.1",
+			"name": "Bad IP1",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[ipv4-addr:value = '198.51.100.1']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp Sighting, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "sighting",
+			"id": "sighting--f185c0e8-f187-4880-be0b-1f10df2d356f",
+			"spec_version": "2.1",
+			"created_by_ref": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"first_seen": "2017-12-21T19:00:00.000Z",
+			"last_seen": "2018-01-06T19:00:00.000Z",
+			"count": 50,
+			"sighting_of_ref": "indicator--12fd1bad-8306-4ed4-8c9b-7dfdd8ad5eb8"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--12fd1bad-8306-4ed4-8c9b-7dfdd8ad5eb8",
+			"spec_version": "2.1",
+			"name": "Bad IP1",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2017-12-17T11:11:13.000Z",
+			"modified": "2017-12-17T11:11:13.000Z",
+			"valid_from": "2017-12-22T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[ipv4-addr:value = '127.198.96.42']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp Sighting, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--6cd5cd4f-ff42-4d67-8402-02aad22f8b63",
+			"spec_version": "2.1",
+			"name": "Bad IP1",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-18T13:04:22.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"anomalous-activity"
+			],
+			"pattern": "[ ipv4-addr:value = '198.51.100.1' ]",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp Sighting, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "sighting",
+			"id": "sighting--f185c0e8-f187-4880-be0b-1f10df2d356f",
+			"spec_version": "2.1",
+			"created_by_ref": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-18T11:11:13.000Z",
+			"first_seen": "2017-12-21T19:00:00.000Z",
+			"last_seen": "2018-01-16T19:00:00.000Z",
+			"count": 50,
+			"sighting_of_ref": "indicator--12fd1bad-8306-4ed4-8c9b-7dfdd8ad5eb8"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--12fd1bad-8306-4ed4-8c9b-7dfdd8ad5eb8",
+			"spec_version": "2.1",
+			"name": "Bad IP1",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2017-12-17T11:11:13.000Z",
+			"modified": "2017-12-17T11:11:13.000Z",
+			"valid_from": "2017-12-22T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[ipv4-addr:value = '127.198.96.42']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp Sighting, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--6cd5cd4f-ff42-4d67-8402-02aad22f8b63",
+			"spec_version": "2.1",
+			"name": "Bad IP1",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-19T13:04:22.000Z",
+			"valid_from": "2018-01-01T00:00:00.000Z",
+			"indicator_types": [
+				"anomalous-activity"
+			],
+			"pattern": "[ ipv4-addr:value = '198.51.100.1' ]",
+			"pattern_type": "stix",
+			"revoked": true
+		},
+		{
+			"type": "identity",
+			"id": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "ACME Corp Sighting, Inc.",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff"
+		},
+		{
+			"type": "sighting",
+			"id": "sighting--f185c0e8-f187-4880-be0b-1f10df2d356f",
+			"spec_version": "2.1",
+			"created_by_ref": "identity--f6e43aa5-76cc-45ca-9b06-be2d65f26bfb",
+			"created": "2018-01-17T11:11:13.000Z",
+			"modified": "2018-01-19T11:11:13.000Z",
+			"first_seen": "2017-12-21T19:00:00.000Z",
+			"last_seen": "2018-01-16T19:00:00.000Z",
+			"count": 50,
+			"sighting_of_ref": "indicator--12fd1bad-8306-4ed4-8c9b-7dfdd8ad5eb8",
+			"revoked": true
+		},
+		{
+			"type": "indicator",
+			"id": "indicator--12fd1bad-8306-4ed4-8c9b-7dfdd8ad5eb8",
+			"spec_version": "2.1",
+			"name": "Bad IP1",
+			"created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+			"created": "2017-12-17T11:11:13.000Z",
+			"modified": "2017-12-17T11:11:13.000Z",
+			"valid_from": "2017-12-22T00:00:00.000Z",
+			"indicator_types": [
+				"malicious-activity"
+			],
+			"pattern": "[ipv4-addr:value = '127.198.96.42']",
+			"pattern_type": "stix"
+		},
+		{
+			"type": "identity",
+			"id": "identity--d88cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "XYZA Corp, Inc.",
+			"created": "2014-01-17T11:11:13.000Z",
+			"modified": "2014-01-17T11:11:13.000Z",
+			"created_by_ref": "identity--d88cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+		},
+		{
+			"type": "vulnerability",
+			"spec_version": "2.1",
+			"id": "vulnerability--0c7b5b88-8ff7-4a4d-aa9d-feb398cd0061",
+			"created": "2016-05-12T08:17:27.000Z",
+			"modified": "2016-05-12T08:17:27.000Z",
+			"created_by_ref": "identity--d88cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"name": "CVE-2016-1234",
+			"external_references": [
+				{
+					"source_name": "cve",
+					"external_id": "CVE-2016-1234"
+				}
+			]
+		},
+		{
+			"type": "identity",
+			"id": "identity--d88cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"spec_version": "2.1",
+			"identity_class": "organization",
+			"name": "XYZA Corp, Inc.",
+			"created": "2014-01-17T11:11:13.000Z",
+			"modified": "2014-01-17T11:11:13.000Z"
+		},
+		{
+			"type": "malware",
+			"id": "malware--61a62a6a-9a18-4758-8e52-622431c4b8ae",
+			"spec_version": "2.1",
+			"created": "2015-05-15T09:00:00.000Z",
+			"modified": "2015-05-15T09:00:00.000Z",
+			"created_by_ref": "identity--d88cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"name": "Malicious Malware #5",
+			"description": "Malicious malware #5 targets ABC software from Vendor XYZ",
+			"malware_types": [
+				"remote-access-trojan"
+			],
+			"is_family": false
+		},
+		{
+			"type": "vulnerability",
+			"id": "vulnerability--c7cab3fb-0822-43a5-b1ba-c9bab34361a2",
+			"spec_version": "2.1",
+			"created": "2015-05-15T09:00:00.000Z",
+			"modified": "2015-05-15T09:00:00.000Z",
+			"created_by_ref": "identity--d88cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"name": "CVE-2012-1234",
+			"description": "Vulnerability in ABC software from Vendor XYZ",
+			"external_references": [
+				{
+					"source_name": "cve",
+					"external_id": "CVE-2012-1234"
+				}
+			]
+		},
+		{
+			"type": "relationship",
+			"id": "relationship--56b1023c-9e28-4449-8b4f-bc2adde45e1a",
+			"spec_version": "2.1",
+			"created": "2015-05-15T09:00:00.000Z",
+			"modified": "2015-05-15T09:00:00.000Z",
+			"created_by_ref": "identity--d88cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+			"relationship_type": "targets",
+			"source_ref": "malware--61a62a6a-9a18-4758-8e52-622431c4b8ae",
+			"target_ref": "vulnerability--717cb1c9-eab3-4330-8340-e4858055aa80"
+		},
+		{
+			"type": "identity",
+			"id": "identity--1621d4d4-b67d-41e3-9670-f01faf20d111",
+			"spec_version": "2.1",
+			"created": "2015-05-10T16:27:17.760Z",
+			"modified": "2015-05-15T16:27:17.760Z",
+			"name": "Bravo Researchers",
+			"identity_class": "organization"
+		},
+		{
+			"type": "threat-actor",
+			"id": "threat-actor--9a8a0d25-7636-429b-a99e-b2a73cd0f11f",
+			"spec_version": "2.1",
+			"created": "2015-05-07T14:22:14.760Z",
+			"modified": "2015-05-07T14:22:14.760Z",
+			"name": "Adversary Bravo",
+			"description": "Adversary Bravo is known to use phishing attacks to deliver remote access malware to the targets.",
+			"threat_actor_types": [
+				"spy",
+				"criminal"
+			],
+			"created_by_ref": "identity--1621d4d4-b67d-41e3-9670-f01faf20d111"
+		},
+		{
+			"type": "vulnerability",
+			"id": "vulnerability--c7cab3fb-0822-43a5-b1ba-c9bab34361a2",
+			"spec_version": "2.1",
+			"created": "2015-05-15T09:00:00.000Z",
+			"modified": "2015-05-15T09:00:00.000Z",
+			"name": "CVE-2012-1234",
+			"description": "Vulnerability in ABC software from Vendor XYZ",
+			"created_by_ref": "identity--1621d4d4-b67d-41e3-9670-f01faf20d111",
+			"external_references": [
+				{
+					"source_name": "cve",
+					"external_id": "CVE-2012-1234"
+				}
+			]
+		},
+		{
+			"type": "relationship",
+			"id": "relationship--6ce78886-1027-4800-9301-40c274fd472f",
+			"spec_version": "2.1",
+			"created": "2015-05-15T09:00:00.000Z",
+			"modified": "2015-05-15T09:00:00.000Z",
+			"relationship_type": "targets",
+			"source_ref": "threat-actor--9a8a0d25-7636-429b-a99e-b2a73cd0f11f",
+			"target_ref": "vulnerability--717cb1c9-eab3-4330-8340-e4858055aa80",
+			"created_by_ref": "identity--1621d4d4-b67d-41e3-9670-f01faf20d111"
+		}
+	]

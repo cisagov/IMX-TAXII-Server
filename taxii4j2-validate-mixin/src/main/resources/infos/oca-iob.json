@@ -1,0 +1,7 @@
+{
+	"owner": "opencybersecurityalliance",
+	"repo": "stix-extensions",
+	"includes": [
+		"stix-extensions/2.x/schemas"
+	]
+}

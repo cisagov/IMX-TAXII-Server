@@ -1,0 +1,367 @@
+{
+	"sdo-attack-pattern": {
+		"_all": {
+			"enabled": true
+		},
+		"description": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		}
+	},
+	"sdo-campaign": {
+		"_all": {
+			"enabled": true
+		},
+		"description": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		}
+	},
+	"sdo-course-of-action": {
+		"_all": {
+			"enabled": true
+		},
+		"description": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		}
+	},
+	"sdo-grouping": {
+		"_all": {
+			"enabled": true
+		},
+		"description": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		}
+	},
+	"sdo-identity": {
+		"_all": {
+			"enabled": true
+		},
+		"description": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		}
+	},
+	"sdo-incident": {
+		"_all": {
+			"enabled": true
+		},
+		"description": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		}
+	},
+	"sdo-indicator": {
+		"_all": {
+			"enabled": true
+		},
+		"description": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		}
+	},
+	"sdo-infrastructure": {
+		"_all": {
+			"enabled": true
+		},
+		"description": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		}
+	},
+	"sdo-intrusion-set": {
+		"_all": {
+			"enabled": true
+		},
+		"description": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		}
+	},
+	"sdo-location": {
+		"_all": {
+			"enabled": true
+		},
+		"description": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		}
+	},
+	"sdo-malware": {
+		"_all": {
+			"enabled": true
+		},
+		"description": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		}
+	},
+	"sdo-malware-analysis": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"sdo-note": {
+		"_all": {
+			"enabled": true
+		},
+		"abstract": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		},
+		"content": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		}
+	},
+	"sdo-observed-data": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"sdo-opinion": {
+		"_all": {
+			"enabled": true
+		},
+		"explanation": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		},
+		"opinion": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		}
+	},
+	"sdo-report": {
+		"_all": {
+			"enabled": true
+		},
+		"description": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		}
+	},
+	"sdo-threat-actor": {
+		"_all": {
+			"enabled": true
+		},
+		"description": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		}
+	},
+	"sdo-tool": {
+		"_all": {
+			"enabled": true
+		},
+		"description": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		}
+	},
+	"sdo-vulnerability": {
+		"_all": {
+			"enabled": true
+		},
+		"description": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		}
+	},
+	"sro-relationship": {
+		"_all": {
+			"enabled": true
+		},
+		"description": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		}
+	},
+	"sro-sighting": {
+		"_all": {
+			"enabled": true
+		},
+		"description": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		}
+	},
+	"extension-extension-definition": {
+		"_all": {
+			"enabled": true
+		},
+		"description": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		}
+	},
+	"sco-artifact": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"sco-autonomous-system": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"sco-directory": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"sco-domain-name": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"sco-email-addr": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"sco-email-message": {
+		"subject": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		},
+		"body": {
+			"type": "text",
+			"analyzer": "english",
+			"term_vector": "with_positions_offsets"
+		},
+		"_all": {
+			"enabled": true
+		}
+	},
+	"sco-file": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"sco-ipv4-addr": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"sco-ipv6-addr": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"sco-mac-addr": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"sco-mutex": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"sco-network-traffic": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"sco-process": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"sco-software": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"sco-url": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"sco-user-account": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"sco-windows-registry-key": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"sco-x509-certificate": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"language-language-content": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"markings-marking-definition": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"custom-x-oca-behavior": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"custom-x-oca-detector": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"custom-x-oca-detection": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"custom-x-oca-playbook": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"custom-x-oca-asset": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"custom-x-mitre-data-source": {
+		"_all": {
+			"enabled": true
+		}
+	},
+	"custom-x-mitre-data-component": {
+		"_all": {
+			"enabled": true
+		}
+	}
+}

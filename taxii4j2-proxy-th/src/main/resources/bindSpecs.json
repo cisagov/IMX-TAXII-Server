@@ -1,0 +1,44 @@
+{
+	"default_package": "com.cisa.taxii4j2",
+	"bind_specs": [
+		{
+			"contract": "method.TAXII",
+			"service": "client.TAXIIClient",
+			"factory": "client.TAXIIClient$Factory"
+		},
+		{
+			"contract": "servlet.security.TAXIISecurityHandler",
+			"service": "servlet.security.CESecurityHandler",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "auth.method.UserAdmin",
+			"service": "servlet.store.DbUserAdmin",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "auth.method.RootCollectionRead",
+			"service": "servlet.store.DbRootCollectionRead",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "servlet.store.DbRootCollectionRead$CollectionRead",
+			"service": "binding.sqlite.SqliteCollectionRead",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "method.logging.LogEntryConnector",
+			"service": "binding.sqlite.SqliteLoggedConnector",
+			"scope": "jakarta.inject.Singleton"
+		},
+		{
+			"contract": "method.latency.LSConsumer",
+			"service": "binding.sqlite.SqliteLSConsumer"
+		},
+		{
+			"contract": "servlet.store.DbBase",
+			"service": "binding.sqlite.SqliteBase",
+			"scope": "jakarta.inject.Singleton"
+		}
+	]
+}

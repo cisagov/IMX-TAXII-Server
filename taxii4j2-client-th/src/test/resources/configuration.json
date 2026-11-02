@@ -1,0 +1,12 @@
+{
+	"info": {
+		"uuid": "443f25c5-cb25-4261-ad54-1dae4c4be25a",
+		"url": "https://localhost:9443/taxii/v2.1-os/",
+		"username": "imx-admin",
+		"password": "imxAdminPassword"
+	},
+	"fragment": "Send2A1",
+	"cId": "vetted",
+	"workerCount": 7,
+	"workerDuration": "PT10S"
+}

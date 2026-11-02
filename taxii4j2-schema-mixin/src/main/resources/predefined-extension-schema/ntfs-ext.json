@@ -1,0 +1,144 @@
+{
+	"$schema": "http://json-schema.org/draft/2020-12/schema#",
+	"title": "ntfs-ext",
+	"type": "object",
+	"description": "The NTFS file extension specifies a default extension for capturing properties specific to the storage of the file on the NTFS file system.",
+	"allOf": [
+		{
+			"properties": {
+				"sid": {
+					"type": "string",
+					"description": "Specifies the security ID (SID) value assigned to the file."
+				},
+				"alternate_data_streams": {
+					"type": "array",
+					"description": "Specifies a list of NTFS alternate data streams that exist for the file.",
+					"items": {
+						"properties": {
+							"name": {
+								"type": "string",
+								"description": "Specifies the name of the alternate data stream."
+							},
+							"hashes": {
+								"$ref": "#/definitions/hashes-type",
+								"description": "Specifies a dictionary of hashes for the data contained in the alternate data stream."
+							},
+							"size": {
+								"type": "integer",
+								"description": "Specifies the size of the alternate data stream, in bytes, as a non-negative integer.",
+								"minimum": 0
+							}
+						},
+						"required": [
+							"name"
+						]
+					}
+				}
+			}
+		},
+		{
+			"anyOf": [
+				{
+					"required": [
+						"sid"
+					]
+				},
+				{
+					"required": [
+						"alternate_data_streams"
+					]
+				}
+			]
+		}
+	],
+	"definitions": {
+		"dictionary": {
+			"title": "dictionary",
+			"description": "A dictionary captures a set of key/value pairs",
+			"type": "object",
+			"minProperties": 1,
+			"patternProperties": {
+				"^[a-zA-Z0-9_-]{0,250}$": {
+					"anyOf": [
+						{
+							"type": "array",
+							"minItems": 1
+						},
+						{
+							"type": "string"
+						},
+						{
+							"type": "integer"
+						},
+						{
+							"type": "boolean"
+						},
+						{
+							"type": "number"
+						},
+						{
+							"type": "object"
+						}
+					]
+				}
+			},
+			"additionalProperties": false
+		},
+		"hashes-type": {
+			"description": "The Hashes type represents one or more cryptographic hashes, as a special set of key/value pairs",
+			"type": "object",
+			"allOf": [
+				{
+					"$ref": "#/definitions/dictionary"
+				}
+			],
+			"patternProperties": {
+				"^[a-zA-Z0-9_-]{3,250}$": {
+					"type": "string",
+					"description": "Custom hash key"
+				},
+				"^MD5$": {
+					"type": "string",
+					"description": "Specifies the MD5 message digest algorithm.",
+					"pattern": "^[a-fA-F0-9]{32}$"
+				},
+				"^SHA-1$": {
+					"type": "string",
+					"description": "Specifies the SHA-1 (secure-hash algorithm 1) cryptographic hash function.",
+					"pattern": "^[a-fA-F0-9]{40}$"
+				},
+				"^SHA-256$": {
+					"type": "string",
+					"description": "Specifies the SHA-256 cryptographic hash function (part of the SHA2 family).",
+					"pattern": "^[a-fA-F0-9]{64}$"
+				},
+				"^SHA-512$": {
+					"type": "string",
+					"description": "Specifies the SHA-512 cryptographic hash function (part of the SHA2 family).",
+					"pattern": "^[a-fA-F0-9]{128}$"
+				},
+				"^SHA3-256$": {
+					"type": "string",
+					"description": "Specifies the SHA3-256 cryptographic hash function.",
+					"pattern": "^[a-fA-F0-9]{64}$"
+				},
+				"^SHA3-512$": {
+					"type": "string",
+					"description": "Specifies the SHA3-512 cryptographic hash function.",
+					"pattern": "^[a-fA-F0-9]{128}$"
+				},
+				"^SSDEEP$": {
+					"type": "string",
+					"description": "Specifies the ssdeep fuzzy hashing algorithm.",
+					"pattern": "^[a-zA-Z0-9/+:.]{1,128}$"
+				},
+				"^TLSH$": {
+					"type": "string",
+					"description": "Specifies the TLSH locality-sensitive hashing algorithm.",
+					"pattern": "^(T.)?[a-zA-Z0-9]{70}$"
+				}
+			},
+			"additionalProperties": false
+		}
+	}
+}

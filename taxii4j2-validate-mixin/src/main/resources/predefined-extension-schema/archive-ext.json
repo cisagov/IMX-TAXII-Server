@@ -1,0 +1,23 @@
+{
+	"$schema": "http://json-schema.org/draft/2020-12/schema#",
+	"title": "archive-ext",
+	"type": "object",
+	"description": "The Archive File extension specifies a default extension for capturing properties specific to archive files.",
+	"properties": {
+		"contains_refs": {
+			"type": "array",
+			"description": "Specifies the files contained in the archive, as a reference to one or more other File Objects. The objects referenced in this list MUST be of type file-object.",
+			"items": {
+				"type": "string"
+			},
+			"minItems": 1
+		},
+		"comment": {
+			"type": "string",
+			"description": "Specifies a comment included as part of the archive file."
+		}
+	},
+	"required": [
+		"contains_refs"
+	]
+}

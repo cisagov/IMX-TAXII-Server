@@ -1,0 +1,146 @@
+{
+	"$schema": "http://json-schema.org/draft/2020-12/schema#",
+	"title": "windows-process-ext",
+	"type": "object",
+	"description": "The Windows Process extension specifies a default extension for capturing properties specific to Windows processes.",
+	"allOf": [
+		{
+			"properties": {
+				"aslr_enabled": {
+					"type": "boolean",
+					"description": "Specifies whether Address Space Layout Randomization (ASLR) is enabled for the process."
+				},
+				"dep_enabled": {
+					"type": "boolean",
+					"description": "Specifies whether Data Execution Prevention (DEP) is enabled for the process."
+				},
+				"priority": {
+					"type": "string",
+					"description": "Specifies the current priority class of the process in Windows."
+				},
+				"owner_sid": {
+					"type": "string",
+					"description": "Specifies the Security ID (SID) value of the owner of the process."
+				},
+				"window_title": {
+					"type": "string",
+					"description": "Specifies the title of the main window of the process."
+				},
+				"startup_info": {
+					"$ref": "#/definitions/startup-info-dictionary",
+					"description": "Specifies the STARTUP_INFO struct used by the process, as a dictionary."
+				},
+				"integrity_level": {
+					"$ref": "#/definitions/windows-integrity-level-enum",
+					"description": "Specifies the Windows integrity level, or trustworthiness, of the process."
+				}
+			}
+		},
+		{
+			"anyOf": [
+				{
+					"required": [
+						"aslr_enabled"
+					]
+				},
+				{
+					"required": [
+						"dep_enabled"
+					]
+				},
+				{
+					"required": [
+						"priority"
+					]
+				},
+				{
+					"required": [
+						"owner_sid"
+					]
+				},
+				{
+					"required": [
+						"window_title"
+					]
+				},
+				{
+					"required": [
+						"startup_info"
+					]
+				}
+			]
+		}
+	],
+	"definitions": {
+		"windows-integrity-level-enum": {
+			"type": "string",
+			"enum": [
+				"low",
+				"medium",
+				"high",
+				"system"
+			]
+		},
+		"dictionary": {
+			"title": "dictionary",
+			"description": "A dictionary captures a set of key/value pairs",
+			"type": "object",
+			"minProperties": 1,
+			"patternProperties": {
+				"^[a-zA-Z0-9_-]{0,250}$": {
+					"anyOf": [
+						{
+							"type": "array",
+							"minItems": 1
+						},
+						{
+							"type": "string"
+						},
+						{
+							"type": "integer"
+						},
+						{
+							"type": "boolean"
+						},
+						{
+							"type": "number"
+						},
+						{
+							"type": "object"
+						}
+					]
+				}
+			},
+			"additionalProperties": false
+		},
+		"startup-info-dictionary": {
+			"allOf": [
+				{
+					"$ref": "#/definitions/dictionary"
+				}
+			],
+			"patternProperties": {
+				"^lpDesktop|lpTitle|dwFillAttribute|dwFlags|wShowWindow|hStdInput|hStdOutput|hStdError$": {
+					"type": "string"
+				},
+				"^lpReserved|lpReserved2$": {
+					"type": "null"
+				},
+				"^cb|dwX|dwY|dwXSize|dwYSize|dwXCountChars|dwYCountChars$": {
+					"type": "integer"
+				},
+				"^cbReserved2$": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 0
+				}
+			},
+			"additionalProperties": false
+		},
+		"hex": {
+			"description": "The hex data type encodes an array of octets (8-bit bytes) as hexadecimal. The string MUST consist of an even number of hexadecimal characters, which are the digits '0' through '9' and the letters 'a' through 'f'.  In order to allow pattern matching on custom objects, all properties that use the hex type, the property name MUST end with '_hex'.",
+			"type": "string",
+			"pattern": "^([a-fA-F0-9]{2})+$"
+		}
+	}
+}

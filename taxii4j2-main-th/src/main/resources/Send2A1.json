@@ -1,0 +1,92 @@
+{
+	"collections": [
+		{
+			"id": "7d476dc7-5c2a-418b-b150-8b07cad20b43",
+			"title": "raw",
+			"can_read": true,
+			"can_write": true,
+			"description": "new cyber threat intelligence awaiting review",
+			"alias": "raw"
+		},
+		{
+			"id": "94859b8c-6795-40e5-9f8c-70433e40ad19",
+			"title": "vetted",
+			"can_read": true,
+			"can_write": true,
+			"description": "verified / validated cyber threat intelligence",
+			"alias": "vetted"
+		},
+		{
+			"id": "70a3f354-63e7-4ad8-965d-5d4c6be243be",
+			"title": "production",
+			"can_read": true,
+			"can_write": true,
+			"description": "cyber threat intelligence shared with Analyst1",
+			"alias": "production"
+		},
+		{
+			"id": "f2107501-b441-4add-8935-dff122a73acb",
+			"title": "MITRE ATT&CK Enterprise Attack",
+			"can_read": true,
+			"can_write": true,
+			"description": "test data taken from MITRE ATT&CK framework",
+			"alias": "mitre-attack"
+		}
+	],
+	"fragments": [
+		{
+			"fragment": "Send2A1",
+			"apiRoot": {
+				"title": "Send2A1",
+				"versions": [
+					"application/taxii+json;version=2.0",
+					"application/taxii+json;version=2.1"
+				],
+				"max_content_length": 524288,
+				"description": "cyber threat intelligence workflow collections for Analyst1"
+			},
+			"rws": [
+				{
+					"cId": "f2107501-b441-4add-8935-dff122a73acb",
+					"lenients": [
+						"DONT_CHECK_CUSTOM_OBJECTS",
+						"DONT_CHECK_CUSTOM_PROPERTIES"
+					],
+					"readers": [
+						"imx-user"
+					],
+					"writers": [
+						"imx-admin"
+					]
+				},
+				{
+					"cId": "7d476dc7-5c2a-418b-b150-8b07cad20b43",
+					"readers": [
+						"imx-user"
+					],
+					"writers": [
+						"imx-user"
+					]
+				},
+				{
+					"cId": "94859b8c-6795-40e5-9f8c-70433e40ad19",
+					"readers": [
+						"imx-user"
+					],
+					"writers": [
+						"imx-user"
+					]
+				},
+				{
+					"cId": "70a3f354-63e7-4ad8-965d-5d4c6be243be",
+					"readers": [
+						"imx-user"
+					],
+					"writers": [
+						"imx-user"
+					]
+				}
+			]
+		}
+	]
+}

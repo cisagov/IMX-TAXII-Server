@@ -1,0 +1,106 @@
+# Copyright 2026 Cybersecurity and Infrastructure Security Agency (CISA)
+#
+# This software is released to the public domain under 17 U.S.C. § 105.
+# The Apache 2.0 license applies to the extent permitted by applicable law,
+# and for the benefit of international users.
+name: taxii
+services:
+
+  opensearch:
+    container_name: opensearch-taxii
+    image: opensearchproject/opensearch:3.7.0
+    restart: unless-stopped
+    mem_limit: 2g
+    networks:
+      - taxii-server
+    environment:
+      - OPENSEARCH_INITIAL_ADMIN_PASSWORD=${OPENSEARCH_PASSWORD}
+      - DISABLE_INSTALL_DEMO_CONFIG=true
+      - discovery.type=single-node
+      - path.repo=/opt/snapshots
+      - plugins.security.disabled=true
+    volumes:
+      - taxii-data-os:/usr/share/opensearch/data
+      - ./snapshots:/opt/snapshots
+    healthcheck:
+      test: ["CMD", "curl", "--user", "admin:${OPENSEARCH_PASSWORD}", "http://localhost:9200"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+
+  stix2-validator:
+    container_name: stix2-validator
+    build:
+      context: ./stix2-validator
+      dockerfile: Dockerfile
+    restart: always
+    env_file: .env
+    networks:
+      - taxii-server
+    volumes:
+      - schema:${SCHEMA_DIR}
+
+# GITHUB_TOKEN is needed to enable collection mirrors.
+  server:
+    container_name: taxii-server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      opensearch:
+        condition: service_healthy
+    env_file: .env
+    networks:
+      - taxii-server
+    volumes:
+      - gitrepos:/opt/repos
+      - taxiiIO:/opt/io
+      - taxiiBootstrap:/opt/bootstrap
+      - schema:${SCHEMA_DIR}
+      - ./keystore:/opt/keystore:ro
+    ports:
+      - "${TAXII_EXPOSED_PORT}:${TAXII_PORT}"
+    command:
+      - "--root"
+      - "test-root.json"
+#      - "--root"
+#      - "cti-stix-common-objects/root-collections.json"
+#      - "--mirror"
+#      - "cti-stix-common-objects/essentials.json"
+#      - "--root"
+#      - "oca-iob/root-collections.json"
+#      - "--mirror"
+#      - "oca-iob/essentials.json"
+#      - "--mirror"
+#      - "oca-iob/schemas.json"
+#      - "--root"
+#      - "mitre-attack/root-collections.json"
+#      - "--mirror"
+#      - "mitre-attack/essentials.json"
+#      - "--root"
+#      - "malware-behavior-catalog/root-collections.json"
+#      - "--mirror"
+#      - "malware-behavior-catalog/essentials.json"
+      - "--schema"
+      - "infos/cti-stix-common-objects.json"
+      - "--schema"
+      - "infos/oca-iob.json"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+volumes:
+  taxii-data-os:
+    driver: local
+  schema:
+    driver: local
+  gitrepos:
+    driver: local
+  taxiiIO:
+    driver: local
+  taxiiBootstrap:
+    driver: local
+
+networks:
+  taxii-server:
+    name: taxii-server

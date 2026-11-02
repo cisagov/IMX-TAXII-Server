@@ -1,0 +1,108 @@
+{
+	"$schema": "http://json-schema.org/draft/2020-12/schema#",
+	"title": "raster-image-ext",
+	"type": "object",
+	"description": "The Raster Image file extension specifies a default extension for capturing properties specific to image files.",
+	"allOf": [
+		{
+			"properties": {
+				"image_height": {
+					"type": "integer",
+					"description": "Specifies the height of the image in the image file, in pixels."
+				},
+				"image_width": {
+					"type": "integer",
+					"description": "Specifies the width of the image in the image file, in pixels."
+				},
+				"bits_per_pixel": {
+					"type": "integer",
+					"description": "Specifies the sum of bits used for each color channel in the image in the image file, and thus the total number of pixels used for expressing the color depth of the image."
+				},
+				"exif_tags": {
+					"allOf": [
+						{
+							"$ref": "#/definitions/dictionary"
+						}
+					],
+					"description": "Specifies the set of EXIF tags found in the image file, as a dictionary. Each key/value pair in the dictionary represents the name/value of a single EXIF tag.",
+					"patternProperties": {
+						"^[A-Z][a-zA-Z0-9_-]+$": {
+							"oneOf": [
+								{
+									"type": "string"
+								},
+								{
+									"type": "integer"
+								}
+							]
+						}
+					},
+					"additionalProperties": false
+				}
+			}
+		},
+		{
+			"anyOf": [
+				{
+					"required": [
+						"image_height"
+					]
+				},
+				{
+					"required": [
+						"image_width"
+					]
+				},
+				{
+					"required": [
+						"bits_per_pixel"
+					]
+				},
+				{
+					"required": [
+						"image_compression_algorithm"
+					]
+				},
+				{
+					"required": [
+						"exif_tags"
+					]
+				}
+			]
+		}
+	],
+	"definitions": {
+		"dictionary": {
+			"title": "dictionary",
+			"description": "A dictionary captures a set of key/value pairs",
+			"type": "object",
+			"minProperties": 1,
+			"patternProperties": {
+				"^[a-zA-Z0-9_-]{0,250}$": {
+					"anyOf": [
+						{
+							"type": "array",
+							"minItems": 1
+						},
+						{
+							"type": "string"
+						},
+						{
+							"type": "integer"
+						},
+						{
+							"type": "boolean"
+						},
+						{
+							"type": "number"
+						},
+						{
+							"type": "object"
+						}
+					]
+				}
+			},
+			"additionalProperties": false
+		}
+	}
+}

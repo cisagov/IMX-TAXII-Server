@@ -1,0 +1,42 @@
+{
+	"collections": [
+		{
+			"id": "1d184030-460e-4bbe-9dbb-c220c245483a",
+			"title": "test",
+			"can_read": true,
+			"can_write": true,
+			"description": "Testing collection",
+			"alias": "test",
+			"media_types": [
+				"application/stix+json"
+			]
+		}
+	],
+	"fragments": [
+		{
+			"fragment": "test-root",
+			"apiRoot": {
+				"title": "test-root",
+				"versions": [
+					"application/taxii+json;version=2.0",
+					"application/taxii+json;version=2.1"
+				],
+				"max_content_length": 4194304,
+				"description": "API root for testing"
+			},
+			"rws": [
+				{
+					"cId": "1d184030-460e-4bbe-9dbb-c220c245483a",
+					"readers": [
+						"imx-admin",
+						"imx-user"
+					],
+					"writers": [
+						"imx-admin",
+						"imx-user"
+					]
+				}
+			]
+		}
+	]
+}

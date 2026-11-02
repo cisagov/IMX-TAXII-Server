@@ -1,0 +1,3916 @@
+{
+    "type": "bundle",
+    "id": "bundle--c9534357-5df9-4f00-b721-dd97a7c451f8",
+    "objects": [
+        {
+            "type": "grouping",
+            "spec_version": "2.1",
+            "id": "grouping--e1079077-1f34-489f-b096-5c5937b7ab10",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2022-12-15T00:18:27.984543Z",
+            "modified": "2023-09-03T09:38:27.481028Z",
+            "context": "malware-analysis",
+            "object_refs": [
+                "campaign--7def54c3-88dd-469e-b43d-8412dba0fd4e"
+            ],
+            "object_marking_refs": [
+                "marking-definition--c5d120ff-666d-4988-bbfd-fa1e11bf568a"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--c5d120ff-666d-4988-bbfd-fa1e11bf568a",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2022-10-05T21:05:02.046936Z",
+            "definition_type": "statement",
+            "name": "government",
+            "definition": {
+                "statement": "Doctor human station image local word. Hand just truth. About step military science. Bring third leader six scientist."
+            }
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--eb9dff0c-932f-415b-94ac-fce35f5e0aad",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-11-08T15:39:19.075087Z",
+            "modified": "2022-09-04T01:29:33.29885Z",
+            "name": "Garcia and Sons",
+            "identity_class": "unknown",
+            "sectors": [
+                "healthcare",
+                "manufacturing",
+                "entertainment"
+            ],
+            "confidence": 24,
+            "lang": "en",
+            "external_references": [
+                {
+                    "source_name": "purpose",
+                    "description": "Republican task into inside."
+                },
+                {
+                    "source_name": "institution",
+                    "url": "https://www.cook.com/",
+                    "external_id": "QfQFgykNyRrZfURh"
+                },
+                {
+                    "source_name": "imagine",
+                    "description": "Beyond room answer few pattern dark bad.",
+                    "url": "https://bryant.com/",
+                    "hashes": {
+                        "MD5": "c02a2040032475ce092431fc90d33033",
+                        "SHA-1": "03673e6517ddc5c3fc688e3743153c7d963ed3d4",
+                        "SHA-256": "07221d30b97338b47ffb7009eb56264c35131aa941757bb27dd45a6125d451c0",
+                        "SHA3-512": "6e78709f94c8783f8b7379f46da268f5c08e7ce8f727d654eb7df8ef9a62ce9ac0bf4163ac1397ba952612158da77c4d2364fa3abea8aa33f02c752fedf52011"
+                    },
+                    "external_id": "phetBuTHnQuphKJDEqu"
+                },
+                {
+                    "source_name": "position",
+                    "description": "Similar hair perhaps simply.",
+                    "url": "https://www.sanchez-henry.com/",
+                    "hashes": {
+                        "MD5": "44a155bb445a4688187f837077a62645",
+                        "SHA-256": "1f4564cdde1ac0afb5c696e15703ab9f0f9ce8bfed0f5770e81eeaa1f57e8222",
+                        "SHA-512": "c76e440144dec5e463d97704527812587a6ec607b71f757f236064c64675c514777e6ac9d3a423c5d148ca740e8f92379624eb23a07823001a0454824698e4a3",
+                        "SHA3-256": "ec5f6d31151bb897cafc183bfb1fe33a9740a917aa4f01371fdc8ebdecbd749d",
+                        "SHA3-512": "4a7533c7eaad4d49c27cdffc574635c6ac9daacce3a327a28201136be5f022d27a4ed3a8adc8f34e0661d0dd752d0f7e3fbc701edfd688f6a3c8915e7a67c834"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--eb9dff0c-932f-415b-94ac-fce35f5e0aad",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-11-08T15:39:19.075087Z",
+            "modified": "2022-09-04T02:19:40.83485Z",
+            "name": "Garcia and Sons",
+            "identity_class": "unknown",
+            "sectors": [
+                "healthcare",
+                "manufacturing",
+                "entertainment"
+            ],
+            "confidence": 24,
+            "lang": "en",
+            "external_references": [
+                {
+                    "source_name": "purpose",
+                    "description": "Republican task into inside."
+                },
+                {
+                    "source_name": "institution",
+                    "url": "https://www.cook.com/",
+                    "external_id": "QfQFgykNyRrZfURh"
+                },
+                {
+                    "source_name": "imagine",
+                    "description": "Beyond room answer few pattern dark bad.",
+                    "url": "https://bryant.com/",
+                    "hashes": {
+                        "MD5": "c02a2040032475ce092431fc90d33033",
+                        "SHA-1": "03673e6517ddc5c3fc688e3743153c7d963ed3d4",
+                        "SHA-256": "07221d30b97338b47ffb7009eb56264c35131aa941757bb27dd45a6125d451c0",
+                        "SHA3-512": "6e78709f94c8783f8b7379f46da268f5c08e7ce8f727d654eb7df8ef9a62ce9ac0bf4163ac1397ba952612158da77c4d2364fa3abea8aa33f02c752fedf52011"
+                    },
+                    "external_id": "phetBuTHnQuphKJDEqu"
+                },
+                {
+                    "source_name": "position",
+                    "description": "Similar hair perhaps simply.",
+                    "url": "https://www.sanchez-henry.com/",
+                    "hashes": {
+                        "MD5": "44a155bb445a4688187f837077a62645",
+                        "SHA-256": "1f4564cdde1ac0afb5c696e15703ab9f0f9ce8bfed0f5770e81eeaa1f57e8222",
+                        "SHA-512": "c76e440144dec5e463d97704527812587a6ec607b71f757f236064c64675c514777e6ac9d3a423c5d148ca740e8f92379624eb23a07823001a0454824698e4a3",
+                        "SHA3-256": "ec5f6d31151bb897cafc183bfb1fe33a9740a917aa4f01371fdc8ebdecbd749d",
+                        "SHA3-512": "4a7533c7eaad4d49c27cdffc574635c6ac9daacce3a327a28201136be5f022d27a4ed3a8adc8f34e0661d0dd752d0f7e3fbc701edfd688f6a3c8915e7a67c834"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--eb9dff0c-932f-415b-94ac-fce35f5e0aad",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-11-08T15:39:19.075087Z",
+            "modified": "2022-09-04T02:19:40.834851Z",
+            "name": "Garcia and Sons",
+            "identity_class": "unknown",
+            "sectors": [
+                "healthcare",
+                "manufacturing",
+                "entertainment"
+            ],
+            "confidence": 24,
+            "lang": "en",
+            "external_references": [
+                {
+                    "source_name": "purpose",
+                    "description": "Republican task into inside."
+                },
+                {
+                    "source_name": "institution",
+                    "url": "https://www.cook.com/",
+                    "external_id": "QfQFgykNyRrZfURh"
+                },
+                {
+                    "source_name": "imagine",
+                    "description": "Beyond room answer few pattern dark bad.",
+                    "url": "https://bryant.com/",
+                    "hashes": {
+                        "MD5": "c02a2040032475ce092431fc90d33033",
+                        "SHA-1": "03673e6517ddc5c3fc688e3743153c7d963ed3d4",
+                        "SHA-256": "07221d30b97338b47ffb7009eb56264c35131aa941757bb27dd45a6125d451c0",
+                        "SHA3-512": "6e78709f94c8783f8b7379f46da268f5c08e7ce8f727d654eb7df8ef9a62ce9ac0bf4163ac1397ba952612158da77c4d2364fa3abea8aa33f02c752fedf52011"
+                    },
+                    "external_id": "phetBuTHnQuphKJDEqu"
+                },
+                {
+                    "source_name": "position",
+                    "description": "Similar hair perhaps simply.",
+                    "url": "https://www.sanchez-henry.com/",
+                    "hashes": {
+                        "MD5": "44a155bb445a4688187f837077a62645",
+                        "SHA-256": "1f4564cdde1ac0afb5c696e15703ab9f0f9ce8bfed0f5770e81eeaa1f57e8222",
+                        "SHA-512": "c76e440144dec5e463d97704527812587a6ec607b71f757f236064c64675c514777e6ac9d3a423c5d148ca740e8f92379624eb23a07823001a0454824698e4a3",
+                        "SHA3-256": "ec5f6d31151bb897cafc183bfb1fe33a9740a917aa4f01371fdc8ebdecbd749d",
+                        "SHA3-512": "4a7533c7eaad4d49c27cdffc574635c6ac9daacce3a327a28201136be5f022d27a4ed3a8adc8f34e0661d0dd752d0f7e3fbc701edfd688f6a3c8915e7a67c834"
+                    }
+                }
+            ],
+            "x_eae683c1_d472_4708_bd63_f9b1a1f016b1_foo": [
+                "line",
+                "medical",
+                "some"
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--eb9dff0c-932f-415b-94ac-fce35f5e0aad",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-11-08T15:39:19.075087Z",
+            "modified": "2022-09-04T02:19:40.834852Z",
+            "name": "Garcia and Sons",
+            "identity_class": "unknown",
+            "sectors": [
+                "healthcare",
+                "manufacturing",
+                "entertainment"
+            ],
+            "confidence": 24,
+            "lang": "en",
+            "external_references": [
+                {
+                    "source_name": "purpose",
+                    "description": "Republican task into inside."
+                },
+                {
+                    "source_name": "institution",
+                    "url": "https://www.cook.com/",
+                    "external_id": "QfQFgykNyRrZfURh"
+                },
+                {
+                    "source_name": "imagine",
+                    "description": "Beyond room answer few pattern dark bad.",
+                    "url": "https://bryant.com/",
+                    "hashes": {
+                        "MD5": "c02a2040032475ce092431fc90d33033",
+                        "SHA-1": "03673e6517ddc5c3fc688e3743153c7d963ed3d4",
+                        "SHA-256": "07221d30b97338b47ffb7009eb56264c35131aa941757bb27dd45a6125d451c0",
+                        "SHA3-512": "6e78709f94c8783f8b7379f46da268f5c08e7ce8f727d654eb7df8ef9a62ce9ac0bf4163ac1397ba952612158da77c4d2364fa3abea8aa33f02c752fedf52011"
+                    },
+                    "external_id": "phetBuTHnQuphKJDEqu"
+                },
+                {
+                    "source_name": "position",
+                    "description": "Similar hair perhaps simply.",
+                    "url": "https://www.sanchez-henry.com/",
+                    "hashes": {
+                        "MD5": "44a155bb445a4688187f837077a62645",
+                        "SHA-256": "1f4564cdde1ac0afb5c696e15703ab9f0f9ce8bfed0f5770e81eeaa1f57e8222",
+                        "SHA-512": "c76e440144dec5e463d97704527812587a6ec607b71f757f236064c64675c514777e6ac9d3a423c5d148ca740e8f92379624eb23a07823001a0454824698e4a3",
+                        "SHA3-256": "ec5f6d31151bb897cafc183bfb1fe33a9740a917aa4f01371fdc8ebdecbd749d",
+                        "SHA3-512": "4a7533c7eaad4d49c27cdffc574635c6ac9daacce3a327a28201136be5f022d27a4ed3a8adc8f34e0661d0dd752d0f7e3fbc701edfd688f6a3c8915e7a67c834"
+                    }
+                }
+            ],
+            "x_eae683c1_d472_4708_bd63_f9b1a1f016b1_foo": [
+                "box",
+                "fact",
+                "bill"
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--eb9dff0c-932f-415b-94ac-fce35f5e0aad",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-11-08T15:39:19.075087Z",
+            "modified": "2022-09-04T02:19:40.834853Z",
+            "name": "Garcia and Sons",
+            "identity_class": "unknown",
+            "sectors": [
+                "healthcare",
+                "manufacturing",
+                "entertainment"
+            ],
+            "confidence": 24,
+            "lang": "en",
+            "external_references": [
+                {
+                    "source_name": "purpose",
+                    "description": "Republican task into inside."
+                },
+                {
+                    "source_name": "institution",
+                    "url": "https://www.cook.com/",
+                    "external_id": "QfQFgykNyRrZfURh"
+                },
+                {
+                    "source_name": "imagine",
+                    "description": "Beyond room answer few pattern dark bad.",
+                    "url": "https://bryant.com/",
+                    "hashes": {
+                        "MD5": "c02a2040032475ce092431fc90d33033",
+                        "SHA-1": "03673e6517ddc5c3fc688e3743153c7d963ed3d4",
+                        "SHA-256": "07221d30b97338b47ffb7009eb56264c35131aa941757bb27dd45a6125d451c0",
+                        "SHA3-512": "6e78709f94c8783f8b7379f46da268f5c08e7ce8f727d654eb7df8ef9a62ce9ac0bf4163ac1397ba952612158da77c4d2364fa3abea8aa33f02c752fedf52011"
+                    },
+                    "external_id": "phetBuTHnQuphKJDEqu"
+                },
+                {
+                    "source_name": "position",
+                    "description": "Similar hair perhaps simply.",
+                    "url": "https://www.sanchez-henry.com/",
+                    "hashes": {
+                        "MD5": "44a155bb445a4688187f837077a62645",
+                        "SHA-256": "1f4564cdde1ac0afb5c696e15703ab9f0f9ce8bfed0f5770e81eeaa1f57e8222",
+                        "SHA-512": "c76e440144dec5e463d97704527812587a6ec607b71f757f236064c64675c514777e6ac9d3a423c5d148ca740e8f92379624eb23a07823001a0454824698e4a3",
+                        "SHA3-256": "ec5f6d31151bb897cafc183bfb1fe33a9740a917aa4f01371fdc8ebdecbd749d",
+                        "SHA3-512": "4a7533c7eaad4d49c27cdffc574635c6ac9daacce3a327a28201136be5f022d27a4ed3a8adc8f34e0661d0dd752d0f7e3fbc701edfd688f6a3c8915e7a67c834"
+                    }
+                }
+            ],
+            "x_eae683c1_d472_4708_bd63_f9b1a1f016b1_foo": [
+                "various",
+                "evening",
+                "arm"
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--a930c539-082f-424a-a6d5-815a96904ce0",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2022-11-26T20:29:16.217549Z",
+            "modified": "2023-09-07T14:33:41.14921Z",
+            "name": "Jones Ltd",
+            "roles": [
+                "PM",
+                "huge",
+                "population"
+            ],
+            "contact_information": "5092 Vaughn Cliff\nHicksshire, NC 55190",
+            "labels": [
+                "store",
+                "measure"
+            ],
+            "lang": "en",
+            "object_marking_refs": [
+                "marking-definition--1e2bd20c-6a2e-455e-87b8-647ab4ed77f1"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--1e2bd20c-6a2e-455e-87b8-647ab4ed77f1",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-06-29T08:40:44.942775Z",
+            "definition_type": "statement",
+            "name": "right",
+            "definition": {
+                "statement": "Trip experience back. Majority whom final thus edge exist. Miss run me inside important care third hour. Economic side quite maybe tax serious."
+            }
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--3ac18fd8-faf6-4861-92d8-8cb68b1ea94d",
+            "created": "2023-04-30T12:50:28.808513Z",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "modified": "2024-04-26T19:03:48.281977Z",
+            "name": "Porter-Vance",
+            "description": "Open-architected even-keeled service-desk",
+            "roles": [
+                "trip",
+                "north"
+            ],
+            "identity_class": "group",
+            "labels": [
+                "cause",
+                "require",
+                "energy",
+                "nearly"
+            ],
+            "confidence": 73
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--f9748877-7ad4-4b56-9c57-1d8e792395f4",
+            "created": "2022-12-13T09:52:47.804934Z",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "modified": "2023-04-13T15:23:37.573181Z",
+            "name": "May Ltd",
+            "description": "Programmable asynchronous info-mediaries",
+            "roles": [
+                "budget"
+            ],
+            "contact_information": "85689 Richardson Islands Apt. 739\nWest Williamton, NY 12413",
+            "labels": [
+                "police",
+                "certain",
+                "discuss"
+            ],
+            "confidence": 78
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--f9748877-7ad4-4b56-9c57-1d8e792395f4",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2022-12-13T09:52:47.804934Z",
+            "modified": "2023-04-13T16:04:00.334181Z",
+            "name": "May Ltd",
+            "description": "Programmable asynchronous info-mediaries",
+            "roles": [
+                "budget"
+            ],
+            "contact_information": "85689 Richardson Islands Apt. 739\nWest Williamton, NY 12413",
+            "labels": [
+                "police",
+                "certain",
+                "discuss"
+            ],
+            "confidence": 78
+        },
+        {
+            "type": "campaign",
+            "spec_version": "2.1",
+            "id": "campaign--7def54c3-88dd-469e-b43d-8412dba0fd4e",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-09-02T19:57:47.897095Z",
+            "modified": "2022-05-03T22:31:49.885863Z",
+            "name": "institution",
+            "description": "True nice family admit different.",
+            "last_seen": "2022-11-25T04:56:17.457591Z",
+            "objective": "Base explain pass quickly.",
+            "labels": [
+                "several",
+                "simple",
+                "tough",
+                "career",
+                "tax"
+            ],
+            "lang": "en",
+            "external_references": [
+                {
+                    "source_name": "movement",
+                    "description": "Find moment keep moment home few music toward.",
+                    "hashes": {
+                        "MD5": "b5c1a571c60f2e83e0d04b7da7d2d395",
+                        "SHA-1": "90883f18e45dbcab66b03c822be7f5849cc03f87",
+                        "SHA-256": "f440b997c6456cf435c8728c01c7d0553a9a832cf7efd08d9d00cbae25d8ed91"
+                    }
+                },
+                {
+                    "source_name": "same",
+                    "description": "Current name worker result.",
+                    "url": "http://www.gallagher.com/"
+                },
+                {
+                    "source_name": "specific",
+                    "description": "Explain seek arm specific.",
+                    "url": "https://www.allen-schneider.com/",
+                    "hashes": {
+                        "MD5": "6353c33ec962297aa812045d2d194a35",
+                        "SHA-1": "4e7ee39a33a7f41c295a3d4477c4ef214905deec",
+                        "SHA-512": "a31d4f7634dd42d5406206ecebfa8eb7fc520695104e23385d09dcc45d0a8d6d351dbadeb69ead2ce260c95ca0c91b921e931371dc8a4165743297c8915b8b66",
+                        "SHA3-256": "697f72ef6033471aadf9e14f8a8ffd50fb02492c36979c99690006b4c7a31d11",
+                        "SHA3-512": "ad8035212f97a2ab8e114c28a664fcd08fb7c200ceb4cd66ab665f329d779e44b2e9c45615247924a44663e0e5dca67e6f05126ffbc81f280e9445d0f9d6f4e3"
+                    }
+                },
+                {
+                    "source_name": "loss",
+                    "url": "https://campbell.net/",
+                    "external_id": "OyvPGnocDhbHDYlKy"
+                }
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--367d38d8-8558-4eb1-9f29-bef7ce952df6",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2022-08-17T04:31:00.935624Z",
+            "modified": "2022-08-27T02:40:36.759799Z",
+            "name": "Lee PLC",
+            "roles": [
+                "on",
+                "impact",
+                "art",
+                "upon",
+                "agreement"
+            ],
+            "external_references": [
+                {
+                    "source_name": "itself",
+                    "url": "http://briggs.org/",
+                    "hashes": {
+                        "SHA-1": "43d2ae5e271fb21952e99edcf0bcabf74c8d7c41",
+                        "SHA-256": "c09de644929360a59ce6ff28635b4455cafa00a191cf6b67697213213d5c0b33",
+                        "SHA-512": "e568a15c7a38db08dc72121862bf7d1e9e55afe29f0707d3c49a5df9f3546f15a9bc3b174e9930c67c2ad521f2a84c377851522b0c53d35746f48bc3bd31418b",
+                        "SHA3-256": "1139b6d795728288c77ff9ca41fbb154554d789baa3e98e0d683c822f534e358"
+                    },
+                    "external_id": "KBFNFun"
+                },
+                {
+                    "source_name": "ago",
+                    "description": "Financial yard property ever leave.",
+                    "url": "https://www.roth.org/",
+                    "external_id": "OGyrlkgDCsKTV"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--c5d120ff-666d-4988-bbfd-fa1e11bf568a"
+            ]
+        },
+        {
+            "type": "campaign",
+            "spec_version": "2.1",
+            "id": "campaign--fba36145-f3b8-4125-b83f-ab1bf21a7b4e",
+            "created": "2022-03-01T14:11:34.031683Z",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "modified": "2022-11-01T02:02:10.037493Z",
+            "name": "similar",
+            "description": "Health big interest scientist stock visit commercial forward.",
+            "first_seen": "2023-01-07T17:38:11.687942Z",
+            "lang": "en"
+        },
+        {
+            "type": "campaign",
+            "spec_version": "2.1",
+            "id": "campaign--fba36145-f3b8-4125-b83f-ab1bf21a7b4e",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2022-03-01T14:11:34.031683Z",
+            "modified": "2022-11-01T02:51:31.226493Z",
+            "name": "similar",
+            "description": "Health big interest scientist stock visit commercial forward.",
+            "first_seen": "2023-01-07T17:38:11.687942Z",
+            "lang": "en"
+        },
+        {
+            "type": "campaign",
+            "spec_version": "2.1",
+            "id": "campaign--fba36145-f3b8-4125-b83f-ab1bf21a7b4e",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2022-03-01T14:11:34.031683Z",
+            "modified": "2022-11-01T04:07:02.459493Z",
+            "name": "similar",
+            "description": "Health big interest scientist stock visit commercial forward.",
+            "first_seen": "2023-01-07T17:38:11.687942Z",
+            "lang": "en"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--7bb22c97-71c9-41bf-959f-275aecbcde52",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2022-04-17T13:17:15.075353Z",
+            "modified": "2022-11-29T03:39:43.476992Z",
+            "relationship_type": "targets",
+            "description": "Career still color. Camera range group economic. Maintain first least PM produce evening.",
+            "source_ref": "campaign--fba36145-f3b8-4125-b83f-ab1bf21a7b4e",
+            "target_ref": "identity--3ac18fd8-faf6-4861-92d8-8cb68b1ea94d",
+            "confidence": 91,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:WHITE",
+            "definition": {
+                "tlp": "white"
+            }
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--b4b84720-28ed-451d-a8dc-40d2ca259fb1",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-11-24T03:31:07.335461Z",
+            "modified": "2022-01-15T19:09:36.735436Z",
+            "name": "Benjamin-Chung",
+            "roles": [
+                "beat"
+            ],
+            "identity_class": "individual",
+            "sectors": [
+                "defense",
+                "government-regional",
+                "pharmaceuticals",
+                "non-profit",
+                "utilities"
+            ],
+            "lang": "en",
+            "external_references": [
+                {
+                    "source_name": "education",
+                    "description": "Back recently clear on level.",
+                    "external_id": "BgiKQoD"
+                },
+                {
+                    "source_name": "garden",
+                    "url": "http://bailey.org/",
+                    "hashes": {
+                        "MD5": "b46f9ef08e3c20e4f2ecdec1f35c8844",
+                        "SHA3-256": "8441ff4c2ed6b1c6a3f89117a25da5ea267ede57ca6397c0104ac94061368001",
+                        "SHA3-512": "d5fb896b3ceeb9382ebde6d25296e2f955bd0f91956544b294db0cfac9f9c59c9686619a7228a15983f74e811a96bccfa145c6c77b6a5be8b61ac1713bf0681e"
+                    }
+                },
+                {
+                    "source_name": "music",
+                    "description": "Soon road analysis Mrs modern perhaps vote half.",
+                    "url": "http://mueller-tucker.com/",
+                    "external_id": "lqZVDoMxtMNU"
+                },
+                {
+                    "source_name": "those",
+                    "url": "https://www.collins.net/",
+                    "hashes": {
+                        "MD5": "a4c1562a68258f4d621b0c83b253357d",
+                        "SHA-256": "0a15e223093f7827d01964ace7a02232d4bf574c8d2e39212494106a1d33dfb5",
+                        "SHA-512": "af204aa3a4347ca343c6f478a12bdc92c8fb634ab9523b775bf3feb5f90cfa56fb3e0f5f122392f24ba0a727acb3acceb788468f26b570e5e2f815400418cb0c",
+                        "SHA3-256": "374d235311f559270bd748a09d0d43c4a229574e21cd06045835778cd7869ee5"
+                    },
+                    "external_id": "KOOboO"
+                },
+                {
+                    "source_name": "activity",
+                    "description": "It here address boy decision.",
+                    "url": "https://www.stanley.com/",
+                    "external_id": "wqUMyFCfnzlhdXgyie"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--b4b84720-28ed-451d-a8dc-40d2ca259fb1",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-11-24T03:31:07.335461Z",
+            "modified": "2022-06-16T05:28:52.693799Z",
+            "name": "Benjamin-Chung",
+            "roles": [
+                "beat"
+            ],
+            "identity_class": "individual",
+            "sectors": [
+                "defense",
+                "government-regional",
+                "pharmaceuticals",
+                "non-profit",
+                "utilities"
+            ],
+            "lang": "en",
+            "external_references": [
+                {
+                    "source_name": "education",
+                    "description": "Back recently clear on level.",
+                    "external_id": "BgiKQoD"
+                },
+                {
+                    "source_name": "garden",
+                    "url": "http://bailey.org/",
+                    "hashes": {
+                        "MD5": "b46f9ef08e3c20e4f2ecdec1f35c8844",
+                        "SHA3-256": "8441ff4c2ed6b1c6a3f89117a25da5ea267ede57ca6397c0104ac94061368001",
+                        "SHA3-512": "d5fb896b3ceeb9382ebde6d25296e2f955bd0f91956544b294db0cfac9f9c59c9686619a7228a15983f74e811a96bccfa145c6c77b6a5be8b61ac1713bf0681e"
+                    }
+                },
+                {
+                    "source_name": "music",
+                    "description": "Soon road analysis Mrs modern perhaps vote half.",
+                    "url": "http://mueller-tucker.com/",
+                    "external_id": "lqZVDoMxtMNU"
+                },
+                {
+                    "source_name": "those",
+                    "url": "https://www.collins.net/",
+                    "hashes": {
+                        "MD5": "a4c1562a68258f4d621b0c83b253357d",
+                        "SHA-256": "0a15e223093f7827d01964ace7a02232d4bf574c8d2e39212494106a1d33dfb5",
+                        "SHA-512": "af204aa3a4347ca343c6f478a12bdc92c8fb634ab9523b775bf3feb5f90cfa56fb3e0f5f122392f24ba0a727acb3acceb788468f26b570e5e2f815400418cb0c",
+                        "SHA3-256": "374d235311f559270bd748a09d0d43c4a229574e21cd06045835778cd7869ee5"
+                    },
+                    "external_id": "KOOboO"
+                },
+                {
+                    "source_name": "activity",
+                    "description": "It here address boy decision.",
+                    "url": "https://www.stanley.com/",
+                    "external_id": "wqUMyFCfnzlhdXgyie"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+            ],
+            "x_eae683c1_d472_4708_bd63_f9b1a1f016b1_foo": [
+                "identify",
+                "meeting",
+                "partner"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:AMBER",
+            "definition": {
+                "tlp": "amber"
+            }
+        },
+        {
+            "type": "marking-definition",
+            "id": "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "definition": {
+                "tlp": "amber"
+            }
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--5e8d5863-a478-4fac-a271-931bc7d78940",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2023-03-28T22:00:45.924179Z",
+            "modified": "2023-03-30T08:14:32.42274Z",
+            "name": "Meyers-Lee",
+            "contact_information": "USS Anderson\nFPO AA 74376",
+            "labels": [
+                "similar",
+                "vote"
+            ],
+            "confidence": 6,
+            "external_references": [
+                {
+                    "source_name": "measure",
+                    "description": "Fine number which garden although politics.",
+                    "url": "https://martinez.biz/",
+                    "hashes": {
+                        "MD5": "dc12d2d92d9a2b78dae7cb29d03c8056"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b09b9e8d-2c5c-4154-8bcd-6a76dc16015f",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2023-04-09T20:17:02.791834Z",
+            "modified": "2023-12-18T09:55:03.415758Z",
+            "relationship_type": "duplicate-of",
+            "description": "Myself democratic whole no dream we view. Quite attorney language oil program charge heavy.",
+            "source_ref": "identity--367d38d8-8558-4eb1-9f29-bef7ce952df6",
+            "target_ref": "identity--5e8d5863-a478-4fac-a271-931bc7d78940",
+            "start_time": "2022-01-24T22:50:06.852489Z",
+            "lang": "en",
+            "external_references": [
+                {
+                    "source_name": "draw",
+                    "external_id": "rtzCV"
+                },
+                {
+                    "source_name": "game",
+                    "description": "Product ever pull if police city.",
+                    "hashes": {
+                        "MD5": "953046dd2a933da6cda9b6041e99af43",
+                        "SHA-1": "21f5f503783c97e2ad6e608392baca2facacaa5b",
+                        "SHA-256": "54774541e2af2b07b6830539a618312999116c8aa535f15fe72414398c4fd8f2",
+                        "SHA-512": "c69fd30e45861d83686b14fbb87a64fc1c63915e01fe8d38ee093b71537f3931be37b58eb8b06440d84fe5e134beb9561e2c9f753ae2fb709f7a4aeaba711749",
+                        "SHA3-256": "83e62a016de86d02eac0806a492fca1b4a8f81c008ac6f74c768337473eefdda"
+                    }
+                },
+                {
+                    "source_name": "drop",
+                    "description": "Camera a citizen.",
+                    "external_id": "dNOzAdr"
+                },
+                {
+                    "source_name": "toward",
+                    "hashes": {
+                        "MD5": "71438123db300cbfa495cb293d6d2725",
+                        "SHA-256": "7976190f811870c7b276c3d85fb2a1b2be719becd15eee9bdaaaa92f45a9c8be",
+                        "SHA-512": "7d404c9bb61887fbe101bfd8c519e515b04f4c64a8ff8d7320a2ea3c9f35d61fe4a3d6a27383fdc03606988fd247a7a1ab5b46f6bb201e7cc1067b9e64218478",
+                        "SHA3-512": "7f35299b7b6e8f3f0a08e8ad28ec6f4d4a935835d723ccc786e5815f9aaa16d0287bf7839c63f92d4132fda8ee4882a8292bcb408735dc80d20ab41c96a25fb6"
+                    },
+                    "external_id": "pyzMqcRNVGZDXcAj"
+                },
+                {
+                    "source_name": "event",
+                    "description": "Choose hour someone usually respond at area.",
+                    "external_id": "zXoszJYpRSBHd"
+                }
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--dbe2834a-8fa6-435c-a898-ad5bcdbebcf8",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2023-04-11T19:38:18.112082Z",
+            "modified": "2023-09-22T12:47:15.136271Z",
+            "name": "Moyer, Pace and Haley",
+            "sectors": [
+                "government",
+                "healthcare",
+                "financial-services",
+                "telecommunications",
+                "chemical"
+            ],
+            "confidence": 90,
+            "lang": "en",
+            "object_marking_refs": [
+                "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--dbe2834a-8fa6-435c-a898-ad5bcdbebcf8",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2023-04-11T19:38:18.112082Z",
+            "modified": "2023-09-22T13:34:21.017271Z",
+            "name": "Moyer, Pace and Haley",
+            "sectors": [
+                "government",
+                "healthcare",
+                "financial-services",
+                "telecommunications",
+                "chemical"
+            ],
+            "confidence": 90,
+            "lang": "en",
+            "object_marking_refs": [
+                "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--e8c0689b-9fe9-4cb5-bf1d-fdd2d6ff1a13",
+            "created": "2022-02-18T13:46:47.112468Z",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "modified": "2022-11-20T05:13:50.446364Z",
+            "name": "Reed, Robinson and Robles",
+            "description": "Multi-channeled attitude-oriented open system",
+            "roles": [
+                "whatever",
+                "travel"
+            ],
+            "sectors": [
+                "government-regional",
+                "commercial",
+                "healthcare",
+                "water",
+                "commercial"
+            ],
+            "contact_information": "56134 Villanueva Station\nSouth Marybury, IN 77502",
+            "labels": [
+                "surface",
+                "region",
+                "indicate",
+                "relationship"
+            ],
+            "confidence": 13,
+            "object_marking_refs": [
+                "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--e8c0689b-9fe9-4cb5-bf1d-fdd2d6ff1a13",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2022-02-18T13:46:47.112468Z",
+            "modified": "2022-11-20T07:22:19.113364Z",
+            "name": "Reed, Robinson and Robles",
+            "description": "Multi-channeled attitude-oriented open system",
+            "roles": [
+                "whatever",
+                "travel"
+            ],
+            "sectors": [
+                "government-regional",
+                "commercial",
+                "healthcare",
+                "water",
+                "commercial"
+            ],
+            "contact_information": "56134 Villanueva Station\nSouth Marybury, IN 77502",
+            "labels": [
+                "surface",
+                "region",
+                "indicate",
+                "relationship"
+            ],
+            "confidence": 13,
+            "object_marking_refs": [
+                "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+            ]
+        },
+        {
+            "type": "intrusion-set",
+            "spec_version": "2.1",
+            "id": "intrusion-set--b5a6a7e3-f66a-4995-9782-5b7541aa1b14",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2022-08-06T13:29:06.20082Z",
+            "modified": "2023-01-28T02:29:18.5323Z",
+            "name": "indicate",
+            "aliases": [
+                "risk",
+                "dinner",
+                "anyone",
+                "call"
+            ],
+            "resource_level": "club",
+            "primary_motivation": "accidental",
+            "labels": [
+                "fill",
+                "federal",
+                "more",
+                "exactly",
+                "single"
+            ],
+            "lang": "en",
+            "confidence": 20
+        },
+        {
+            "type": "intrusion-set",
+            "spec_version": "2.1",
+            "id": "intrusion-set--b5a6a7e3-f66a-4995-9782-5b7541aa1b14",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2022-08-06T13:29:06.20082Z",
+            "modified": "2023-01-28T02:29:18.532301Z",
+            "name": "indicate",
+            "aliases": [
+                "risk",
+                "dinner",
+                "anyone",
+                "call"
+            ],
+            "resource_level": "club",
+            "primary_motivation": "accidental",
+            "labels": [
+                "fill",
+                "federal",
+                "more",
+                "exactly",
+                "single"
+            ],
+            "lang": "en",
+            "confidence": 20,
+            "x_eae683c1_d472_4708_bd63_f9b1a1f016b1_foo": [
+                "whose",
+                "central",
+                "own"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--52593da2-d010-4728-a3f3-7631dd71bdc0",
+            "created": "2022-02-02T23:08:39.980236Z",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "modified": "2023-01-17T06:26:29.174441Z",
+            "relationship_type": "targets",
+            "description": "Course movie mean everything number. Focus against ok cut. Board manage idea gun political amount stand model.",
+            "source_ref": "intrusion-set--b5a6a7e3-f66a-4995-9782-5b7541aa1b14",
+            "target_ref": "identity--e8c0689b-9fe9-4cb5-bf1d-fdd2d6ff1a13",
+            "labels": [
+                "control",
+                "decade",
+                "sister"
+            ],
+            "confidence": 29,
+            "external_references": [
+                {
+                    "source_name": "bed",
+                    "description": "Idea discuss sister easy.",
+                    "hashes": {
+                        "SHA-1": "429c514412888213dafb37c6c507090528e6dff6",
+                        "SHA3-256": "df136c2132b7ac770fb3e812c52ff05b8f65f251cf3d30336ff9e82201cb3793",
+                        "SHA3-512": "3cc349d5f9bfe2d50693d4fd4c7fec4a35d2dd53c72ed0d5e6d56a6a9aa5679d270826889483718e39d6e1b0a274af5442e216318e572b9a9daa177786c43d64"
+                    }
+                },
+                {
+                    "source_name": "city",
+                    "description": "Air part maybe music test push.",
+                    "url": "https://www.fleming.biz/",
+                    "external_id": "ZqhBLTClogug"
+                },
+                {
+                    "source_name": "girl",
+                    "description": "While section country treat floor result.",
+                    "url": "http://nichols-wilson.org/",
+                    "hashes": {
+                        "MD5": "d579ad8dc7650ab9d046cb84d7b49d21",
+                        "SHA-256": "2f89265c476e49e5456759f56f19fae20de47b4bd8e4f4b87e3f1b37f6446ac7",
+                        "SHA-512": "f5bf1eded9fbb5bb5917b39f22d8c298da596835f36d352ebfffaeb68f3a3ad609839086b69172093b3d963c02998c2eeaef8c083e491095694c81132138fd35",
+                        "SHA3-512": "f852a7157710b306b74d4d7c67889bc1792bd08241e5517525eac433c90e08a80b3824266d52ff1572b9a48c75f3368b30b524f4d795902b71eba0c1e43397d9"
+                    }
+                },
+                {
+                    "source_name": "season",
+                    "url": "https://www.henderson.com/",
+                    "hashes": {
+                        "SHA-256": "dbac3701adeecdb4a659bfe9368958fdbc0ee43d3ca31d8be326d902271e3df5",
+                        "SHA-512": "1e9a8f5cb9209616071abc6cbaa037ca700f7984ec205d5bf58bd5918dbdaaab14851c6fadeae8e7065de8bfa736cb096cf21dca15f55b29af6119c739ace1ee",
+                        "SHA3-256": "baa5c9b605a9e21b09f4883de1a72eeb459a08bbb5cd1724ca0fe5e3c030726d"
+                    },
+                    "external_id": "pylelKH"
+                }
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--1df3ac3f-f4e1-4536-84dc-4151499abf5d",
+            "created": "2022-04-19T13:32:17.666561Z",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "modified": "2022-05-28T02:19:11.471725Z",
+            "name": "Robles-Brown",
+            "description": "Optional uniform customer loyalty",
+            "roles": [
+                "party"
+            ],
+            "sectors": [
+                "manufacturing",
+                "retail",
+                "construction"
+            ],
+            "contact_information": "35372 Patrick Stravenue\nLake Christopher, RI 82397",
+            "labels": [
+                "move",
+                "floor",
+                "public",
+                "as",
+                "radio"
+            ]
+        },
+        {
+            "type": "tool",
+            "spec_version": "2.1",
+            "id": "tool--dbe13d09-f769-4413-8748-b854a908fcd0",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-06-16T15:22:32.668488Z",
+            "modified": "2022-04-19T20:37:27.993218Z",
+            "name": "against",
+            "description": "Instead bad me middle.",
+            "tool_types": [
+                "credential-exploitation",
+                "network-capture",
+                "network-capture",
+                "information-gathering",
+                "unknown"
+            ],
+            "aliases": [
+                "all",
+                "imagine",
+                "structure",
+                "rule",
+                "better"
+            ],
+            "confidence": 52
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--7d5dcb70-d52e-4a52-a2f3-94e95d449a84",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2023-04-01T20:01:47.163711Z",
+            "modified": "2024-01-03T19:54:49.49911Z",
+            "relationship_type": "targets",
+            "description": "The coach decision new participant. Recent sister article idea base debate.",
+            "source_ref": "tool--dbe13d09-f769-4413-8748-b854a908fcd0",
+            "target_ref": "identity--dbe2834a-8fa6-435c-a898-ad5bcdbebcf8",
+            "start_time": "2021-07-11T11:59:39.138023Z",
+            "stop_time": "2021-07-31T02:34:43.287427Z",
+            "lang": "en",
+            "external_references": [
+                {
+                    "source_name": "stand",
+                    "hashes": {
+                        "MD5": "4ae5db1a4b107c5d8b068f6243767b71",
+                        "SHA-1": "5c362db5863efa327531c2950164c1755533a78c",
+                        "SHA3-256": "4abd04294ae80492bb8eb168c822de9530219e48bed37e42dc1ad7d354757b9c"
+                    },
+                    "external_id": "IwyMVVXUssoLkw"
+                }
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--42c8e6f2-80ea-4de2-9ba4-69e28bedcf08",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2023-01-20T05:45:46.001828Z",
+            "modified": "2023-07-14T08:31:42.397008Z",
+            "name": "Kelly-Gross",
+            "description": "Future-proofed national website",
+            "roles": [
+                "also",
+                "we",
+                "upon",
+                "serve"
+            ],
+            "sectors": [
+                "government-public-services",
+                "chemical",
+                "hospitality-leisure",
+                "government-national",
+                "energy"
+            ],
+            "contact_information": "8170 Kayla Roads\nWest Michelle, WV 52952",
+            "labels": [
+                "world"
+            ],
+            "confidence": 37,
+            "external_references": [
+                {
+                    "source_name": "myself",
+                    "description": "Somebody red whom capital town make.",
+                    "url": "http://hayes-herman.com/"
+                },
+                {
+                    "source_name": "rate",
+                    "description": "Reach student audience however talk assume must environmental.",
+                    "url": "https://hall.net/"
+                },
+                {
+                    "source_name": "theory",
+                    "description": "Fish option another tell feeling drop or.",
+                    "external_id": "lWlQQhMaetLfff"
+                }
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--a8bb8398-43ee-4440-82c7-6d766f2477e0",
+            "created": "2023-01-17T13:18:44.508613Z",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "modified": "2023-02-24T11:57:58.165525Z",
+            "name": "Mendoza-Smith",
+            "roles": [
+                "Democrat",
+                "themselves"
+            ],
+            "identity_class": "group",
+            "sectors": [
+                "hospitality-leisure",
+                "communications",
+                "government-local"
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--eceb801a-98ba-4bee-9ac3-1822d95a5d8e",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-10-13T19:41:38.591807Z",
+            "modified": "2021-11-06T17:24:26.293603Z",
+            "name": "Perry, Taylor and Rodriguez",
+            "roles": [
+                "cultural",
+                "hospital",
+                "over"
+            ],
+            "contact_information": "18292 Roman Trace\nLake Allison, FL 48329",
+            "labels": [
+                "happen",
+                "group",
+                "man",
+                "point"
+            ],
+            "confidence": 31,
+            "object_marking_refs": [
+                "marking-definition--f020deb0-14ee-4ce9-8d29-cd1ea10b0fdc"
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--eceb801a-98ba-4bee-9ac3-1822d95a5d8e",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-10-13T19:41:38.591807Z",
+            "modified": "2021-11-06T19:34:15.276603Z",
+            "name": "Perry, Taylor and Rodriguez",
+            "roles": [
+                "cultural",
+                "hospital",
+                "over"
+            ],
+            "contact_information": "18292 Roman Trace\nLake Allison, FL 48329",
+            "labels": [
+                "happen",
+                "group",
+                "man",
+                "point"
+            ],
+            "confidence": 31,
+            "object_marking_refs": [
+                "marking-definition--f020deb0-14ee-4ce9-8d29-cd1ea10b0fdc"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--f020deb0-14ee-4ce9-8d29-cd1ea10b0fdc",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2023-01-21T10:13:25.034775Z",
+            "definition_type": "statement",
+            "name": "affect",
+            "definition": {
+                "statement": "Act later beyond. Help pull employee lead letter account."
+            }
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--63b22215-3a24-451a-841d-94b1d17cbd8c",
+            "created": "2021-06-28T03:38:34.964459Z",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "modified": "2021-08-26T19:38:57.318184Z",
+            "name": "Lang-Ferrell",
+            "description": "Function-based neutral capability",
+            "contact_information": "8712 Catherine Lodge\nSouth Lynn, NC 78310",
+            "confidence": 69,
+            "lang": "en",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--63b22215-3a24-451a-841d-94b1d17cbd8c",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-06-28T03:38:34.964459Z",
+            "modified": "2022-06-16T05:28:52.687121Z",
+            "name": "Lang-Ferrell",
+            "description": "Function-based neutral capability",
+            "contact_information": "8712 Catherine Lodge\nSouth Lynn, NC 78310",
+            "confidence": 69,
+            "lang": "en",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_eae683c1_d472_4708_bd63_f9b1a1f016b1_foo": [
+                "difference",
+                "serious",
+                "action"
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--86301c3c-d01a-4959-a8d6-9ef370bd87d0",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2023-04-05T14:40:12.623804Z",
+            "modified": "2024-03-05T15:27:32.699347Z",
+            "name": "Doyle-Roberts",
+            "roles": [
+                "far",
+                "economic"
+            ],
+            "sectors": [
+                "financial-services",
+                "construction"
+            ],
+            "contact_information": "9165 Leslie Forges Suite 990\nAdrianton, MT 24605",
+            "confidence": 67,
+            "lang": "en",
+            "external_references": [
+                {
+                    "source_name": "skill",
+                    "description": "Model south challenge stay my surface money.",
+                    "hashes": {
+                        "SHA-512": "1329db1c4112a2bc8b5d984b5fa50be7bf577e60b4469001831d325b3bd9d3c81b2259d1bb7a73115f85d191a9e78c54c8d736f64c6d2b3125f22ac9b007b138",
+                        "SHA3-256": "a6f7afcf613455b84ba1f508f3dcb3afa1f97ab3816c5fc1dd5e629c0f3b24fc",
+                        "SHA3-512": "86d9540795c93fb82c4875a86b7c3cffe345bf477c063bcd6585c7c1284ffd1f3577e954eccc3d1855d46d642b1f369c0fb56122ed7456aa5c0fb6fc08f6141b"
+                    },
+                    "external_id": "DSbWvLaQyEEWCbuD"
+                },
+                {
+                    "source_name": "serious",
+                    "description": "Project learn health shake left thousand.",
+                    "url": "http://meadows.info/",
+                    "hashes": {
+                        "SHA-1": "0881486e7906d1e0c2a171a72e13fb1da9d4beaa",
+                        "SHA-256": "5c5d072a746cdeed8e88b3f9301a0a1d248aa04af9b2bf30459251bb99cd32e9",
+                        "SHA-512": "88715a7660c21814cfeda02132f42346cb02a20f060996c82905899e52f04bd90cca947acea6749a284c7640e5b1b0a6ec5cc3401811ebad59df304f08ea0db2",
+                        "SHA3-512": "3fafb122f15e95c5a2fed198e34ca384db864a8eb4dd171c271349fe64d25278b5850adc7bf940736c9b9557b28a6f01492899d8a647c1aef13185b91f8a4067"
+                    },
+                    "external_id": "mzrfaQXKMRmyZsHhjTi"
+                },
+                {
+                    "source_name": "agree",
+                    "description": "Society leg race treatment local.",
+                    "url": "http://turner.com/",
+                    "external_id": "gtRwzmbLV"
+                },
+                {
+                    "source_name": "hospital",
+                    "description": "Rather something gas tax third.",
+                    "external_id": "dJved"
+                },
+                {
+                    "source_name": "dark",
+                    "description": "For pay training turn fast everyone.",
+                    "url": "http://herrera.com/",
+                    "hashes": {
+                        "SHA-1": "addb8379fe6c2bb6db9c2b959db962e81d9ff788",
+                        "SHA3-256": "f73d75e2d43f7724e64f884707657b4511ac640ba89cf42a10f9e57e32af7532"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--86301c3c-d01a-4959-a8d6-9ef370bd87d0",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2023-04-05T14:40:12.623804Z",
+            "modified": "2024-03-05T15:27:32.699348Z",
+            "name": "Doyle-Roberts",
+            "roles": [
+                "far",
+                "economic"
+            ],
+            "sectors": [
+                "financial-services",
+                "construction"
+            ],
+            "contact_information": "9165 Leslie Forges Suite 990\nAdrianton, MT 24605",
+            "confidence": 67,
+            "lang": "en",
+            "external_references": [
+                {
+                    "source_name": "skill",
+                    "description": "Model south challenge stay my surface money.",
+                    "hashes": {
+                        "SHA-512": "1329db1c4112a2bc8b5d984b5fa50be7bf577e60b4469001831d325b3bd9d3c81b2259d1bb7a73115f85d191a9e78c54c8d736f64c6d2b3125f22ac9b007b138",
+                        "SHA3-256": "a6f7afcf613455b84ba1f508f3dcb3afa1f97ab3816c5fc1dd5e629c0f3b24fc",
+                        "SHA3-512": "86d9540795c93fb82c4875a86b7c3cffe345bf477c063bcd6585c7c1284ffd1f3577e954eccc3d1855d46d642b1f369c0fb56122ed7456aa5c0fb6fc08f6141b"
+                    },
+                    "external_id": "DSbWvLaQyEEWCbuD"
+                },
+                {
+                    "source_name": "serious",
+                    "description": "Project learn health shake left thousand.",
+                    "url": "http://meadows.info/",
+                    "hashes": {
+                        "SHA-1": "0881486e7906d1e0c2a171a72e13fb1da9d4beaa",
+                        "SHA-256": "5c5d072a746cdeed8e88b3f9301a0a1d248aa04af9b2bf30459251bb99cd32e9",
+                        "SHA-512": "88715a7660c21814cfeda02132f42346cb02a20f060996c82905899e52f04bd90cca947acea6749a284c7640e5b1b0a6ec5cc3401811ebad59df304f08ea0db2",
+                        "SHA3-512": "3fafb122f15e95c5a2fed198e34ca384db864a8eb4dd171c271349fe64d25278b5850adc7bf940736c9b9557b28a6f01492899d8a647c1aef13185b91f8a4067"
+                    },
+                    "external_id": "mzrfaQXKMRmyZsHhjTi"
+                },
+                {
+                    "source_name": "agree",
+                    "description": "Society leg race treatment local.",
+                    "url": "http://turner.com/",
+                    "external_id": "gtRwzmbLV"
+                },
+                {
+                    "source_name": "hospital",
+                    "description": "Rather something gas tax third.",
+                    "external_id": "dJved"
+                },
+                {
+                    "source_name": "dark",
+                    "description": "For pay training turn fast everyone.",
+                    "url": "http://herrera.com/",
+                    "hashes": {
+                        "SHA-1": "addb8379fe6c2bb6db9c2b959db962e81d9ff788",
+                        "SHA3-256": "f73d75e2d43f7724e64f884707657b4511ac640ba89cf42a10f9e57e32af7532"
+                    }
+                }
+            ],
+            "x_eae683c1_d472_4708_bd63_f9b1a1f016b1_foo": [
+                "myself",
+                "almost",
+                "through"
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--af2ab30a-7f49-458d-b867-5f536453e647",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-12-28T04:31:54.792647Z",
+            "modified": "2022-01-16T09:35:13.53158Z",
+            "name": "Fisher-Stephens",
+            "description": "Reactive local process improvement",
+            "roles": [
+                "glass"
+            ],
+            "identity_class": "individual",
+            "lang": "en"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d1b1f56d-ed6b-4125-8958-00d99c59c2b6",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-06-20T05:01:33.029975Z",
+            "modified": "2021-10-30T21:53:35.127001Z",
+            "relationship_type": "derived-from",
+            "source_ref": "identity--5e8d5863-a478-4fac-a271-931bc7d78940",
+            "target_ref": "identity--f9748877-7ad4-4b56-9c57-1d8e792395f4",
+            "start_time": "2021-07-03T18:16:30.192068Z",
+            "stop_time": "2021-09-23T22:17:45.336761Z",
+            "lang": "en",
+            "external_references": [
+                {
+                    "source_name": "work",
+                    "description": "Card magazine second now while arrive party.",
+                    "url": "http://www.kaufman.com/",
+                    "hashes": {
+                        "SHA-1": "bc1f5dbc60ca63529a77495e5a5328285a6f997e",
+                        "SHA-256": "58492065fd0a0044db49e2f081fc9a5857f5f62ac5444ef4549022c3a1bb5720"
+                    },
+                    "external_id": "TiZAISgMdmjeyyOW"
+                },
+                {
+                    "source_name": "much",
+                    "description": "Stand capital lot their answer.",
+                    "external_id": "ruGQzaICSczVIhfMRCuA"
+                },
+                {
+                    "source_name": "reality",
+                    "url": "https://www.hill-stevens.com/",
+                    "hashes": {
+                        "MD5": "b63a2fa1cd4e9bc60e5277bc5c6503dc",
+                        "SHA-1": "f0f5075d133875c9c90536429b408f7da3064fa2",
+                        "SHA-256": "2104a4a1192a3f325ef27218eea4873c22ef07d423ddfbda0c60505daada6e8a",
+                        "SHA-512": "ee5c92fbcb70ad1a4c7413f83f83a5ea7e369396a7f11f110afd2364fc0f9895306a862af219ea77d2221ddea70e5cb0b3f4896023a3beae47265179437f4aa8",
+                        "SHA3-512": "8d378fde138027f7c74f2c510c840e8d4a5f5adcf05212bab428ed2701d67b68a116210d4ead480ca736f0e4417f74c4ebebef8ca3201bd5de1353d95d7b29c7"
+                    },
+                    "external_id": "FmPLTdICBl"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d1b1f56d-ed6b-4125-8958-00d99c59c2b6",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-06-20T05:01:33.029975Z",
+            "modified": "2022-06-16T05:28:52.692502Z",
+            "relationship_type": "derived-from",
+            "source_ref": "identity--5e8d5863-a478-4fac-a271-931bc7d78940",
+            "target_ref": "identity--f9748877-7ad4-4b56-9c57-1d8e792395f4",
+            "start_time": "2021-07-03T18:16:30.192068Z",
+            "stop_time": "2021-09-23T22:17:45.336761Z",
+            "lang": "en",
+            "external_references": [
+                {
+                    "source_name": "work",
+                    "description": "Card magazine second now while arrive party.",
+                    "url": "http://www.kaufman.com/",
+                    "hashes": {
+                        "SHA-1": "bc1f5dbc60ca63529a77495e5a5328285a6f997e",
+                        "SHA-256": "58492065fd0a0044db49e2f081fc9a5857f5f62ac5444ef4549022c3a1bb5720"
+                    },
+                    "external_id": "TiZAISgMdmjeyyOW"
+                },
+                {
+                    "source_name": "much",
+                    "description": "Stand capital lot their answer.",
+                    "external_id": "ruGQzaICSczVIhfMRCuA"
+                },
+                {
+                    "source_name": "reality",
+                    "url": "https://www.hill-stevens.com/",
+                    "hashes": {
+                        "MD5": "b63a2fa1cd4e9bc60e5277bc5c6503dc",
+                        "SHA-1": "f0f5075d133875c9c90536429b408f7da3064fa2",
+                        "SHA-256": "2104a4a1192a3f325ef27218eea4873c22ef07d423ddfbda0c60505daada6e8a",
+                        "SHA-512": "ee5c92fbcb70ad1a4c7413f83f83a5ea7e369396a7f11f110afd2364fc0f9895306a862af219ea77d2221ddea70e5cb0b3f4896023a3beae47265179437f4aa8",
+                        "SHA3-512": "8d378fde138027f7c74f2c510c840e8d4a5f5adcf05212bab428ed2701d67b68a116210d4ead480ca736f0e4417f74c4ebebef8ca3201bd5de1353d95d7b29c7"
+                    },
+                    "external_id": "FmPLTdICBl"
+                }
+            ],
+            "x_eae683c1_d472_4708_bd63_f9b1a1f016b1_foo": [
+                "present",
+                "fill",
+                "Mrs"
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--1470cba6-08ba-40af-89f4-a8201964b25e",
+            "created": "2023-02-05T16:15:06.947363Z",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "modified": "2023-04-07T06:48:44.342408Z",
+            "name": "Suarez PLC",
+            "identity_class": "system",
+            "sectors": [
+                "chemical",
+                "agriculture"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--1470cba6-08ba-40af-89f4-a8201964b25e",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2023-02-05T16:15:06.947363Z",
+            "modified": "2023-04-07T07:22:37.965408Z",
+            "name": "Suarez PLC",
+            "identity_class": "system",
+            "sectors": [
+                "chemical",
+                "agriculture"
+            ],
+            "object_marking_refs": [
+                "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--34098fce-860f-48ae-8e50-ebd3cc5e41da",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:GREEN",
+            "definition": {
+                "tlp": "green"
+            }
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--d252d2a8-97ce-47f9-9a2b-d8a478a38fcc",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-07-24T18:28:32.706263Z",
+            "modified": "2022-06-06T15:35:24.399606Z",
+            "first_observed": "2022-01-15T17:53:17.747539Z",
+            "last_observed": "2022-12-03T09:15:06.942091Z",
+            "number_observed": 14199523,
+            "object_refs": [
+                "email-message--51a8ce70-e59b-4d28-9810-09071967d3a2",
+                "mac-addr--e7637baf-501f-410e-adf0-fc70d7ccbac5"
+            ],
+            "lang": "en",
+            "object_marking_refs": [
+                "marking-definition--116b0b7c-00bd-4495-8bb5-72e44fe14bb8"
+            ]
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--d252d2a8-97ce-47f9-9a2b-d8a478a38fcc",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-07-24T18:28:32.706263Z",
+            "modified": "2022-06-06T16:41:51.876606Z",
+            "first_observed": "2022-01-15T17:53:17.747539Z",
+            "last_observed": "2022-12-03T09:15:06.942091Z",
+            "number_observed": 14199523,
+            "object_refs": [
+                "email-message--51a8ce70-e59b-4d28-9810-09071967d3a2",
+                "mac-addr--e7637baf-501f-410e-adf0-fc70d7ccbac5"
+            ],
+            "lang": "en",
+            "object_marking_refs": [
+                "marking-definition--116b0b7c-00bd-4495-8bb5-72e44fe14bb8"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--116b0b7c-00bd-4495-8bb5-72e44fe14bb8",
+            "created": "2021-07-12T20:19:32.112591Z",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "definition_type": "statement",
+            "definition": {
+                "statement": "Avoid seek eat certainly growth authority manager audience. Increase inside student along firm. Television thousand hand common. Election resource become."
+            }
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--615fd593-367e-4f5c-9810-19c762e2c6ca",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-08-12T22:46:51.092839Z",
+            "modified": "2021-09-28T04:58:49.207254Z",
+            "name": "Williams, Steele and Perez",
+            "description": "Object-based homogeneous customer loyalty",
+            "roles": [
+                "there"
+            ],
+            "sectors": [
+                "non-profit",
+                "government-local"
+            ],
+            "contact_information": "26886 David Club Suite 201\nNorth Melinda, KS 43743",
+            "confidence": 65,
+            "external_references": [
+                {
+                    "source_name": "commercial",
+                    "url": "https://rice.com/",
+                    "hashes": {
+                        "MD5": "988ae3e059db545cae36c07a04894b15",
+                        "SHA-512": "40ecafafedaa4c78f5c2a9ef469318eb6c788da5dded9b95c9370a22a342ffcbdaf7c9aed1cdf911120ed91cb7c06c4b8a4e89bfece67c259554bc56bd0afa9d",
+                        "SHA3-512": "00600668e8f1a72ca200e43774ca026b270aec327b983798346dcc606ce246498f1f76e2c0978d75ef7dd7a24a575e76ce64d00e73731aeaf5cfa8855ba67c05"
+                    },
+                    "external_id": "uDWbdycdpJoeJJXudzEv"
+                },
+                {
+                    "source_name": "meet",
+                    "description": "Computer miss deal give wish trip.",
+                    "url": "https://www.roach-bender.com/",
+                    "hashes": {
+                        "SHA-256": "378774e1a4359a3c7a33094eb7c58744b07d2b6c255fdd0ff44e26e47eaf7a51",
+                        "SHA-512": "0f2344586b73bab3b462097216eb543b4c74088cf1931e3cf4fb50562e5f01fdc2cebfb389cfea8991debc5434e7f526ee23ca96b3678743e99695193061e19f",
+                        "SHA3-256": "fbaa2ee7c9da3914fc87bffeed19d240daaf8540c35917082326ba853b949718",
+                        "SHA3-512": "25cb38593e32f85b628b63be4764b603e7ef3976658ea1f7acc8888c1cbb2bd697adcd07776a3ca0f7d2c4444ef7d387fca84e47c4bdea417f922ac06b104da9"
+                    }
+                },
+                {
+                    "source_name": "program",
+                    "description": "Debate add mouth another.",
+                    "hashes": {
+                        "SHA3-256": "16d52edfd9c581449cc019de4b863bfd61634470342f451213b3156e64106332",
+                        "SHA3-512": "b897fae858a380854084d292d82c23ae17f16c833d2db9c079509cfc3e064dd003da8ae0059939803cd24f2233b9b11c46ad3dd0a3ed050a22dffcd5a5468ccf"
+                    },
+                    "external_id": "AJwrQHw"
+                },
+                {
+                    "source_name": "record",
+                    "description": "Side experience skin development always life street pay.",
+                    "url": "http://www.cross-sanders.com/",
+                    "hashes": {
+                        "SHA-1": "b6637870fe4862e46334759c7caf22909f2844da",
+                        "SHA-256": "fa1956791ddb35b1b400c46721ba764363523ae881efe3bcab7ebe4109426c16",
+                        "SHA-512": "ca0c2c84b57980e4cfa97e509613931ea2447ec36cc0e26706ab10c3c5725cbdd2b47942af1d60f01e42fb1eafc18ef434fa17a38a93c98ab4aa7e82db2f8771"
+                    }
+                },
+                {
+                    "source_name": "when",
+                    "external_id": "KUtcabUHCtXnNM"
+                }
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--8e4aacbc-f834-4b4f-bfa6-7243e4d5e000",
+            "created": "2021-08-19T22:04:30.051109Z",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "modified": "2022-06-22T15:50:13.7065Z",
+            "name": "Howard, Huang and Wilson",
+            "identity_class": "unknown",
+            "sectors": [
+                "hospitality-leisure",
+                "mining",
+                "healthcare"
+            ],
+            "contact_information": "10244 Claudia Neck Suite 856\nBarneshaven, AL 56213",
+            "labels": [
+                "prepare",
+                "opportunity",
+                "happy"
+            ],
+            "external_references": [
+                {
+                    "source_name": "yourself",
+                    "description": "Else imagine worker about.",
+                    "url": "http://www.ponce.org/",
+                    "external_id": "QxTvFMXDjGAabzZPcp"
+                },
+                {
+                    "source_name": "hot",
+                    "description": "Four fall else situation theory southern board.",
+                    "external_id": "quYkMMFasQkS"
+                },
+                {
+                    "source_name": "capital",
+                    "description": "Song notice available reach onto pick should.",
+                    "url": "https://www.cortez-powell.com/",
+                    "hashes": {
+                        "MD5": "69f7773ab50ebe43fac3b43280e2a58f",
+                        "SHA-256": "4a0287b5d41b4918fdfca81cd764284b01c439640e2d05987d7a8515fc085cfa",
+                        "SHA-512": "e7061291c2883d8ea92e3beeb93246eb65c716d51373107d316f41edfa5a76afd94b8b8c2831350f147d905a98e0ff827df2787ecc4ea0d8585b1720d3948e66",
+                        "SHA3-256": "bd676805722ddab46bd4453d8e3b8de676cb30ad47d7f75c650d90fad36de780",
+                        "SHA3-512": "ee8f4523bf64046d42eecddc9eae8fc68b8d51e5113f7e537eb91342fb8b104db3d9826d5a7f0f327a11dddc836bf22746511d71756ee9aa1554fc92f83e1996"
+                    },
+                    "external_id": "gIIKfKGchRAzilGPHw"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--116b0b7c-00bd-4495-8bb5-72e44fe14bb8"
+            ]
+        },
+        {
+            "type": "email-message",
+            "spec_version": "2.1",
+            "id": "email-message--51a8ce70-e59b-4d28-9810-09071967d3a2",
+            "is_multipart": false,
+            "date": "2022-11-17T13:01:08.607139Z",
+            "to_refs": [
+                "email-addr--9e30df52-edfb-4291-a8ba-c94e209c68a0",
+                "email-addr--a8b8a19a-bb90-49a9-8750-5518313111dc",
+                "email-addr--8f7debfe-f0fe-4de9-a2cc-f3e98da5d61d",
+                "email-addr--ac75ae91-1397-462a-ac89-d7fccbfb8921"
+            ],
+            "bcc_refs": [
+                "email-addr--a7616302-c8ea-4534-bcdd-342ae7ce3bdc",
+                "email-addr--a7616302-c8ea-4534-bcdd-342ae7ce3bdc"
+            ],
+            "subject": "President beautiful research require protect sound.",
+            "received_lines": [
+                "XfPLagGE",
+                "dtQPbCP"
+            ],
+            "raw_email_ref": "artifact--593d184e-4819-4f4a-b7b7-6bf917bcc5a0"
+        },
+        {
+            "type": "artifact",
+            "spec_version": "2.1",
+            "id": "artifact--593d184e-4819-4f4a-b7b7-6bf917bcc5a0",
+            "url": "https://www.bond-hicks.com/",
+            "hashes": {
+                "SHA-1": "534b8ec1f928ea141a3e344163acff4f1b9abf45",
+                "SHA-512": "25d6a00fe904b8eabe2e2309d3bd41151ad51509e265779fddf8080e738ff178b96fbc67b2b2763d1419a85878e4149fedd3d936e0a9a923e4e994250425ae3a",
+                "SHA3-256": "b9f58c9f041600c62b120f2aba5f0afc5e8aa16f2ef7a393558e0a5c52671707"
+            },
+            "encryption_algorithm": "ChaCha20-Poly1305",
+            "decryption_key": "EaPUdQFXPTNCPozguco",
+            "defanged": true
+        },
+        {
+            "type": "email-addr",
+            "spec_version": "2.1",
+            "id": "email-addr--a7616302-c8ea-4534-bcdd-342ae7ce3bdc",
+            "value": "awilliams@example.com",
+            "display_name": "Rebecca Sosa",
+            "belongs_to_ref": "user-account--5e4435db-b2e9-4e18-8cf1-af52aa808711"
+        },
+        {
+            "type": "user-account",
+            "spec_version": "2.1",
+            "id": "user-account--5e4435db-b2e9-4e18-8cf1-af52aa808711",
+            "user_id": "ylee",
+            "credential": "pxp86N&&v(",
+            "account_type": "radius",
+            "is_privileged": true,
+            "credential_last_changed": "2023-03-30T22:46:02.730164Z",
+            "account_first_login": "2021-06-29T03:53:29.166102Z"
+        },
+        {
+            "type": "email-addr",
+            "spec_version": "2.1",
+            "id": "email-addr--9e30df52-edfb-4291-a8ba-c94e209c68a0",
+            "value": "cmorton@example.net"
+        },
+        {
+            "type": "email-addr",
+            "spec_version": "2.1",
+            "id": "email-addr--a8b8a19a-bb90-49a9-8750-5518313111dc",
+            "value": "walkermichelle@example.com",
+            "belongs_to_ref": "user-account--5e4435db-b2e9-4e18-8cf1-af52aa808711"
+        },
+        {
+            "type": "email-addr",
+            "spec_version": "2.1",
+            "id": "email-addr--8f7debfe-f0fe-4de9-a2cc-f3e98da5d61d",
+            "value": "kingashley@example.net"
+        },
+        {
+            "type": "email-addr",
+            "spec_version": "2.1",
+            "id": "email-addr--ac75ae91-1397-462a-ac89-d7fccbfb8921",
+            "value": "prestoncraig@example.org",
+            "display_name": "Holly Thomas",
+            "belongs_to_ref": "user-account--d903b09a-c17d-48fa-b88c-8e67319ec8ec"
+        },
+        {
+            "type": "user-account",
+            "spec_version": "2.1",
+            "id": "user-account--d903b09a-c17d-48fa-b88c-8e67319ec8ec",
+            "user_id": "lorihubbard",
+            "account_login": "brian74@example.org",
+            "account_type": "skype",
+            "is_privileged": true,
+            "is_disabled": false,
+            "credential_last_changed": "2022-03-30T07:43:29.116011Z",
+            "account_first_login": "2021-10-07T12:00:09.251974Z"
+        },
+        {
+            "type": "mac-addr",
+            "spec_version": "2.1",
+            "id": "mac-addr--e7637baf-501f-410e-adf0-fc70d7ccbac5",
+            "value": "39:2b:ec:f6:c5:9d"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--d8f71da3-ed10-4d9c-9ba8-7de8b8b4f242",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-11-05T01:18:49.219017Z",
+            "modified": "2022-04-03T12:49:53.51255Z",
+            "first_observed": "2021-04-02T09:50:40.371356Z",
+            "last_observed": "2021-10-31T08:37:15.924319Z",
+            "number_observed": 116955030,
+            "object_refs": [
+                "email-message--df128e71-5dc3-48fb-b9f8-dec5814596a8",
+                "process--8e74098c-887e-4ba2-9c07-3b297793e177",
+                "ipv6-addr--22684b9e-3d24-43e0-af40-1b78baa22919",
+                "windows-registry-key--511fa8b1-5778-4e59-aff5-058c172ad26a",
+                "file--cbe54e28-8614-45cc-8537-072873952ea2"
+            ],
+            "object_marking_refs": [
+                "marking-definition--0265d973-e92c-43de-99c4-0582bb228ae6"
+            ]
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--d8f71da3-ed10-4d9c-9ba8-7de8b8b4f242",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-11-05T01:18:49.219017Z",
+            "modified": "2022-04-03T14:03:47.14255Z",
+            "first_observed": "2021-04-02T09:50:40.371356Z",
+            "last_observed": "2021-10-31T08:37:15.924319Z",
+            "number_observed": 116955030,
+            "object_refs": [
+                "email-message--df128e71-5dc3-48fb-b9f8-dec5814596a8",
+                "process--8e74098c-887e-4ba2-9c07-3b297793e177",
+                "ipv6-addr--22684b9e-3d24-43e0-af40-1b78baa22919",
+                "windows-registry-key--511fa8b1-5778-4e59-aff5-058c172ad26a",
+                "file--cbe54e28-8614-45cc-8537-072873952ea2"
+            ],
+            "object_marking_refs": [
+                "marking-definition--0265d973-e92c-43de-99c4-0582bb228ae6"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--0265d973-e92c-43de-99c4-0582bb228ae6",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2023-03-24T07:25:05.899853Z",
+            "definition_type": "statement",
+            "name": "point",
+            "definition": {
+                "statement": "Interesting above represent list senior. Mr scientist focus soon movie point now. Success interview nice treatment whose building series."
+            }
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--300270e6-2f8b-43cf-8263-00b11fe541a1",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-07-05T10:08:32.426144Z",
+            "modified": "2021-07-17T13:12:34.461112Z",
+            "name": "Cortez, Gordon and Evans",
+            "roles": [
+                "daughter",
+                "audience",
+                "itself",
+                "happen",
+                "white"
+            ],
+            "identity_class": "group",
+            "sectors": [
+                "government-national",
+                "mining",
+                "retail"
+            ],
+            "contact_information": "50120 Peggy Vista Suite 030\nWest Karen, NC 85476",
+            "labels": [
+                "chair",
+                "law",
+                "prepare",
+                "build",
+                "moment"
+            ],
+            "external_references": [
+                {
+                    "source_name": "common",
+                    "url": "https://alvarez.org/",
+                    "external_id": "FNAfbBoXoKXzgu"
+                },
+                {
+                    "source_name": "section",
+                    "description": "Everything capital they one care side apply.",
+                    "url": "http://massey.com/",
+                    "hashes": {
+                        "SHA-256": "ae2c2b5fe6cf8dad6116e5909202ec6d428d61b0284f90422904dc52353b83f9",
+                        "SHA-512": "3e9fbcbce153b75a951631fb71709599b626676525b61d0f2b29fbb825193abdb00c93886286b091456936127dd433b6557c2b466dac68d390175b50c13d0b37",
+                        "SHA3-256": "d3b070c12f76c17a1bd2cb520c32983d45722175a02cd42f704ca804e0dce03b",
+                        "SHA3-512": "f83f498136f027b25124ea60779ecf1128d575ea86192c32252368c1af17d5f9257bb14edf77caa0290255e00ec84b15bc3e99d14104fd3343fa3b06cfcb6891"
+                    },
+                    "external_id": "LQoRGJdkGFjQQnjvxLlX"
+                },
+                {
+                    "source_name": "piece",
+                    "description": "Stage interview their hour senior.",
+                    "external_id": "DqtsjnuBncPtWPPUtiQe"
+                },
+                {
+                    "source_name": "high",
+                    "description": "Certainly outside name experience apply so little.",
+                    "url": "http://www.brewer.info/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--5e57c739-391a-4eb3-b6be-7d15ca92d5ed"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--5e57c739-391a-4eb3-b6be-7d15ca92d5ed",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:RED",
+            "definition": {
+                "tlp": "red"
+            }
+        },
+        {
+            "type": "email-message",
+            "spec_version": "2.1",
+            "id": "email-message--df128e71-5dc3-48fb-b9f8-dec5814596a8",
+            "is_multipart": false,
+            "date": "2022-03-13T19:50:11.907465Z",
+            "to_refs": [
+                "email-addr--357d9c20-9e5c-4af8-bb4f-ea92a68348c0",
+                "email-addr--8f7debfe-f0fe-4de9-a2cc-f3e98da5d61d",
+                "email-addr--ac75ae91-1397-462a-ac89-d7fccbfb8921",
+                "email-addr--47745dff-a69d-4a44-a65a-ce9f84c02b79",
+                "email-addr--0cb9a7d8-1508-4621-8b70-d7bc945147ba"
+            ],
+            "bcc_refs": [
+                "email-addr--f2b94bfc-a270-441f-a0bc-00790bc88017",
+                "email-addr--f2b94bfc-a270-441f-a0bc-00790bc88017"
+            ],
+            "subject": "Truth article Mrs more school."
+        },
+        {
+            "type": "email-addr",
+            "spec_version": "2.1",
+            "id": "email-addr--f2b94bfc-a270-441f-a0bc-00790bc88017",
+            "value": "reginaleonard@example.com",
+            "display_name": "Theresa Wright"
+        },
+        {
+            "type": "email-addr",
+            "spec_version": "2.1",
+            "id": "email-addr--357d9c20-9e5c-4af8-bb4f-ea92a68348c0",
+            "value": "kwalker@example.org",
+            "display_name": "Robert King"
+        },
+        {
+            "type": "email-addr",
+            "spec_version": "2.1",
+            "id": "email-addr--47745dff-a69d-4a44-a65a-ce9f84c02b79",
+            "value": "robert30@example.net",
+            "display_name": "Abigail Contreras",
+            "belongs_to_ref": "user-account--5e4435db-b2e9-4e18-8cf1-af52aa808711"
+        },
+        {
+            "type": "email-addr",
+            "spec_version": "2.1",
+            "id": "email-addr--0cb9a7d8-1508-4621-8b70-d7bc945147ba",
+            "value": "hmack@example.com",
+            "display_name": "Lisa Peterson"
+        },
+        {
+            "type": "process",
+            "spec_version": "2.1",
+            "id": "process--8e74098c-887e-4ba2-9c07-3b297793e177",
+            "created_time": "2023-01-11T11:01:18.280509Z",
+            "cwd": "/describe/charge.wav",
+            "opened_connection_refs": [
+                "network-traffic--3cca6ef4-eb19-41d2-be48-752239063930",
+                "network-traffic--4a192a05-a7f3-4793-8db4-168c4e33a7c0",
+                "network-traffic--fc265f5e-6521-496c-a92c-bdc42bf614f4",
+                "network-traffic--c3aeb9cd-6c16-40d9-9475-77b684e7f6a4",
+                "network-traffic--cee9724c-1d13-464d-80d4-69824f8d2c5d"
+            ],
+            "image_ref": "file--37c231b2-818d-4c2d-9f4a-5ac0ae8a7722",
+            "child_refs": [
+                "process--c3193285-a86d-4419-80a6-e90e2d5f6cbf",
+                "process--36e0481d-bfed-4577-8b1f-00e4f67637a0",
+                "process--27e3c546-ef14-477b-b5dd-d8344b97221c",
+                "process--6b3efe3f-33ba-4c1f-ad4d-f0a3667f9010"
+            ]
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--3cca6ef4-eb19-41d2-be48-752239063930",
+            "start": "2021-03-16T06:04:03.641445Z",
+            "end": "2021-09-04T19:56:30.1169Z",
+            "is_active": false,
+            "src_ref": "ipv4-addr--607d7e3d-6f94-432e-99bd-25ca9c2a3ded",
+            "dst_ref": "ipv6-addr--375e2ec1-3f6c-4708-82e0-5731508a2269",
+            "src_port": 22231,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "src_byte_count": 742292,
+            "src_packets": 727137,
+            "encapsulates_refs": [
+                "network-traffic--4a192a05-a7f3-4793-8db4-168c4e33a7c0"
+            ]
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--4a192a05-a7f3-4793-8db4-168c4e33a7c0",
+            "start": "2023-04-11T21:18:16.571625Z",
+            "end": "2023-04-20T07:38:30.228879Z",
+            "is_active": false,
+            "src_ref": "ipv4-addr--607d7e3d-6f94-432e-99bd-25ca9c2a3ded",
+            "src_packets": 271457,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "dst_payload_ref": "artifact--593d184e-4819-4f4a-b7b7-6bf917bcc5a0"
+        },
+        {
+            "type": "ipv4-addr",
+            "spec_version": "2.1",
+            "id": "ipv4-addr--607d7e3d-6f94-432e-99bd-25ca9c2a3ded",
+            "value": "106.187.148.111"
+        },
+        {
+            "type": "ipv6-addr",
+            "spec_version": "2.1",
+            "id": "ipv6-addr--375e2ec1-3f6c-4708-82e0-5731508a2269",
+            "value": "9f79:d14c:8bfa:40d5:fa86:850b:8cc:5883"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--fc265f5e-6521-496c-a92c-bdc42bf614f4",
+            "start": "2022-09-20T01:30:38.444568Z",
+            "end": "2022-11-02T06:11:17.012085Z",
+            "is_active": false,
+            "src_ref": "ipv6-addr--c564d8b7-73ef-4290-abe2-6d7f3cb66a6b",
+            "src_port": 47723,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "src_packets": 376524,
+            "dst_packets": 190814,
+            "encapsulates_refs": [
+                "network-traffic--05df1fd8-b17a-4720-8c64-3dc7cca7a12f",
+                "network-traffic--a7701761-d5ae-44ec-9441-d549992879f0",
+                "network-traffic--c8da44d9-6287-42b2-986e-c2efca8feb5f"
+            ],
+            "encapsulated_by_ref": "network-traffic--cee9724c-1d13-464d-80d4-69824f8d2c5d"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--cee9724c-1d13-464d-80d4-69824f8d2c5d",
+            "end": "2022-05-24T00:29:12.658767Z",
+            "is_active": false,
+            "src_ref": "ipv4-addr--1b687eaa-023b-47a4-88ed-4df78a84cdbb",
+            "src_byte_count": 542355,
+            "defanged": true,
+            "src_payload_ref": "artifact--593d184e-4819-4f4a-b7b7-6bf917bcc5a0",
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ]
+        },
+        {
+            "type": "ipv4-addr",
+            "spec_version": "2.1",
+            "id": "ipv4-addr--1b687eaa-023b-47a4-88ed-4df78a84cdbb",
+            "value": "93.223.173.174"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--05df1fd8-b17a-4720-8c64-3dc7cca7a12f",
+            "dst_ref": "domain-name--65600019-8136-4375-9003-931c67231756",
+            "is_active": false,
+            "dst_port": 33791,
+            "src_byte_count": 675938,
+            "dst_payload_ref": "artifact--78f51a70-8b62-414d-8e2c-143bd2aa79da",
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "encapsulates_refs": [
+                "network-traffic--46951c73-e46c-4c54-81b8-afa06a133b87",
+                "network-traffic--f9835dee-5cea-44de-9465-76af6662fcaa",
+                "network-traffic--b4668cb4-51b1-40ef-9914-d7f04b9c8825",
+                "network-traffic--ce060c15-167e-46c1-9486-d18866031f30"
+            ]
+        },
+        {
+            "type": "artifact",
+            "spec_version": "2.1",
+            "id": "artifact--78f51a70-8b62-414d-8e2c-143bd2aa79da",
+            "mime_type": "video/webm",
+            "url": "http://hamilton-williams.com/",
+            "hashes": {
+                "SHA-1": "a5da71bafc35b77bd7f196a5235a0c0583336c42",
+                "SHA-512": "ecc633be6d2b192ec9ed9820a7d9a68273f31f693ac121b43946efb1d03f6967c02222838ddfd1c15bd9fabe45214f4f99e1ab8c503f1f19eaeb888e174f96d0"
+            },
+            "encryption_algorithm": "mime-type-indicated",
+            "decryption_key": "huMNHSMEXXKujGM"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--46951c73-e46c-4c54-81b8-afa06a133b87",
+            "start": "2022-10-05T12:52:37.760228Z",
+            "end": "2022-10-15T21:22:01.573761Z",
+            "is_active": false,
+            "src_ref": "domain-name--dd001ee5-cb09-4996-9858-a7bd2a237bd4",
+            "src_port": 855,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "src_byte_count": 105597,
+            "dst_payload_ref": "artifact--593d184e-4819-4f4a-b7b7-6bf917bcc5a0",
+            "dst_byte_count": 281432,
+            "encapsulates_refs": [
+                "network-traffic--26a9c719-afca-4137-ad57-6bc8fa7e94b3"
+            ]
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--26a9c719-afca-4137-ad57-6bc8fa7e94b3",
+            "start": "2022-06-05T09:19:06.901149Z",
+            "is_active": false,
+            "src_ref": "ipv6-addr--e1483a99-b7eb-42d6-82fb-de34ba411705",
+            "src_port": 14879,
+            "src_byte_count": 547728,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "dst_packets": 319248
+        },
+        {
+            "type": "ipv6-addr",
+            "spec_version": "2.1",
+            "id": "ipv6-addr--e1483a99-b7eb-42d6-82fb-de34ba411705",
+            "value": "9d80:8d30:f076:2bcc:d61b:836a:d564:d427"
+        },
+        {
+            "type": "domain-name",
+            "spec_version": "2.1",
+            "id": "domain-name--dd001ee5-cb09-4996-9858-a7bd2a237bd4",
+            "value": "jones.com"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--f9835dee-5cea-44de-9465-76af6662fcaa",
+            "start": "2022-07-21T13:09:57.193015Z",
+            "src_ref": "ipv6-addr--148eb0be-f758-4bd5-bdb2-98e7dd2e9d74",
+            "src_port": 58750,
+            "dst_port": 52635,
+            "dst_byte_count": 705175,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "dst_payload_ref": "artifact--63020a0c-3d7b-44dd-9bba-6afe0bf329f5",
+            "encapsulated_by_ref": "network-traffic--05df1fd8-b17a-4720-8c64-3dc7cca7a12f"
+        },
+        {
+            "type": "artifact",
+            "spec_version": "2.1",
+            "id": "artifact--63020a0c-3d7b-44dd-9bba-6afe0bf329f5",
+            "url": "https://www.willis.com/",
+            "hashes": {
+                "MD5": "efc662a992997b5d74465248f36e0b53",
+                "SHA-256": "c3573c7e89bb783121917460efb0c0f8e69004da46df4012f1e64992b5fdaf8a",
+                "SHA-512": "e2b0cdccfaf6d326317f155238d58c3d612bfbbc48beec111f94148c2f8ca35f3a840688772b836580ca1f3a6955b8af37f4efd6bb852227127387e643c355bd",
+                "SHA3-256": "2718b176ad133668aeccc86a8bf067b4415994235d5fe32c1cdcc2f19d368a42",
+                "SHA3-512": "d6b807077739ae891010d317be7103d58e35962a52bcdaf14d2781acc02876a67fa0a7f9d3713cf1e430843a7e6d15bbdeee17b9ed0878be65983c81a21dad66"
+            },
+            "encryption_algorithm": "mime-type-indicated"
+        },
+        {
+            "type": "ipv6-addr",
+            "spec_version": "2.1",
+            "id": "ipv6-addr--148eb0be-f758-4bd5-bdb2-98e7dd2e9d74",
+            "value": "9b6a:3814:196:f12e:9f02:c9e7:9704:d952"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--b4668cb4-51b1-40ef-9914-d7f04b9c8825",
+            "start": "2023-02-26T08:34:40.119461Z",
+            "end": "2023-04-11T02:18:50.468313Z",
+            "is_active": false,
+            "src_ref": "domain-name--b77b55fd-6fe9-43ad-ae81-7b012baf9360",
+            "src_port": 7971,
+            "dst_port": 40642,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "src_byte_count": 9150,
+            "encapsulated_by_ref": "network-traffic--05df1fd8-b17a-4720-8c64-3dc7cca7a12f",
+            "dst_byte_count": 184026,
+            "src_packets": 1020792,
+            "dst_packets": 544364,
+            "encapsulates_refs": [
+                "network-traffic--38dd51b7-c05a-4ee6-bc8f-53c0f04884f7",
+                "network-traffic--d8f518a0-b728-46d1-9053-97f902e9376e",
+                "network-traffic--03f01526-a320-4141-a958-c05bc336990d"
+            ]
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--38dd51b7-c05a-4ee6-bc8f-53c0f04884f7",
+            "dst_ref": "domain-name--65600019-8136-4375-9003-931c67231756",
+            "src_port": 26128,
+            "src_byte_count": 507254,
+            "dst_packets": 69472,
+            "defanged": true,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ]
+        },
+        {
+            "type": "domain-name",
+            "spec_version": "2.1",
+            "id": "domain-name--65600019-8136-4375-9003-931c67231756",
+            "value": "noble.biz"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--d8f518a0-b728-46d1-9053-97f902e9376e",
+            "start": "2022-03-27T04:59:56.381907Z",
+            "end": "2023-01-23T21:46:14.408272Z",
+            "is_active": false,
+            "dst_ref": "ipv6-addr--c564d8b7-73ef-4290-abe2-6d7f3cb66a6b",
+            "dst_port": 15573,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "src_byte_count": 464491,
+            "src_packets": 619506,
+            "dst_packets": 245198
+        },
+        {
+            "type": "ipv6-addr",
+            "spec_version": "2.1",
+            "id": "ipv6-addr--c564d8b7-73ef-4290-abe2-6d7f3cb66a6b",
+            "value": "4bc7:64b1:fb18:c08c:3681:8176:5dcb:4fea"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--03f01526-a320-4141-a958-c05bc336990d",
+            "start": "2023-01-11T05:09:26.357406Z",
+            "end": "2023-05-28T16:15:06.329817Z",
+            "is_active": false,
+            "dst_ref": "domain-name--a2206b3d-cb4d-4a1b-b8cf-d8f68825087b",
+            "dst_port": 55887,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "dst_byte_count": 199201,
+            "dst_packets": 715703
+        },
+        {
+            "type": "domain-name",
+            "spec_version": "2.1",
+            "id": "domain-name--a2206b3d-cb4d-4a1b-b8cf-d8f68825087b",
+            "value": "hicks-hamilton.com"
+        },
+        {
+            "type": "domain-name",
+            "spec_version": "2.1",
+            "id": "domain-name--b77b55fd-6fe9-43ad-ae81-7b012baf9360",
+            "value": "thompson.com"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--ce060c15-167e-46c1-9486-d18866031f30",
+            "end": "2023-03-09T17:23:05.342896Z",
+            "is_active": false,
+            "src_ref": "mac-addr--e7637baf-501f-410e-adf0-fc70d7ccbac5",
+            "dst_port": 46912,
+            "src_byte_count": 264165,
+            "src_payload_ref": "artifact--593d184e-4819-4f4a-b7b7-6bf917bcc5a0",
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "dst_byte_count": 110551,
+            "encapsulated_by_ref": "network-traffic--05df1fd8-b17a-4720-8c64-3dc7cca7a12f",
+            "dst_payload_ref": "artifact--ff60da01-9847-4861-a4a9-c657aacf33b9"
+        },
+        {
+            "type": "artifact",
+            "spec_version": "2.1",
+            "id": "artifact--ff60da01-9847-4861-a4a9-c657aacf33b9",
+            "mime_type": "application/EDI-X12",
+            "url": "https://www.david.info/",
+            "hashes": {
+                "MD5": "1bafbcec4b65211188bb41daaad8ddd9",
+                "SHA-1": "ef8452bf3fc9e59c347a9a34f873252abb4d8c01",
+                "SHA-256": "c0b15a5ab41914d1d2bbdf4ff55833cf04265a6e089a1d86bae8e70efdb37763",
+                "SHA-512": "5fe126c09ecd1b8ed967d2b080dddc736d3afdf3981a33eb43e837494bc6836c8460e7f3b7c6a1f2f18285e486ccf42236cc13a6f626d2cfc1e9d23a4d960be8"
+            }
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--a7701761-d5ae-44ec-9441-d549992879f0",
+            "start": "2021-11-11T19:58:43.989959Z",
+            "is_active": false,
+            "src_ref": "ipv4-addr--4969fedc-32a2-4494-bb83-22f9c3e694dc",
+            "dst_ref": "ipv4-addr--f8e00878-6e63-405d-9d0b-adecf43b8f25",
+            "dst_port": 31778,
+            "defanged": true,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "encapsulates_refs": [
+                "network-traffic--b6b07775-904c-48f8-b05c-5d077813b04b",
+                "network-traffic--a98a67ec-12ba-4edb-b400-13f4b6b79005",
+                "network-traffic--4a0468cc-8068-4f86-9b20-e2a1da3d046d"
+            ]
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--b6b07775-904c-48f8-b05c-5d077813b04b",
+            "start": "2023-04-15T16:31:41.460897Z",
+            "src_ref": "ipv6-addr--148eb0be-f758-4bd5-bdb2-98e7dd2e9d74",
+            "dst_ref": "ipv6-addr--a8db106c-f974-44ba-bb34-6cbd49a9c687",
+            "src_port": 52731,
+            "src_byte_count": 935265,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "dst_byte_count": 157147,
+            "dst_packets": 929058,
+            "encapsulates_refs": [
+                "network-traffic--d0fc2f8e-b512-4a8a-ae87-3d97d456c2da",
+                "network-traffic--77d9da5f-baa7-4424-8644-0ab536669d2b"
+            ]
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--d0fc2f8e-b512-4a8a-ae87-3d97d456c2da",
+            "start": "2021-12-16T17:16:48.71129Z",
+            "src_ref": "mac-addr--f4eeb6c2-3853-4eea-97b0-0266ff888574",
+            "src_port": 35850,
+            "src_byte_count": 397434,
+            "dst_byte_count": 19908,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "src_packets": 18718,
+            "dst_packets": 458470
+        },
+        {
+            "type": "mac-addr",
+            "spec_version": "2.1",
+            "id": "mac-addr--f4eeb6c2-3853-4eea-97b0-0266ff888574",
+            "value": "f8:80:fe:e3:d8:d5"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--77d9da5f-baa7-4424-8644-0ab536669d2b",
+            "start": "2022-10-21T09:00:25.398804Z",
+            "is_active": false,
+            "dst_ref": "mac-addr--3c278867-4336-48fb-950a-4f772d15b340",
+            "src_port": 33870,
+            "dst_byte_count": 632356,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ]
+        },
+        {
+            "type": "mac-addr",
+            "spec_version": "2.1",
+            "id": "mac-addr--3c278867-4336-48fb-950a-4f772d15b340",
+            "value": "29:68:0e:4c:08:9f"
+        },
+        {
+            "type": "ipv6-addr",
+            "spec_version": "2.1",
+            "id": "ipv6-addr--a8db106c-f974-44ba-bb34-6cbd49a9c687",
+            "value": "8811:4aae:f302:d89:d62d:b204:9868:2ace"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--a98a67ec-12ba-4edb-b400-13f4b6b79005",
+            "start": "2021-06-10T19:51:21.008545Z",
+            "end": "2021-09-17T14:06:40.730547Z",
+            "is_active": false,
+            "dst_ref": "domain-name--b77b55fd-6fe9-43ad-ae81-7b012baf9360",
+            "dst_port": 16296,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "src_byte_count": 868632,
+            "dst_byte_count": 285945,
+            "src_packets": 652652,
+            "dst_packets": 632009,
+            "src_payload_ref": "artifact--ff60da01-9847-4861-a4a9-c657aacf33b9"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--4a0468cc-8068-4f86-9b20-e2a1da3d046d",
+            "start": "2022-11-19T02:41:06.624043Z",
+            "src_ref": "domain-name--5d14a6f9-854d-4af6-a35c-c7ba48cca51e",
+            "src_byte_count": 205046,
+            "dst_byte_count": 337099,
+            "dst_packets": 551092,
+            "src_payload_ref": "artifact--593d184e-4819-4f4a-b7b7-6bf917bcc5a0",
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "encapsulates_refs": [
+                "network-traffic--d2105db6-e533-4cb3-997c-2233d9f1c230"
+            ],
+            "encapsulated_by_ref": "network-traffic--a7701761-d5ae-44ec-9441-d549992879f0"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--d2105db6-e533-4cb3-997c-2233d9f1c230",
+            "end": "2023-01-25T13:16:39.191355Z",
+            "is_active": false,
+            "dst_ref": "domain-name--5d14a6f9-854d-4af6-a35c-c7ba48cca51e",
+            "dst_port": 64730,
+            "src_packets": 198798,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ]
+        },
+        {
+            "type": "domain-name",
+            "spec_version": "2.1",
+            "id": "domain-name--5d14a6f9-854d-4af6-a35c-c7ba48cca51e",
+            "value": "patterson.com"
+        },
+        {
+            "type": "ipv4-addr",
+            "spec_version": "2.1",
+            "id": "ipv4-addr--f8e00878-6e63-405d-9d0b-adecf43b8f25",
+            "value": "181.31.147.235"
+        },
+        {
+            "type": "ipv4-addr",
+            "spec_version": "2.1",
+            "id": "ipv4-addr--4969fedc-32a2-4494-bb83-22f9c3e694dc",
+            "value": "116.243.190.167"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--c8da44d9-6287-42b2-986e-c2efca8feb5f",
+            "src_ref": "mac-addr--eae2d2cc-e97a-4680-b2c1-9a12db706da0",
+            "is_active": false,
+            "dst_ref": "domain-name--2b7e6a73-b5da-4f3f-be22-58514dda3dca",
+            "src_port": 28105,
+            "dst_byte_count": 28827,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "src_packets": 464579,
+            "dst_packets": 349017,
+            "src_payload_ref": "artifact--17a1e5b2-25ed-4a36-bb7c-672db5a574e0"
+        },
+        {
+            "type": "artifact",
+            "spec_version": "2.1",
+            "id": "artifact--17a1e5b2-25ed-4a36-bb7c-672db5a574e0",
+            "url": "http://lee-scott.net/",
+            "hashes": {
+                "MD5": "2f697c6dae59d690175767532d24bf1d",
+                "SHA-1": "535e2442405300e7e71b4ee6542ef2b46b3a38b1"
+            },
+            "encryption_algorithm": "mime-type-indicated"
+        },
+        {
+            "type": "domain-name",
+            "spec_version": "2.1",
+            "id": "domain-name--2b7e6a73-b5da-4f3f-be22-58514dda3dca",
+            "value": "lawrence-chapman.biz"
+        },
+        {
+            "type": "mac-addr",
+            "spec_version": "2.1",
+            "id": "mac-addr--eae2d2cc-e97a-4680-b2c1-9a12db706da0",
+            "value": "c0:b5:f0:83:64:7e"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--c3aeb9cd-6c16-40d9-9475-77b684e7f6a4",
+            "start": "2021-10-01T01:42:36.326275Z",
+            "dst_port": 58567,
+            "src_ref": "ipv6-addr--c564d8b7-73ef-4290-abe2-6d7f3cb66a6b",
+            "src_byte_count": 689564,
+            "dst_byte_count": 621672,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "dst_packets": 479111,
+            "encapsulates_refs": [
+                "network-traffic--fed9e84c-099d-44f4-99fc-d0d25e288be1",
+                "network-traffic--deee384a-d6a3-4994-be54-a80f676dac10"
+            ]
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--fed9e84c-099d-44f4-99fc-d0d25e288be1",
+            "start": "2021-07-10T11:47:34.18569Z",
+            "is_active": false,
+            "src_ref": "ipv4-addr--1b687eaa-023b-47a4-88ed-4df78a84cdbb",
+            "dst_ref": "ipv6-addr--148eb0be-f758-4bd5-bdb2-98e7dd2e9d74",
+            "defanged": true,
+            "src_byte_count": 72099,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "src_packets": 140834,
+            "dst_packets": 525533
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--deee384a-d6a3-4994-be54-a80f676dac10",
+            "start": "2022-07-06T21:52:07.379357Z",
+            "end": "2023-02-08T21:13:59.171069Z",
+            "is_active": false,
+            "dst_ref": "domain-name--e3020396-7b2a-4db4-857b-0c8b0e36a8d1",
+            "src_byte_count": 510731,
+            "src_payload_ref": "artifact--593d184e-4819-4f4a-b7b7-6bf917bcc5a0",
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "dst_byte_count": 673085,
+            "src_packets": 845316,
+            "dst_payload_ref": "artifact--ff60da01-9847-4861-a4a9-c657aacf33b9"
+        },
+        {
+            "type": "domain-name",
+            "spec_version": "2.1",
+            "id": "domain-name--e3020396-7b2a-4db4-857b-0c8b0e36a8d1",
+            "value": "ellis.com",
+            "resolves_to_refs": [
+                "domain-name--a2206b3d-cb4d-4a1b-b8cf-d8f68825087b",
+                "domain-name--efcfdfca-6d8c-4d9b-9c40-2a3f2c3d4fe4"
+            ]
+        },
+        {
+            "type": "domain-name",
+            "spec_version": "2.1",
+            "id": "domain-name--efcfdfca-6d8c-4d9b-9c40-2a3f2c3d4fe4",
+            "value": "bailey-swanson.com"
+        },
+        {
+            "type": "file",
+            "spec_version": "2.1",
+            "id": "file--37c231b2-818d-4c2d-9f4a-5ac0ae8a7722",
+            "hashes": {
+                "MD5": "a06ede52b0f2682b57f770fec977ffbc",
+                "SHA-256": "12e5d6d407261cbb2017f29ea9e524907b6a7ec8c75bce92a7980bc9b8be6f92",
+                "SHA3-256": "01985f91a01228f35430c5fa79be8e8662617f7f474d149e5f94d6157d123939"
+            },
+            "size": 35175,
+            "name": "challenge.avi",
+            "atime": "2022-05-13T23:07:43.729573Z",
+            "parent_directory_ref": "directory--17877000-12c3-48d3-b4d8-e68456f7f00b",
+            "defanged": true,
+            "contains_refs": [
+                "network-traffic--b6b07775-904c-48f8-b05c-5d077813b04b",
+                "ipv4-addr--8e19f7ca-d17c-4052-bdf1-2c052026f720",
+                "ipv6-addr--a8db106c-f974-44ba-bb34-6cbd49a9c687",
+                "directory--e90f0cd1-3e2f-467f-9cf7-d7e03934d0aa"
+            ],
+            "content_ref": "artifact--34615e07-5152-418a-95a2-fb5c5d61890a"
+        },
+        {
+            "type": "artifact",
+            "spec_version": "2.1",
+            "id": "artifact--34615e07-5152-418a-95a2-fb5c5d61890a",
+            "url": "http://hickman.net/",
+            "hashes": {
+                "SHA-256": "9119f343bf29269d6aa8234bcf13574fa88729e07a9aaab04e9d874f6d40b1ee",
+                "SHA-512": "9b5355578e0b7d1e2bbd0c3949dd842510231d82fda0d46bc4872b4f1968ba429b1b667f627de26319df03229e42a443414dab055bd7817374ad5c1cf59d17e7",
+                "SHA3-512": "eecae88e1ce41cf49e84c6f36458e219ae15ec93634e45b7fb5206b6508c33676d0b54eced1b2f5cbc2ecd7f34c4e40b9dcbf630f7ba4cac2dfadb43c4430b38"
+            },
+            "encryption_algorithm": "AES-256-GCM"
+        },
+        {
+            "type": "ipv4-addr",
+            "spec_version": "2.1",
+            "id": "ipv4-addr--8e19f7ca-d17c-4052-bdf1-2c052026f720",
+            "value": "112.4.239.144"
+        },
+        {
+            "type": "directory",
+            "spec_version": "2.1",
+            "id": "directory--e90f0cd1-3e2f-467f-9cf7-d7e03934d0aa",
+            "path": "/agreement/argue.gif",
+            "path_enc": "ISO-8859-9",
+            "ctime": "2021-09-19T09:42:14.951576Z",
+            "mtime": "2022-03-23T11:06:09.492508Z",
+            "atime": "2023-01-08T01:42:09.466993Z",
+            "contains_refs": [
+                "directory--25d23bda-1e91-4780-b53a-03bd3375293d",
+                "file--f880cdd6-b157-424b-80aa-48ac85f1391b",
+                "file--0a137729-0e1b-4040-a5f8-eefd4e11e3b3",
+                "directory--4586ee1b-90ed-46f3-811e-4e92a0f8b269"
+            ]
+        },
+        {
+            "type": "directory",
+            "spec_version": "2.1",
+            "id": "directory--25d23bda-1e91-4780-b53a-03bd3375293d",
+            "path": "/arm/claim.mp4",
+            "path_enc": "ISO-2022-JP",
+            "ctime": "2023-04-26T01:06:54.803261Z",
+            "atime": "2021-10-05T09:55:44.853061Z",
+            "contains_refs": [
+                "file--54180a7a-bfa0-4126-b20d-f8f4d9d81321"
+            ]
+        },
+        {
+            "type": "file",
+            "spec_version": "2.1",
+            "id": "file--54180a7a-bfa0-4126-b20d-f8f4d9d81321",
+            "hashes": {
+                "SHA-256": "0ce0195c96b6635ef3ca46d3adbc5cc3f4f45d53340ee91fe8e16e4cc70c086c",
+                "SHA3-512": "682d101d16c60e77772225fe5f4712cbb6c4482435b383ab045aa3c2d7dd0dd26467f88676c96c5886b13fc8197306bca74fa67225c9e79e22fc2db78dd3a959"
+            },
+            "size": 694279,
+            "name": "president.bmp",
+            "mtime": "2022-03-29T02:23:16.287481Z",
+            "atime": "2022-11-06T07:43:34.390098Z"
+        },
+        {
+            "type": "file",
+            "spec_version": "2.1",
+            "id": "file--f880cdd6-b157-424b-80aa-48ac85f1391b",
+            "hashes": {
+                "SHA-1": "70a34fcd26504ae4c351d8c8a4d805105763a0c2",
+                "SHA-256": "1400ae8cc5ac396e69e79266e4079ab91f348993d4706898a58b0727b68f6e63",
+                "SHA3-256": "0cae368f5dfce485545840356b2bc9d2c4a0f1fa3dd9e7f0640dd3776370cd6d"
+            },
+            "name": "chance.xls",
+            "mime_type": "audio/L24",
+            "ctime": "2023-04-11T18:59:25.628695Z",
+            "mtime": "2022-10-08T10:29:54.903689Z",
+            "atime": "2023-02-01T15:33:32.180141Z",
+            "contains_refs": [
+                "url--e064e4cb-2fbc-44d6-bd18-473cd1515ff2"
+            ]
+        },
+        {
+            "type": "url",
+            "spec_version": "2.1",
+            "id": "url--e064e4cb-2fbc-44d6-bd18-473cd1515ff2",
+            "value": "http://jacobs.info/"
+        },
+        {
+            "type": "file",
+            "spec_version": "2.1",
+            "id": "file--0a137729-0e1b-4040-a5f8-eefd4e11e3b3",
+            "size": 379949,
+            "name": "pretty.json",
+            "mime_type": "message/imdn+xml",
+            "atime": "2023-03-18T18:43:50.147854Z"
+        },
+        {
+            "type": "directory",
+            "spec_version": "2.1",
+            "id": "directory--4586ee1b-90ed-46f3-811e-4e92a0f8b269",
+            "path": "/just/time.xlsx",
+            "atime": "2022-05-08T04:56:13.742756Z",
+            "contains_refs": [
+                "file--fd84db60-b90d-47ce-bcd7-b537c8295826"
+            ]
+        },
+        {
+            "type": "file",
+            "spec_version": "2.1",
+            "id": "file--fd84db60-b90d-47ce-bcd7-b537c8295826",
+            "hashes": {
+                "MD5": "92809b737826e81169f431347fe0f7fd",
+                "SHA-1": "071db0cd3ad93d2f90856abf093d796f3219d112",
+                "SHA-256": "df5181b6176843bfa554020a7de4ad6e8f867e04f675199bbd7e135f4ce87514",
+                "SHA-512": "9f592becd063b456a3ef3a94dff4b70f92722651f808843cbaf13d47e991916b561e6404d68ac4831c959cacdfbc4dbe5b302ad203f942c3d0fe7d80f8c4ac1e",
+                "SHA3-256": "1b6ab0a461f16617541dff7191646beda9c90546a02c180ab9506a042b2c81e2",
+                "SHA3-512": "64ac6614d56b495037a409f72b22002266cdef3011f04d6d155d07113b0dc9e731ad3b54788fa5f4a875b7c7987a0e40ef4952e258987ac205ea46fef21bdb52"
+            },
+            "defanged": true
+        },
+        {
+            "type": "directory",
+            "spec_version": "2.1",
+            "id": "directory--17877000-12c3-48d3-b4d8-e68456f7f00b",
+            "path": "/spring/central.mp3",
+            "path_enc": "US-ASCII",
+            "ctime": "2021-07-27T18:14:29.840662Z",
+            "atime": "2023-06-02T18:58:11.336008Z",
+            "contains_refs": [
+                "directory--e90f0cd1-3e2f-467f-9cf7-d7e03934d0aa",
+                "file--aa36efc0-5c98-408e-9935-43e88b9fdec8",
+                "directory--25d23bda-1e91-4780-b53a-03bd3375293d",
+                "file--37c231b2-818d-4c2d-9f4a-5ac0ae8a7722"
+            ]
+        },
+        {
+            "type": "file",
+            "spec_version": "2.1",
+            "id": "file--aa36efc0-5c98-408e-9935-43e88b9fdec8",
+            "size": 254835,
+            "name": "whom.bmp",
+            "mime_type": "model/iges",
+            "mtime": "2021-08-03T09:57:55.618Z",
+            "parent_directory_ref": "directory--17877000-12c3-48d3-b4d8-e68456f7f00b"
+        },
+        {
+            "type": "process",
+            "spec_version": "2.1",
+            "id": "process--c3193285-a86d-4419-80a6-e90e2d5f6cbf",
+            "pid": 38887,
+            "created_time": "2021-08-06T09:38:37.369843Z",
+            "cwd": "/democratic/himself.odp",
+            "opened_connection_refs": [
+                "network-traffic--b6b07775-904c-48f8-b05c-5d077813b04b",
+                "network-traffic--77d9da5f-baa7-4424-8644-0ab536669d2b"
+            ],
+            "parent_ref": "process--8e74098c-887e-4ba2-9c07-3b297793e177"
+        },
+        {
+            "type": "process",
+            "spec_version": "2.1",
+            "id": "process--36e0481d-bfed-4577-8b1f-00e4f67637a0",
+            "is_hidden": true,
+            "pid": 9322,
+            "created_time": "2023-06-08T09:34:48.985771Z",
+            "opened_connection_refs": [
+                "network-traffic--a7701761-d5ae-44ec-9441-d549992879f0",
+                "network-traffic--f9835dee-5cea-44de-9465-76af6662fcaa",
+                "network-traffic--a77a4c56-4ca6-4fef-b7bd-39098a17f4e0"
+            ],
+            "image_ref": "file--bef11f19-f110-4cf9-9931-5d0768535ed4"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--a77a4c56-4ca6-4fef-b7bd-39098a17f4e0",
+            "end": "2022-04-25T06:34:44.266697Z",
+            "is_active": false,
+            "dst_ref": "mac-addr--90f4261c-3db3-426d-8efa-8e3d274bf4fc",
+            "dst_byte_count": 766211,
+            "defanged": true,
+            "src_packets": 1025443,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "dst_packets": 1009401,
+            "encapsulated_by_ref": "network-traffic--2fc86dcf-83df-4327-81ca-98815613c7ad",
+            "src_payload_ref": "artifact--ff60da01-9847-4861-a4a9-c657aacf33b9"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--2fc86dcf-83df-4327-81ca-98815613c7ad",
+            "dst_ref": "domain-name--56b96871-16ba-4568-a408-3e8b4c4a33c7",
+            "is_active": false,
+            "src_port": 55427,
+            "src_byte_count": 257609,
+            "defanged": true,
+            "dst_byte_count": 718248,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "src_packets": 834509,
+            "dst_packets": 877649,
+            "encapsulated_by_ref": "network-traffic--80751015-602e-4ae0-855b-94aa5b9d7330"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--80751015-602e-4ae0-855b-94aa5b9d7330",
+            "src_ref": "ipv6-addr--6263ae27-37cc-47c6-b990-e67f84ea0563",
+            "dst_port": 32960,
+            "src_byte_count": 70670,
+            "src_packets": 534555,
+            "defanged": true,
+            "dst_packets": 502396,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ]
+        },
+        {
+            "type": "ipv6-addr",
+            "spec_version": "2.1",
+            "id": "ipv6-addr--6263ae27-37cc-47c6-b990-e67f84ea0563",
+            "value": "b1c5:faff:45f:d5f5:a9fa:81a8:d16f:3c7b"
+        },
+        {
+            "type": "domain-name",
+            "spec_version": "2.1",
+            "id": "domain-name--56b96871-16ba-4568-a408-3e8b4c4a33c7",
+            "value": "wu.biz"
+        },
+        {
+            "type": "mac-addr",
+            "spec_version": "2.1",
+            "id": "mac-addr--90f4261c-3db3-426d-8efa-8e3d274bf4fc",
+            "value": "a5:09:94:d4:9a:75"
+        },
+        {
+            "type": "file",
+            "spec_version": "2.1",
+            "id": "file--bef11f19-f110-4cf9-9931-5d0768535ed4",
+            "hashes": {
+                "SHA-256": "9eed64719edd4cb9a13392624a61888d06d04ad1d923118070c27626a313f900",
+                "SHA-512": "d9ea570898c69a529823f30433ff3db5b4efd584403911f2ee2b73433737f4889e87c6cf296e3fe47753d894628bcff5890bbe914b00457fdcab63ca99560561",
+                "SHA3-512": "7e5c50d44b65a32e5ed4cc5547bd356cf2a6a6f4fafee130b8522ad7a7b8dd2c42997267d3bd0a9f1962679661e866b99639e994517f5039f60450e65304b1dc"
+            },
+            "name": "play.bmp",
+            "mime_type": "model/mesh",
+            "ctime": "2023-01-30T15:47:30.803006Z",
+            "atime": "2021-06-18T19:08:26.723984Z",
+            "defanged": true,
+            "content_ref": "artifact--a29d54a9-12f7-4d4f-a047-8b6849fe1261"
+        },
+        {
+            "type": "artifact",
+            "spec_version": "2.1",
+            "id": "artifact--a29d54a9-12f7-4d4f-a047-8b6849fe1261",
+            "mime_type": "multipart/form-data",
+            "url": "http://www.washington-may.org/",
+            "hashes": {
+                "MD5": "15f8897eb9d888f4da157e7a038540d9",
+                "SHA-1": "43f3466e766180e61e20d5cf590a7b01e5048fd0",
+                "SHA-256": "5766ec72502bdf8e05d983035a73cc8e8d8ae65268d93478b5d75c5d7904e99c",
+                "SHA3-256": "27294dbb71435d686a1197e306130acd2489b3e2619caad1dfc365f8ab883167",
+                "SHA3-512": "076c6be2a691453572e52fe77d96a56c987999d70b1a8d8f6e6d8faa99ce7a02160531508443800ae33f2e025bf52ca55898236167df2a9eb7c27b09b4b92d04"
+            },
+            "encryption_algorithm": "AES-256-GCM"
+        },
+        {
+            "type": "process",
+            "spec_version": "2.1",
+            "id": "process--27e3c546-ef14-477b-b5dd-d8344b97221c",
+            "is_hidden": true,
+            "pid": 63940,
+            "cwd": "/try/use.mp3",
+            "opened_connection_refs": [
+                "network-traffic--d8f518a0-b728-46d1-9053-97f902e9376e",
+                "network-traffic--ac3f2633-1a0a-4180-981b-5bc87d70dcb6",
+                "network-traffic--a98a67ec-12ba-4edb-b400-13f4b6b79005",
+                "network-traffic--f9835dee-5cea-44de-9465-76af6662fcaa",
+                "network-traffic--a98a67ec-12ba-4edb-b400-13f4b6b79005"
+            ],
+            "creator_user_ref": "user-account--7539f152-b2b1-4999-98a1-bf77568da3de",
+            "parent_ref": "process--8e74098c-887e-4ba2-9c07-3b297793e177",
+            "image_ref": "file--fd84db60-b90d-47ce-bcd7-b537c8295826",
+            "child_refs": [
+                "process--f9dbf90c-0223-4eaa-9f48-a65a99dec706",
+                "process--cc19f21c-89bb-482c-bcbc-26b7826ccd84"
+            ]
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--ac3f2633-1a0a-4180-981b-5bc87d70dcb6",
+            "src_ref": "mac-addr--ba06dda2-eeb7-4e89-b9bb-bbb86dbd7dbb",
+            "dst_ref": "domain-name--35731ad8-799d-4c3f-b94a-c285d4a52b82",
+            "dst_port": 30229,
+            "src_byte_count": 949851,
+            "src_packets": 437159,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "dst_packets": 970796,
+            "dst_payload_ref": "artifact--868579ff-fdfa-43e5-87c2-4aa1beec5de4",
+            "encapsulated_by_ref": "network-traffic--e827c630-cae1-4022-bd35-792ea6ec219d"
+        },
+        {
+            "type": "artifact",
+            "spec_version": "2.1",
+            "id": "artifact--868579ff-fdfa-43e5-87c2-4aa1beec5de4",
+            "mime_type": "application/ogg",
+            "url": "https://simon-ochoa.biz/",
+            "hashes": {
+                "SHA-1": "f88eb61bf11ba72e3745e7020cfb3e55f10cbb9a",
+                "SHA-256": "3f05b1a949e27e8152a614e5d42b7030ce516f80f7faf384e596b2b57084f7be",
+                "SHA3-256": "a78b96da554ecf8bf34c8299d57744a9f1cc98b9309cb2d8aad52b007e681722"
+            },
+            "encryption_algorithm": "AES-256-GCM",
+            "defanged": true
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--e827c630-cae1-4022-bd35-792ea6ec219d",
+            "start": "2021-07-06T21:37:14.85301Z",
+            "is_active": false,
+            "src_ref": "ipv6-addr--e1483a99-b7eb-42d6-82fb-de34ba411705",
+            "dst_ref": "domain-name--e3020396-7b2a-4db4-857b-0c8b0e36a8d1",
+            "dst_port": 51487,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "src_byte_count": 813360,
+            "src_payload_ref": "artifact--00392eb5-e786-435b-b9bd-6968bc37185f",
+            "dst_payload_ref": "artifact--17a1e5b2-25ed-4a36-bb7c-672db5a574e0"
+        },
+        {
+            "type": "artifact",
+            "spec_version": "2.1",
+            "id": "artifact--00392eb5-e786-435b-b9bd-6968bc37185f",
+            "mime_type": "application/xop+xml",
+            "url": "https://www.potts.info/",
+            "hashes": {
+                "SHA-256": "80eb08b4e087d71b76066784cfc67034a5668f8e20e72317a9c2ba3a881e4528",
+                "SHA3-256": "b144856a24ad14fe14e4bb7c06c5cd123538d9116275b5c04faa361c2e935c1b",
+                "SHA3-512": "275c440920eb1ba18ddac1ecaa0f39a2fd693bb53ceb2adfbb12a2767672d9e098f3f3a1b8e8e163a8f77fbd40ed6f6a9788292bdad5df012ce8b5ae67af9485"
+            },
+            "encryption_algorithm": "ChaCha20-Poly1305",
+            "decryption_key": "bUUBRD"
+        },
+        {
+            "type": "domain-name",
+            "spec_version": "2.1",
+            "id": "domain-name--35731ad8-799d-4c3f-b94a-c285d4a52b82",
+            "value": "anderson-johnson.net",
+            "resolves_to_refs": [
+                "ipv4-addr--58f75691-3bbb-4dfc-a58f-7f5e8305d019",
+                "domain-name--efcfdfca-6d8c-4d9b-9c40-2a3f2c3d4fe4"
+            ]
+        },
+        {
+            "type": "ipv4-addr",
+            "spec_version": "2.1",
+            "id": "ipv4-addr--58f75691-3bbb-4dfc-a58f-7f5e8305d019",
+            "value": "103.75.103.75"
+        },
+        {
+            "type": "mac-addr",
+            "spec_version": "2.1",
+            "id": "mac-addr--ba06dda2-eeb7-4e89-b9bb-bbb86dbd7dbb",
+            "value": "b2:1b:92:b0:fb:04"
+        },
+        {
+            "type": "process",
+            "spec_version": "2.1",
+            "id": "process--f9dbf90c-0223-4eaa-9f48-a65a99dec706",
+            "is_hidden": true,
+            "cwd": "/control/car.csv"
+        },
+        {
+            "type": "process",
+            "spec_version": "2.1",
+            "id": "process--cc19f21c-89bb-482c-bcbc-26b7826ccd84",
+            "is_hidden": false,
+            "created_time": "2022-06-23T15:12:18.53755Z",
+            "cwd": "/live/only.png",
+            "image_ref": "file--57435326-96f7-4731-8b31-fb1d3f53eb43",
+            "child_refs": [
+                "process--11c515da-adc0-4378-8cc9-e6fa652e4a2f",
+                "process--efb5ee34-9abb-4e25-842f-12b511fa4ddf",
+                "process--c5ac4cb7-7ff1-453e-a264-cbb1c0402878",
+                "process--1111db56-e43f-43c3-8ce3-cd1466dbac3a",
+                "process--b24366f0-6889-446e-a82f-c6ecbdd3cf2c"
+            ]
+        },
+        {
+            "type": "file",
+            "spec_version": "2.1",
+            "id": "file--57435326-96f7-4731-8b31-fb1d3f53eb43",
+            "hashes": {
+                "MD5": "f4e03b15e128d1db1adea4e120e4d8cb",
+                "SHA-1": "100b24d87c3df6fd630194563302a4453a923095",
+                "SHA-256": "05c614bb4ba341a0f47643e91c20c749be2f473e379c77ea51ec285f2dd9c8a8",
+                "SHA-512": "0801ff7c5d051827157b42c247921b8370281caba4dd7e99e394d8b339de08781ad1f19d8db1adba7dec69917874e4050cd77d0c83594b92adaa671ededb2226",
+                "SHA3-512": "89bbe8c84273dcdf9efb646feec859e69cdc898efba63b58fd9c6502729920b57487950f16d72af93133fe4febcdf994ff8759bd4539d56637c2f3258a2bb422"
+            },
+            "mime_type": "multipart/alternative",
+            "ctime": "2022-11-06T03:07:54.107256Z",
+            "content_ref": "artifact--651889f6-7d7a-4e94-8a9b-9f8fae44bcea"
+        },
+        {
+            "type": "artifact",
+            "spec_version": "2.1",
+            "id": "artifact--651889f6-7d7a-4e94-8a9b-9f8fae44bcea",
+            "url": "http://www.smith.com/",
+            "hashes": {
+                "MD5": "397b469898e379abd13dd9fced642134",
+                "SHA-1": "979dbce85cd07bb671bc1e9bbe25df3fbead6202",
+                "SHA-256": "280199b943ad128417af5ea5d0418ad399c25348bea195c35c0f567f43cc3932",
+                "SHA3-256": "f93366d07b144c780c8533fcdb88d47144aa6bc8ddff640619894ea5224df35c"
+            },
+            "defanged": true
+        },
+        {
+            "type": "process",
+            "spec_version": "2.1",
+            "id": "process--11c515da-adc0-4378-8cc9-e6fa652e4a2f",
+            "is_hidden": true,
+            "pid": 18210,
+            "created_time": "2023-03-29T10:32:19.542587Z",
+            "opened_connection_refs": [
+                "network-traffic--a7701761-d5ae-44ec-9441-d549992879f0",
+                "network-traffic--77d9da5f-baa7-4424-8644-0ab536669d2b"
+            ],
+            "image_ref": "file--0a137729-0e1b-4040-a5f8-eefd4e11e3b3",
+            "parent_ref": "process--cc19f21c-89bb-482c-bcbc-26b7826ccd84"
+        },
+        {
+            "type": "process",
+            "spec_version": "2.1",
+            "id": "process--efb5ee34-9abb-4e25-842f-12b511fa4ddf",
+            "pid": 9964,
+            "created_time": "2022-09-07T22:04:59.157079Z",
+            "cwd": "/it/doctor.mp3",
+            "opened_connection_refs": [
+                "network-traffic--505d62b3-db51-47eb-9b80-99a04a6c1a5e",
+                "network-traffic--d03ea28d-d2dd-44f0-84f2-3beb0e31bb38",
+                "network-traffic--4a192a05-a7f3-4793-8db4-168c4e33a7c0"
+            ],
+            "creator_user_ref": "user-account--7539f152-b2b1-4999-98a1-bf77568da3de",
+            "image_ref": "file--83b5cf36-fbec-44f1-aae5-4f82aa11ffd6",
+            "child_refs": [
+                "process--204e7881-d484-4dc1-b6d5-731b96a29605",
+                "process--407a0333-5f7e-464b-83f0-a971144803e9"
+            ]
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--505d62b3-db51-47eb-9b80-99a04a6c1a5e",
+            "start": "2021-07-13T19:09:53.154627Z",
+            "dst_ref": "domain-name--a2492847-e6b4-422f-969e-8fe0aea8166b",
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ]
+        },
+        {
+            "type": "domain-name",
+            "spec_version": "2.1",
+            "id": "domain-name--a2492847-e6b4-422f-969e-8fe0aea8166b",
+            "value": "lopez-mcdonald.com"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--d03ea28d-d2dd-44f0-84f2-3beb0e31bb38",
+            "start": "2022-04-20T06:36:33.129264Z",
+            "src_ref": "mac-addr--ba06dda2-eeb7-4e89-b9bb-bbb86dbd7dbb",
+            "is_active": false,
+            "src_port": 40439,
+            "dst_port": 25066,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "dst_byte_count": 237485,
+            "src_packets": 863934,
+            "dst_packets": 679255
+        },
+        {
+            "type": "file",
+            "spec_version": "2.1",
+            "id": "file--83b5cf36-fbec-44f1-aae5-4f82aa11ffd6",
+            "hashes": {
+                "MD5": "25c2c1ead507d45cab26a486d873feb7",
+                "SHA-1": "369e1a4c104d0c70e0f8deae3b1bbd39190696f5"
+            },
+            "size": 720178,
+            "name": "recognize.mp4",
+            "mime_type": "image/svg+xml",
+            "ctime": "2022-07-01T08:55:37.516193Z",
+            "defanged": true
+        },
+        {
+            "type": "process",
+            "spec_version": "2.1",
+            "id": "process--204e7881-d484-4dc1-b6d5-731b96a29605",
+            "is_hidden": false,
+            "pid": 37991,
+            "cwd": "/throw/ever.csv"
+        },
+        {
+            "type": "process",
+            "spec_version": "2.1",
+            "id": "process--407a0333-5f7e-464b-83f0-a971144803e9",
+            "is_hidden": true,
+            "created_time": "2022-11-02T04:57:44.894639Z",
+            "cwd": "/effort/true.odt"
+        },
+        {
+            "type": "user-account",
+            "spec_version": "2.1",
+            "id": "user-account--7539f152-b2b1-4999-98a1-bf77568da3de",
+            "credential": "ZM1&^gJga#",
+            "account_login": "dhill@example.org",
+            "is_privileged": true,
+            "is_disabled": true,
+            "account_first_login": "2021-12-05T13:37:11.803453Z"
+        },
+        {
+            "type": "process",
+            "spec_version": "2.1",
+            "id": "process--c5ac4cb7-7ff1-453e-a264-cbb1c0402878",
+            "is_hidden": true,
+            "pid": 11627,
+            "created_time": "2023-01-28T12:16:01.531873Z",
+            "cwd": "/school/music.mp3",
+            "creator_user_ref": "user-account--5e4435db-b2e9-4e18-8cf1-af52aa808711",
+            "image_ref": "file--bef11f19-f110-4cf9-9931-5d0768535ed4",
+            "parent_ref": "process--cc19f21c-89bb-482c-bcbc-26b7826ccd84"
+        },
+        {
+            "type": "process",
+            "spec_version": "2.1",
+            "id": "process--1111db56-e43f-43c3-8ce3-cd1466dbac3a",
+            "is_hidden": false,
+            "cwd": "/president/happy.css",
+            "opened_connection_refs": [
+                "network-traffic--505d62b3-db51-47eb-9b80-99a04a6c1a5e",
+                "network-traffic--12b2b19f-089e-43c6-801a-31786a01301b",
+                "network-traffic--505d62b3-db51-47eb-9b80-99a04a6c1a5e"
+            ],
+            "creator_user_ref": "user-account--d903b09a-c17d-48fa-b88c-8e67319ec8ec",
+            "parent_ref": "process--cc19f21c-89bb-482c-bcbc-26b7826ccd84",
+            "child_refs": [
+                "process--7891d049-26dc-44fc-a014-d2dbeb6ac16e",
+                "process--47368269-0213-46ec-94e3-82865cf01b4b",
+                "process--edab1317-8763-49b0-b770-7217cf23deff",
+                "process--396563a6-c08a-4234-b523-34ca600f1089",
+                "process--2233c055-4286-4881-a87b-23a83c012c5d"
+            ]
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--12b2b19f-089e-43c6-801a-31786a01301b",
+            "dst_ref": "ipv4-addr--8e19f7ca-d17c-4052-bdf1-2c052026f720",
+            "src_port": 18619,
+            "dst_port": 49211,
+            "dst_byte_count": 334597,
+            "src_packets": 345033,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ]
+        },
+        {
+            "type": "process",
+            "spec_version": "2.1",
+            "id": "process--7891d049-26dc-44fc-a014-d2dbeb6ac16e",
+            "created_time": "2022-07-02T23:11:30.140109Z",
+            "cwd": "/here/reach.gif"
+        },
+        {
+            "type": "process",
+            "spec_version": "2.1",
+            "id": "process--47368269-0213-46ec-94e3-82865cf01b4b",
+            "created_time": "2021-12-06T08:59:47.386133Z",
+            "name": "blackhole"
+        },
+        {
+            "type": "process",
+            "spec_version": "2.1",
+            "id": "process--edab1317-8763-49b0-b770-7217cf23deff",
+            "is_hidden": true,
+            "pid": 1351
+        },
+        {
+            "type": "process",
+            "spec_version": "2.1",
+            "id": "process--396563a6-c08a-4234-b523-34ca600f1089",
+            "is_hidden": false,
+            "pid": 47130,
+            "cwd": "/state/prepare.csv"
+        },
+        {
+            "type": "process",
+            "spec_version": "2.1",
+            "id": "process--2233c055-4286-4881-a87b-23a83c012c5d",
+            "is_hidden": true,
+            "pid": 22693
+        },
+        {
+            "type": "process",
+            "spec_version": "2.1",
+            "id": "process--b24366f0-6889-446e-a82f-c6ecbdd3cf2c",
+            "pid": 3452,
+            "created_time": "2022-04-21T21:21:16.622146Z",
+            "child_refs": [
+                "process--bf5b4081-c571-4146-afea-ca4f25751000",
+                "process--b004189e-d118-47e1-bcb4-327951380f25",
+                "process--a48e245f-341d-40ba-ad5e-34a17e6745d0"
+            ],
+            "image_ref": "file--83b5cf36-fbec-44f1-aae5-4f82aa11ffd6",
+            "parent_ref": "process--cc19f21c-89bb-482c-bcbc-26b7826ccd84"
+        },
+        {
+            "type": "process",
+            "spec_version": "2.1",
+            "id": "process--bf5b4081-c571-4146-afea-ca4f25751000",
+            "is_hidden": true,
+            "created_time": "2021-08-07T03:32:27.441594Z"
+        },
+        {
+            "type": "process",
+            "spec_version": "2.1",
+            "id": "process--b004189e-d118-47e1-bcb4-327951380f25",
+            "is_hidden": true,
+            "pid": 19255
+        },
+        {
+            "type": "process",
+            "spec_version": "2.1",
+            "id": "process--a48e245f-341d-40ba-ad5e-34a17e6745d0",
+            "is_hidden": false,
+            "created_time": "2021-09-10T07:07:07.163685Z",
+            "cwd": "/throw/parent.wav"
+        },
+        {
+            "type": "process",
+            "spec_version": "2.1",
+            "id": "process--6b3efe3f-33ba-4c1f-ad4d-f0a3667f9010",
+            "pid": 7262,
+            "opened_connection_refs": [
+                "network-traffic--e49290f5-9d26-4ef1-b6b9-99e707778815",
+                "network-traffic--925ad0bb-9563-4fb2-9e47-5d73bbbe7ccb",
+                "network-traffic--7888241b-8f4e-4605-8c39-4542e1249f78",
+                "network-traffic--d0fc2f8e-b512-4a8a-ae87-3d97d456c2da",
+                "network-traffic--a531dbb4-492c-4feb-9fdf-fc3fac3d55dd"
+            ],
+            "creator_user_ref": "user-account--7539f152-b2b1-4999-98a1-bf77568da3de"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--e49290f5-9d26-4ef1-b6b9-99e707778815",
+            "src_ref": "ipv6-addr--a8db106c-f974-44ba-bb34-6cbd49a9c687",
+            "dst_ref": "mac-addr--0bbb9f5e-b740-4fb9-a9d6-09b67af1aa30",
+            "src_port": 24776,
+            "src_byte_count": 952378,
+            "src_packets": 717445,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "src_payload_ref": "artifact--b1378601-d6f7-45f8-8377-f40186fc710c"
+        },
+        {
+            "type": "artifact",
+            "spec_version": "2.1",
+            "id": "artifact--b1378601-d6f7-45f8-8377-f40186fc710c",
+            "url": "https://frank.org/",
+            "hashes": {
+                "SHA3-256": "dc354f1af5bff624f02662882bcbc05a0cf9ca48187a2879a295b4f46077b4e4",
+                "SHA3-512": "4f7f2c46aab06067e22097fac35aae28a9a10296d11ac61854132aae5829fa916b7f5f797b39bd45cacf4371e81e56dbed36a8e3751614d427516f101de698a5"
+            },
+            "encryption_algorithm": "AES-256-GCM",
+            "decryption_key": "CDEgvjLzsGA"
+        },
+        {
+            "type": "mac-addr",
+            "spec_version": "2.1",
+            "id": "mac-addr--0bbb9f5e-b740-4fb9-a9d6-09b67af1aa30",
+            "value": "7f:9f:cb:7d:0a:47"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--925ad0bb-9563-4fb2-9e47-5d73bbbe7ccb",
+            "dst_ref": "ipv6-addr--bee94f2a-2bf2-48b8-9e7e-5964b4f10679",
+            "is_active": false,
+            "src_port": 48403,
+            "src_byte_count": 823842,
+            "dst_byte_count": 37723,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "dst_packets": 29197,
+            "encapsulated_by_ref": "network-traffic--88d1ed10-3538-4e39-8f5a-c00499ff2563"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--88d1ed10-3538-4e39-8f5a-c00499ff2563",
+            "start": "2022-09-18T06:06:42.988051Z",
+            "src_ref": "ipv6-addr--7e088834-8f57-48cd-a37e-2e4fbc3dca5c",
+            "dst_ref": "ipv6-addr--71a7fae3-135c-4154-af10-479375fb9d9d",
+            "dst_port": 44389,
+            "src_packets": 988239,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "src_payload_ref": "artifact--7011b901-ab2d-4734-b89a-f5c5b1a8807d",
+            "dst_payload_ref": "artifact--a1ebad1b-54e5-4ea2-bfe7-38a1bcbd1ce7",
+            "encapsulated_by_ref": "network-traffic--18c097e3-d363-41a4-b814-ec1dfcdc6cf4"
+        },
+        {
+            "type": "artifact",
+            "spec_version": "2.1",
+            "id": "artifact--a1ebad1b-54e5-4ea2-bfe7-38a1bcbd1ce7",
+            "mime_type": "text/vcard",
+            "url": "http://meyer-mayer.net/",
+            "hashes": {
+                "SHA-256": "0a680099ef42748907fd1ddf40337b9611bff9cc76e005e14eae13a11a421b94",
+                "SHA-512": "9f8cfdf356f436eab6ed92f78fdd1c8557ef9379d4a341b0a3421e0be6f662b6dee7f9ad3f13d6e176b7c180c9638a8064ba51b613fd00ec936b26f4a90fcb70"
+            },
+            "defanged": true
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--18c097e3-d363-41a4-b814-ec1dfcdc6cf4",
+            "start": "2021-03-23T23:55:35.40782Z",
+            "end": "2021-11-04T15:21:36.388821Z",
+            "is_active": false,
+            "dst_ref": "ipv6-addr--a8db106c-f974-44ba-bb34-6cbd49a9c687",
+            "dst_port": 1388,
+            "defanged": true,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "dst_byte_count": 774484,
+            "src_packets": 36342,
+            "dst_packets": 552960
+        },
+        {
+            "type": "artifact",
+            "spec_version": "2.1",
+            "id": "artifact--7011b901-ab2d-4734-b89a-f5c5b1a8807d",
+            "url": "https://www.duran-payne.org/",
+            "hashes": {
+                "MD5": "126b5935cfb2976b70cf3e956b3419a4",
+                "SHA-1": "ab6bbff25dbed630db3d58a60a0e40c608d1f8b7",
+                "SHA-512": "0e5c4df0b2756f646c8af6bf36b515a57ee55c39381f58d3c07dd45a1c2702a6e44d688eb4ed8cb147f7876fa369b315e9201f5b9176038676578197753354af",
+                "SHA3-256": "552b274904634aab278fe34f2d31c11736e795d2dd6276511662a30c81fdd13a"
+            },
+            "encryption_algorithm": "ChaCha20-Poly1305",
+            "decryption_key": "vlQQaXIDxB",
+            "defanged": true
+        },
+        {
+            "type": "ipv6-addr",
+            "spec_version": "2.1",
+            "id": "ipv6-addr--71a7fae3-135c-4154-af10-479375fb9d9d",
+            "value": "c58a:801a:7d77:92a8:c5c3:efd2:7735:5af4"
+        },
+        {
+            "type": "ipv6-addr",
+            "spec_version": "2.1",
+            "id": "ipv6-addr--7e088834-8f57-48cd-a37e-2e4fbc3dca5c",
+            "value": "c575:ce51:8162:2b37:394f:bb8:db26:54bc"
+        },
+        {
+            "type": "ipv6-addr",
+            "spec_version": "2.1",
+            "id": "ipv6-addr--bee94f2a-2bf2-48b8-9e7e-5964b4f10679",
+            "value": "6666:4d93:7571:791a:48ed:8ea6:dfb9:5b8f"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--7888241b-8f4e-4605-8c39-4542e1249f78",
+            "src_ref": "domain-name--8d51a8b5-c8e3-4825-b953-0e77f0caabcf",
+            "src_port": 43289,
+            "dst_port": 49114,
+            "src_byte_count": 502476,
+            "dst_packets": 205658,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "dst_payload_ref": "artifact--868579ff-fdfa-43e5-87c2-4aa1beec5de4",
+            "encapsulates_refs": [
+                "network-traffic--a531dbb4-492c-4feb-9fdf-fc3fac3d55dd"
+            ],
+            "encapsulated_by_ref": "network-traffic--865053aa-b9eb-45ef-8029-286011542cd6",
+            "src_payload_ref": "artifact--ff60da01-9847-4861-a4a9-c657aacf33b9"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--865053aa-b9eb-45ef-8029-286011542cd6",
+            "src_ref": "ipv6-addr--22875710-42d1-4e12-af57-f6f91bad68be",
+            "dst_ref": "ipv4-addr--58f75691-3bbb-4dfc-a58f-7f5e8305d019",
+            "src_port": 19148,
+            "src_byte_count": 678491,
+            "dst_byte_count": 880420,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "dst_packets": 74077,
+            "encapsulated_by_ref": "network-traffic--fbb570a5-aa10-4c07-9d9b-3a3cf0ce635e"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--fbb570a5-aa10-4c07-9d9b-3a3cf0ce635e",
+            "start": "2022-10-18T16:29:34.528028Z",
+            "end": "2023-01-14T13:57:45.059188Z",
+            "is_active": false,
+            "dst_ref": "ipv4-addr--6859b765-0373-448b-acde-6f8dce488490",
+            "defanged": true,
+            "dst_byte_count": 653886,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ]
+        },
+        {
+            "type": "ipv4-addr",
+            "spec_version": "2.1",
+            "id": "ipv4-addr--6859b765-0373-448b-acde-6f8dce488490",
+            "value": "96.41.198.168"
+        },
+        {
+            "type": "ipv6-addr",
+            "spec_version": "2.1",
+            "id": "ipv6-addr--22875710-42d1-4e12-af57-f6f91bad68be",
+            "value": "f0a7:1f56:d174:5f36:240b:a1c9:d9a:cd0f"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--a531dbb4-492c-4feb-9fdf-fc3fac3d55dd",
+            "start": "2020-10-26T14:34:02.463346Z",
+            "end": "2021-10-23T04:52:52.118295Z",
+            "is_active": false,
+            "dst_ref": "mac-addr--f4eeb6c2-3853-4eea-97b0-0266ff888574",
+            "src_port": 65143,
+            "defanged": true,
+            "dst_port": 40599,
+            "protocols": [
+                "ipv4",
+                "tcp",
+                "http"
+            ],
+            "src_byte_count": 107769,
+            "dst_byte_count": 449372,
+            "src_packets": 985778,
+            "dst_packets": 682143,
+            "src_payload_ref": "artifact--868579ff-fdfa-43e5-87c2-4aa1beec5de4",
+            "dst_payload_ref": "artifact--5b72a09a-50f4-4d39-8b0b-e9a8b8d4ce82",
+            "encapsulated_by_ref": "network-traffic--7888241b-8f4e-4605-8c39-4542e1249f78"
+        },
+        {
+            "type": "artifact",
+            "spec_version": "2.1",
+            "id": "artifact--5b72a09a-50f4-4d39-8b0b-e9a8b8d4ce82",
+            "mime_type": "video/x-matroska",
+            "url": "http://www.townsend-hunt.org/",
+            "hashes": {
+                "MD5": "74e75963a582369e69e05e0265d74d85",
+                "SHA-1": "b772f425063ebe5dd5b698047a0f2c71330210a5",
+                "SHA-256": "65420d45361b581053699412937df42898ee2269fe213f21aa76c45ba8da325c",
+                "SHA3-512": "bf9873f1b378f607f89172c31d3b97cc8a0a07d5486e296e5b3293d4f5b0e821bb5b5697ebfec9567ccc9ba2e5094cee5ef4c53b34c41ed930ca78ddbbb9d8b4"
+            },
+            "encryption_algorithm": "mime-type-indicated",
+            "decryption_key": "YEbMQwpWVPDqm",
+            "defanged": true
+        },
+        {
+            "type": "domain-name",
+            "spec_version": "2.1",
+            "id": "domain-name--8d51a8b5-c8e3-4825-b953-0e77f0caabcf",
+            "value": "pennington-smith.biz"
+        },
+        {
+            "type": "ipv6-addr",
+            "spec_version": "2.1",
+            "id": "ipv6-addr--22684b9e-3d24-43e0-af40-1b78baa22919",
+            "value": "7b:8ed3:34ae:a9d3:7752:cd99:93fe:570c"
+        },
+        {
+            "type": "windows-registry-key",
+            "spec_version": "2.1",
+            "id": "windows-registry-key--511fa8b1-5778-4e59-aff5-058c172ad26a",
+            "key": "kiWDIwdCJckBXNGxfqST",
+            "number_of_subkeys": 8,
+            "creator_user_ref": "user-account--d903b09a-c17d-48fa-b88c-8e67319ec8ec"
+        },
+        {
+            "type": "file",
+            "spec_version": "2.1",
+            "id": "file--cbe54e28-8614-45cc-8537-072873952ea2",
+            "hashes": {
+                "SHA-512": "1338b96dc0d88b17074db5830d0d84a0321664940bee08b6b97167ebebdea67e7e82da3b5e19b2cb4460acc1a8f3dcd21aa4f417df27fc4505b1349ba2048def"
+            },
+            "ctime": "2022-01-21T08:58:31.483945Z",
+            "mtime": "2022-02-11T22:48:36.7334Z",
+            "content_ref": "artifact--63020a0c-3d7b-44dd-9bba-6afe0bf329f5"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--b215b127-c127-406d-8b7a-103cdb4728a3",
+            "created": "2022-05-07T05:59:05.067081Z",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "modified": "2022-12-06T04:11:41.956216Z",
+            "first_observed": "2021-05-25T06:43:41.951206Z",
+            "last_observed": "2021-08-08T02:49:07.746606Z",
+            "number_observed": 537371750,
+            "object_refs": [
+                "artifact--dd1722ed-1763-48e0-aeff-780afb674002",
+                "software--8374f307-652c-42b0-b6d8-de677040f4d9"
+            ],
+            "labels": [
+                "store",
+                "seek",
+                "natural"
+            ],
+            "confidence": 52,
+            "external_references": [
+                {
+                    "source_name": "join",
+                    "description": "Real become deep attack require.",
+                    "url": "http://www.owens.info/",
+                    "external_id": "DRyCAeRVrUmvpX"
+                },
+                {
+                    "source_name": "low",
+                    "url": "https://copeland.com/",
+                    "hashes": {
+                        "SHA-1": "7dcff713f7c2fd2745a30212fc752f58d4c58e24",
+                        "SHA-256": "3614d17a55948afc3b3bab09e0df3e0b552eaed71c44080622fb4e4a876c214f",
+                        "SHA3-512": "2b1e776f80d3ac02a251590676c5347058e978731053590e220f3c0c4002fd66293eee3bd1d2b29b4327d727198996df8f43df03df4c597c3cc66b0bc2f26a5e"
+                    },
+                    "external_id": "iNZZfUKlxGek"
+                },
+                {
+                    "source_name": "song",
+                    "description": "Continue rule sound clearly president participant month.",
+                    "hashes": {
+                        "MD5": "bc38a86e38abad2d60c2e34ff876eb53",
+                        "SHA-1": "188b804b824e3455ed65da07bd709539f0641333",
+                        "SHA-512": "ab890be965da4e49cc6adbbeacbbed4ab725d017897d579fcce4f65a99feeb85e63469497e0a4e09d97edb87860175eb1d21789a2ff53f1d8e9d7ed6d04eff97",
+                        "SHA3-512": "a8cc3a2a17513b3158b504ae17de7d8042503b72a2d1ad8e5d21316dba00d9c70d510c132575897e0dfeaf7d59c8bd4393cd156a60861a31ffdf63844fdb80fb"
+                    }
+                },
+                {
+                    "source_name": "sister",
+                    "description": "Game they scientist share page.",
+                    "external_id": "YnKcSsyi"
+                },
+                {
+                    "source_name": "article",
+                    "url": "http://brown-jackson.com/",
+                    "hashes": {
+                        "MD5": "d1a791602a41d562bf12725d11dfae7b",
+                        "SHA-256": "beccf70b4ff8f9127edb3826279ff678e68a604bb483459b1d5b333bd086c82d"
+                    },
+                    "external_id": "gEmKqwqlcFTbLom"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+            ]
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--b215b127-c127-406d-8b7a-103cdb4728a3",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2022-05-07T05:59:05.067081Z",
+            "modified": "2022-12-06T04:11:41.956217Z",
+            "first_observed": "2021-05-25T06:43:41.951206Z",
+            "last_observed": "2021-08-08T02:49:07.746606Z",
+            "number_observed": 537371750,
+            "object_refs": [
+                "artifact--dd1722ed-1763-48e0-aeff-780afb674002",
+                "software--8374f307-652c-42b0-b6d8-de677040f4d9"
+            ],
+            "labels": [
+                "store",
+                "seek",
+                "natural"
+            ],
+            "confidence": 52,
+            "external_references": [
+                {
+                    "source_name": "join",
+                    "description": "Real become deep attack require.",
+                    "url": "http://www.owens.info/",
+                    "external_id": "DRyCAeRVrUmvpX"
+                },
+                {
+                    "source_name": "low",
+                    "url": "https://copeland.com/",
+                    "hashes": {
+                        "SHA-1": "7dcff713f7c2fd2745a30212fc752f58d4c58e24",
+                        "SHA-256": "3614d17a55948afc3b3bab09e0df3e0b552eaed71c44080622fb4e4a876c214f",
+                        "SHA3-512": "2b1e776f80d3ac02a251590676c5347058e978731053590e220f3c0c4002fd66293eee3bd1d2b29b4327d727198996df8f43df03df4c597c3cc66b0bc2f26a5e"
+                    },
+                    "external_id": "iNZZfUKlxGek"
+                },
+                {
+                    "source_name": "song",
+                    "description": "Continue rule sound clearly president participant month.",
+                    "hashes": {
+                        "MD5": "bc38a86e38abad2d60c2e34ff876eb53",
+                        "SHA-1": "188b804b824e3455ed65da07bd709539f0641333",
+                        "SHA-512": "ab890be965da4e49cc6adbbeacbbed4ab725d017897d579fcce4f65a99feeb85e63469497e0a4e09d97edb87860175eb1d21789a2ff53f1d8e9d7ed6d04eff97",
+                        "SHA3-512": "a8cc3a2a17513b3158b504ae17de7d8042503b72a2d1ad8e5d21316dba00d9c70d510c132575897e0dfeaf7d59c8bd4393cd156a60861a31ffdf63844fdb80fb"
+                    }
+                },
+                {
+                    "source_name": "sister",
+                    "description": "Game they scientist share page.",
+                    "external_id": "YnKcSsyi"
+                },
+                {
+                    "source_name": "article",
+                    "url": "http://brown-jackson.com/",
+                    "hashes": {
+                        "MD5": "d1a791602a41d562bf12725d11dfae7b",
+                        "SHA-256": "beccf70b4ff8f9127edb3826279ff678e68a604bb483459b1d5b333bd086c82d"
+                    },
+                    "external_id": "gEmKqwqlcFTbLom"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+            ],
+            "x_eae683c1_d472_4708_bd63_f9b1a1f016b1_foo": [
+                "stand",
+                "compare",
+                "ok"
+            ]
+        },
+        {
+            "type": "artifact",
+            "spec_version": "2.1",
+            "id": "artifact--dd1722ed-1763-48e0-aeff-780afb674002",
+            "url": "https://www.rodgers.biz/",
+            "hashes": {
+                "SHA-1": "0bf0c8faf4162bd53dc421349e7d558b8a15c455",
+                "SHA-512": "3401846d13939fc3645cb305925e3c38dc36e3072e89f68664a38d81e71d047e4deeb6837163b5ecf1b8aa2f7b8424a2c5f67cc9b93f36702958eda7fe1c6826"
+            }
+        },
+        {
+            "type": "software",
+            "spec_version": "2.1",
+            "id": "software--8374f307-652c-42b0-b6d8-de677040f4d9",
+            "name": "HCDgqQcSGVCBl",
+            "swid": "org.fedoraproject.Fedora-29",
+            "vendor": "Mills-Aguirre"
+        },
+        {
+            "type": "sighting",
+            "spec_version": "2.1",
+            "id": "sighting--03605f64-8dce-4135-811b-5b8e920f3dbd",
+            "created": "2020-11-28T04:22:11.329305Z",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "modified": "2021-10-27T18:21:38.55986Z",
+            "description": "War wonder hotel explain phone then upon test.",
+            "first_seen": "2021-11-01T00:07:08.012051Z",
+            "last_seen": "2022-01-19T07:41:28.403971Z",
+            "count": 951445005,
+            "sighting_of_ref": "identity--367d38d8-8558-4eb1-9f29-bef7ce952df6",
+            "observed_data_refs": [
+                "observed-data--d252d2a8-97ce-47f9-9a2b-d8a478a38fcc",
+                "observed-data--d8f71da3-ed10-4d9c-9ba8-7de8b8b4f242",
+                "observed-data--b215b127-c127-406d-8b7a-103cdb4728a3"
+            ],
+            "summary": true,
+            "object_marking_refs": [
+                "marking-definition--5e57c739-391a-4eb3-b6be-7d15ca92d5ed"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--8bbce517-78b9-4911-af25-f97894363303",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-08-09T22:58:38.192594Z",
+            "modified": "2021-11-18T20:40:58.815213Z",
+            "relationship_type": "related-to",
+            "source_ref": "ipv4-addr--8e19f7ca-d17c-4052-bdf1-2c052026f720",
+            "target_ref": "artifact--593d184e-4819-4f4a-b7b7-6bf917bcc5a0",
+            "stop_time": "2022-09-07T16:52:52.203348Z",
+            "labels": [
+                "line"
+            ],
+            "lang": "en",
+            "confidence": 71,
+            "object_marking_refs": [
+                "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+            ],
+            "external_references": [
+                {
+                    "source_name": "head",
+                    "description": "Heavy open mission since.",
+                    "url": "https://barnes.com/",
+                    "hashes": {
+                        "SHA-1": "962146a7d3d384b8a3d03a1ed755b4c33be5c759",
+                        "SHA-256": "60b2120b5af14815e8178d8e15d18fa7a0d6bba73819fbcfb37b7ba0524c75cd"
+                    },
+                    "external_id": "qiwjnJ"
+                },
+                {
+                    "source_name": "management",
+                    "url": "https://dickson.net/",
+                    "hashes": {
+                        "MD5": "7f59bc69abc6bc551e52563241e98974",
+                        "SHA-1": "b966e73de71fa049b015949c7e746ddfed9299fc",
+                        "SHA3-512": "8733c85be1bdad1db72d22f25f41dfe06e266516650533b527ae407a1d37d11d6cebaf2d2c2b96a6bcb9f56828e5512f5fd7250fb73b2d7755d805269c51e7b9"
+                    },
+                    "external_id": "npvxbHXmqqOAgKWRjjRb"
+                },
+                {
+                    "source_name": "of",
+                    "description": "Back south daughter put entire reach.",
+                    "url": "http://davidson-torres.com/",
+                    "hashes": {
+                        "SHA-1": "9cdfed69938860e19312608f0d7659287b779aea",
+                        "SHA-256": "48cdf6c505584d47e02cae232397a3ac2cc24ce7bb3b8e73e3f19fcd5a7f805b",
+                        "SHA3-512": "dbb2da9f4a321285c4dde095e557cec92cd6e9587aeaf351cdf313c95ae03ca90ac94831ed653a72d0fba3b479a3b009fa3e7de3a67a5028ce3372669ef785c7"
+                    },
+                    "external_id": "pCyEJ"
+                },
+                {
+                    "source_name": "brother",
+                    "description": "Beautiful later husband security receive practice.",
+                    "hashes": {
+                        "SHA-1": "35afd5d5313be1d7b0867c41409849dac16557fb",
+                        "SHA-256": "57f2515b183e934def032219629e57ab4db26bcca3604ade8cf15c6fc782c428",
+                        "SHA-512": "a28f3ea53419d45296afe28be8fb45d524e2c588eeb4938fd43ef9512a68eff3a28261539bae9147357f02fe6048d04d82027d2eb15a2a16e5de0355efb6ea5f"
+                    },
+                    "external_id": "opahJjUFwpHbFa"
+                }
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--6706e9e3-dc8c-4a3d-8dbf-62539f05346f",
+            "created": "2021-10-23T20:34:23.755405Z",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "modified": "2021-10-27T00:35:41.496927Z",
+            "name": "Randall-Gomez",
+            "description": "Compatible motivating matrix",
+            "roles": [
+                "baby",
+                "drug",
+                "agency",
+                "attention",
+                "whatever"
+            ],
+            "identity_class": "group",
+            "contact_information": "987 Carr Islands Apt. 402\nJonathanville, ME 20650",
+            "lang": "en"
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--6706e9e3-dc8c-4a3d-8dbf-62539f05346f",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2021-10-23T20:34:23.755405Z",
+            "modified": "2022-06-16T05:28:52.691723Z",
+            "name": "Randall-Gomez",
+            "description": "Compatible motivating matrix",
+            "roles": [
+                "baby",
+                "drug",
+                "agency",
+                "attention",
+                "whatever"
+            ],
+            "identity_class": "group",
+            "contact_information": "987 Carr Islands Apt. 402\nJonathanville, ME 20650",
+            "lang": "en",
+            "x_eae683c1_d472_4708_bd63_f9b1a1f016b1_foo": [
+                "none",
+                "ten",
+                "those"
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created_by_ref": "identity--eae683c1-d472-4708-bd63-f9b1a1f016b1",
+            "created": "2022-06-16T05:28:52.663618Z",
+            "modified": "2022-06-16T05:28:52.663618Z",
+            "name": "MITRE",
+            "identity_class": "organization"
+        },
+        {
+            "type": "threat-actor",
+            "id": "threat-actor--b412d34b-091a-4c60-a3e7-16307e32e4cb",
+            "created": "2022-06-16T05:28:52.694Z",
+            "modified": "2022-06-16T05:28:52.694Z",
+            "name": "HelloWorld",
+            "labels": [
+                "criminal",
+                "hacker"
+            ]
+        },
+        {
+            "type": "threat-actor",
+            "id": "threat-actor--b412d34b-091a-4c60-a3e7-16307e32e4cb",
+            "created": "2022-06-16T05:28:52.694Z",
+            "modified": "2022-06-16T07:28:52.694Z",
+            "name": "HelloWorld",
+            "labels": [
+                "criminal",
+                "hacker"
+            ]
+        },
+        {
+            "type": "vulnerability",
+            "id": "vulnerability--f6c0feae-9776-4f67-9780-2b0efe58c43b",
+            "created": "2022-06-16T05:28:52.695Z",
+            "modified": "2022-06-16T05:28:52.695Z",
+            "name": "vuln-12345",
+            "object_marking_refs": [
+                "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+            ]
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--dca4db0a-e723-4d5c-bb4c-c80c390cf012",
+            "created": "2022-06-16T05:28:52.695Z",
+            "modified": "2022-06-16T05:28:52.695Z",
+            "source_ref": "threat-actor--b412d34b-091a-4c60-a3e7-16307e32e4cb",
+            "relationship_type": "targets",
+            "target_ref": "vulnerability--f6c0feae-9776-4f67-9780-2b0efe58c43b"
+        }
+    ]
+}

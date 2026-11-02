@@ -1,0 +1,10 @@
+{
+	"uuid": "af062974-7640-4676-bcf1-d3de14edf5f7",
+	"type": "OBJECT",
+	"includes": [
+		"objects/location"
+	],
+	"cIds": [
+		"location"
+	]
+}

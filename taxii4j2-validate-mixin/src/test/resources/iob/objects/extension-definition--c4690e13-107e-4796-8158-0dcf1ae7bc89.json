@@ -1,0 +1,25 @@
+{
+	"type": "x-oca-detection",
+	"spec_version": "2.1",
+	"id": "x-oca-detection--5899C5CC-CE20-44EE-806E-9F64EBA0B29F",
+	"created_by_ref": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+	"created": "2022-03-31T13:00:00.000Z",
+	"modified": "2022-03-31T13:00:00.000Z",
+	"name": "Beacon Detection with RITA analytics",
+	"data_sources": [
+		{
+			"LogName": "Rita",
+			"Category": "show-beacons",
+			"score_num": "> 0.7"
+		}
+	],
+	"analytic": {
+		"rule": "LS0tCmRhdGU6IDIwMjIvMDMvMTYKdGl0bGU6IFJpdGEgQmVhY29uCmlkOiA5MmEyMWJlZi00MTM4LTQwYjYtYTk1NS00OTdiMGNlMDUxNTkKc3RhdHVzOiBleHBlcmltZW50YWwKZGVzY3JpcHRpb246IERldGVjdGlvbiBiZWFjb25pbmcgd2l0aCBhIGhpZ2ggZW5vdWdoIHNjb3JlCnRhZ3M6CiAgLSBhdHRhY2suY29tbWFuZF9hbmRfY29udHJvbAogIC0gYXR0YWNrLnQxMDcxCmF1dGhvcjogZGVtbwpsb2dzb3VyY2U6CiAgcHJvZHVjdDogcml0YQogIGluZGV4OiBtYWluCiAgY2F0ZWdvcnk6IHNob3ctYmVhY29ucwpkZXRlY3Rpb246CiAgc2VsZWN0aW9uOgogICAgc291cmNldHlwZTogcml0YS1sb2dzCiAgICBzY29yZV9udW18Z3Q6IDAuNwogIGNvbmRpdGlvbjogc2VsZWN0aW9uCmZhbHNlcG9zaXRpdmVzOgogIC0gVW5rbm93bgpsZXZlbDogbWVkaXVt",
+		"type": "Sigma Rule - base64 encoded YAML file"
+	},
+	"extensions": {
+		"extension-definition--c4690e13-107e-4796-8158-0dcf1ae7bc89": {
+			"extension_type": "new-sdo"
+		}
+	}
+}

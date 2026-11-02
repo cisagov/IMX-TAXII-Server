@@ -1,0 +1,80 @@
+{
+	"$schema": "http://json-schema.org/draft/2020-12/schema#",
+	"title": "http-request-ext",
+	"type": "object",
+	"description": "The HTTP request extension specifies a default extension for capturing network traffic properties specific to HTTP requests.",
+	"properties": {
+		"request_method": {
+			"type": "string",
+			"description": "Specifies the HTTP method portion of the HTTP request line, as a lowercase string."
+		},
+		"request_value": {
+			"type": "string",
+			"description": "Specifies the value (typically a resource path) portion of the HTTP request line."
+		},
+		"request_version": {
+			"type": "string",
+			"description": "Specifies the HTTP version portion of the HTTP request line, as a lowercase string."
+		},
+		"request_header": {
+			"allOf": [
+				{
+					"$ref": "#/definitions/dictionary"
+				}
+			],
+			"description": "Specifies all of the HTTP header fields that may be found in the HTTP client request, as a dictionary.",
+			"patternProperties": {
+				"^.+$": {
+					"type": "string"
+				}
+			},
+			"additionalProperties": false
+		},
+		"message_body_length": {
+			"type": "integer",
+			"description": "Specifies the length of the HTTP message body, if included, in bytes."
+		},
+		"message_body_data_ref": {
+			"description": "Specifies the data contained in the HTTP message body, if included.",
+			"type": "string"
+		}
+	},
+	"required": [
+		"request_method",
+		"request_value"
+	],
+	"definitions": {
+		"dictionary": {
+			"title": "dictionary",
+			"description": "A dictionary captures a set of key/value pairs",
+			"type": "object",
+			"minProperties": 1,
+			"patternProperties": {
+				"^[a-zA-Z0-9_-]{0,250}$": {
+					"anyOf": [
+						{
+							"type": "array",
+							"minItems": 1
+						},
+						{
+							"type": "string"
+						},
+						{
+							"type": "integer"
+						},
+						{
+							"type": "boolean"
+						},
+						{
+							"type": "number"
+						},
+						{
+							"type": "object"
+						}
+					]
+				}
+			},
+			"additionalProperties": false
+		}
+	}
+}
