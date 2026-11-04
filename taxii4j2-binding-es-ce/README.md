@@ -9,7 +9,7 @@
 # taxii4j2-binding-es-ce
 
 This module provides
-an Elasticsearch persistence mechnism for the
+an OpenSearch persistence mechnism for the
 specification-only (community edition) TAXII server.
 
 Refer to either `taxii4j2-ce-sqlite` or `taxii4j2-th-es`

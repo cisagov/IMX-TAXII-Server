@@ -21,7 +21,7 @@ services:
       - plugins.security.disabled=true
     volumes:
       - taxii-data-os:/usr/share/opensearch/data
-      - ./snapshots:/opt/snapshots
+      - ${OPENSEARCH_SNAPSHOTS}:/opt/snapshots
     healthcheck:
       test: ["CMD", "curl", "--user", "admin:${OPENSEARCH_PASSWORD}", "http://localhost:9200"]
       interval: 10s
@@ -54,11 +54,11 @@ services:
     networks:
       - taxii-server
     volumes:
-      - gitrepos:/opt/repos
-      - taxiiIO:/opt/io
-      - taxiiBootstrap:/opt/bootstrap
+      - ${GIT_REPOS}:/opt/repos
+      - ${TAXII_IO}:/opt/io
+      - ${TAXII_BOOTSTRAP}:/opt/bootstrap
       - schema:${SCHEMA_DIR}
-      - ./keystore:/opt/keystore:ro
+      - ${TAXII_KEYSTORE_DIR}:/opt/keystore:ro
     ports:
       - "${TAXII_EXPOSED_PORT}:${TAXII_PORT}"
     command:
@@ -93,12 +93,6 @@ volumes:
   taxii-data-os:
     driver: local
   schema:
-    driver: local
-  gitrepos:
-    driver: local
-  taxiiIO:
-    driver: local
-  taxiiBootstrap:
     driver: local
 
 networks:

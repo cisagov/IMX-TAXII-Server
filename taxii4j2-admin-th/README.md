@@ -16,8 +16,8 @@ for TAXII server configuration management.
 
 - [Authentication via OIDC provider](README_OIDC.md)
 - [Authentication by Mutual TLS](README_PKCS12.md)
-- [Attribute Based Access Control](README_APAC.md)
-- [Management of Elasticsearch snapshots](README_SNAPSHOT.md)
+- [Attribute Based Access Control](README_ABAC.md)
+- [Management of OpenSearch snapshots](README_SNAPSHOT.md)
 
 ## Miscellaneous
 

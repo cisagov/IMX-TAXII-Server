@@ -8,7 +8,7 @@
 
 # Snapshot Management
 
-The CISA server, when using Elasticsearch as its backing store,
+The CISA server, when using OpenSearch as its backing store,
 provides capabilities for creating, restoring, listing, and deleting
 named *snapshots*. These contain all the necessary data to restore
 the server to a point in time (the impetus perhaps being safety
@@ -28,7 +28,7 @@ container directory.  Keep in mind that the bound host
 volume could easily be a NFS volume or other form of shared
 storage.
 
-The Elasticsearch snapshot capabilities provide for other
+The OpenSearch snapshot capabilities provide for other
 backup media, e.g. AWS S3, Azure Blob, ...
 The server could be reworked to have a more sophisticated
 snapshot repository scheme, based on configuration data...

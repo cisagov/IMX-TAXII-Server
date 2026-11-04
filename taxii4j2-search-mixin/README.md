@@ -16,7 +16,7 @@ e.g. *windows foundation class exploitation*
 in the `description` member of an attack pattern.
 
 There are two endpoints, both taking the same payload -
-a string defined by the Elasticsearch query DSL (see below),
+a string defined by the OpenSearch query DSL (see below),
 an offset into the search results, and the maximum number
 of items to include in the result:
 
@@ -36,7 +36,7 @@ in the path. `POST ext/v1.0/search` will search all api roots
 and collections readable by the request authentication credentials
 used. Both endpoints accept standard TAXII endpoint filters as well.
 
-This implementation requires the use of the Elasticsearch
+This implementation requires the use of the OpenSearch
 persistence plugin (vice, say SQLite).
 
 ## Response
@@ -95,7 +95,7 @@ to prevent oversized payloads that endanger both server and client integrity.
 Hence, the top level `query` element contains an offset `from` and a
 chunk size `size` enabling paging through larger result sets.
 `total` contains the, well, total number of search results available
-**OR** a maximum number supported by Elasticsearch (typically 10000).
+**OR** a maximum number supported by OpenSearch (typically 10000).
 If `truncated` is `false`, then `total` is exact and accurate.
 If `truncated` is `true`, then an undetermined number of results are
 available that is greater than or equal to `total`.
@@ -109,7 +109,7 @@ and/or
 displaying results `from` through `from + size - 1` of more than `total - 1`
 
 `founds` is an array of search hits.
-Each has the match score as returned by Elasticsearch (treat these as ordinal values -
+Each has the match score as returned by OpenSearch (treat these as ordinal values -
 higher value implies better match). Hits are sorted in decreasing `score` value
 (better matches appear earlier in the list).
 `object` is the STIX hit.
@@ -119,7 +119,7 @@ the object can be retrieved (using the same authentication credentials as the se
 ## Queries
 
 The full query DSL can be found
-[here](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html).
+[here](https://docs.opensearch.org/latest/query-dsl/).
 
 For flavor, the query described above would be expressed
 
