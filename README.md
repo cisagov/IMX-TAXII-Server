@@ -6,30 +6,68 @@
   ~ and for the benefit of international users.
 -->
 
-# TAXII server
+# IMX TAXII server
 
-This module binds together all submodules developed for CISA
-and provides an *easy button* for deploying a TAXII server.
-Clone this repository and run the following:
+A server fully compliant with the OASIS TAXII specification version 2.1,
+with a number of extensions and administrative functions.
+
+While the IMX TAXII server can be deployed as a standalone server,
+[IMX](https://github.com/cisagov/IMX) has integrations to custom endpoints to administer the server.
+
+The deployment package incorporates the OASIS stix2-validator python package 
+for validation of STIX 2.1 objects against published schemas.
+
+## Tech Stack
+
+| Layer  | Technology |
+| ------ | ---------- |
+| Server | Java  |
+| API | JAX-RS |
+| Storage | OpenSearch |
+| STIX 2 Validation | Python stix2-validator |
+| Standards | STIX 2.1, TAXII 2.1 |
+
+## Deployment
+
+This module binds together all submodules developed by CISA
+and provides everything necessary for deploying a TAXII server.
+
+The repository root contains a `docker-compose.yml` file and an example
+environment file. Copy the `.env.example` file to `.env`, and edit 
+to update the required values. See the [Customization](#customization)
+section for specific values to update.
+
+Build the images and start the server by running the following commands.
 
 ```
-docker rmi taxii4j2/th-es:0.1-SNAPSHOT
-docker build -t taxii4j2/th-es:0.1-SNAPSHOT .
+docker compose build 
+docker compose up -d
 ```
 
-All relevant source code will be downloaded and the Docker image will
-be built.
+Create api roots, associated collections,
+and additional users / roles;
+see [`GET admin/v1.0/configure`](taxii4j2-admin-th/README.md) for
+instructions.
+Import any saved objects (see below) and subscribe to any desired
+Git object repositories;
+see [`POST admin/v1.0/mirror`](taxii-git-mirror-mixin/README.md)
+for instructions.
 
-For modules configured for Maven publication, set `MAVEN_REPOSITORY_URL` to
-the destination repository URL before running `mvn deploy` in that module.
-Configure credentials under the `ties-gitlab` server ID in your Maven settings.
+### Testing
+
+The script `run_tests.sh` in the root directory will execute the testbed, located in the
+`tests` directory. The script will start up a cluster using the 
+`docker-compose.testing.yml` configuration and the `.env.testing`
+environment file, execute the testbed, and tear down the cluster.
+
+### Deployment Notes
 
 If there is a legacy server running, one should consider backing up
 the objects in each collection prior to redeploying.
-See [`Exporter'](taxii4j2-util-mixin/README.md) for instructions.
+See [Exporter](taxii4j2-util-mixin/README.md) for instructions.
 This allows one to destroy Docker volumes associated with object
 storage ensuring that the database schema is *also* brought up to date.
-See [`Importer'](taxii4j2-util-mixin/README.md) for instructions
+See [Importer](taxii4j2-util-mixin/README.md) for instructions
 post deployment to restore objects.
 
 As delivered, the server assumes internet access,
@@ -49,7 +87,7 @@ sh taxii4j2-th-es/taxii-validate-mixin/update-schema-bootstrap.sh bootstrap
 These commands reach out to public GitHub and create local directories / files
 consumable by the server during initialization.  Considering the `TAXII_BOOTSTRAP`
 value above, copy this new `bootstrap` directory to `/opt/taxii4j2/data` on
-the deployment host (sneaker net, S3, whatever method one is able to access it).
+the deployment host.
 The common objects and schema will be loaded from the bootstrap files but,
 of course, will never be updated (by detected new commits in GitHub) and are
 frozen in time per when they were cloned by the scripts.
@@ -58,24 +96,12 @@ The server will not crash if neither internet access nor bootstrap files
 are availble; simply the common object collections will be empty and edge
 object validation will be unable to verify custom extension content.
 
-It's worth mentioning that if the deployment host does not have internet access,
-the image produced in the first code block above will need to be also moved to the deployment host
+If the deployment host does not have internet access,
+the images built by docker compose above will need to be also moved to the deployment host
 via `docker save | gzip -c > server.tgz` on the build host and
-`zcat server.tgz | docker load` on the deployment host (with whatever
-transfer gymnastics in between to move `server.tgz`). Similar maneuvers are
-required to build, download, and transfer the validator and Elasticsearch
-images
+`zcat server.tgz | docker load` on the deployment host. 
 
-```
-cd stix2-validator
-docker build -t taxii4j2/stix2-validator:0.1-SNAPSHOT .
-docker pull elasticsearch:8.15.2
-```
-
-Lather, rinse, repeat with those two images parallel to above.
-
-Stop all legacy taxii4j2 containers (some Docker knowledge is assumed
-in these instructions), and
+Stop all legacy taxii4j2 containers, and
 
 ```
 docker volume rm $(docker volume ls -q)
@@ -91,14 +117,9 @@ It will be bootstrapped with an administrative user
 `imx-admin` with the password found in the `.env` file
 (see next section for changing this and other aspects).
 
-Create api roots, associated collections,
-and additional users / roles;
-see [`GET admin/v1.0/configure`](taxii4j2-admin-th/README.md) for
-instructions.
-Import any saved objects (see above) and subscribe to any desired
-Git object repositories;
-see [`POST admin/v1.0/mirror`](taxii-git-mirror-mixin/README.md)
-for instructions.
+For installing modules to a local Maven repository , set `MAVEN_REPOSITORY_URL` to
+the destination repository URL before running `mvn deploy` in that module.
+Configure credentials under the `ties-gitlab` server ID in your Maven settings.
 
 ## Customization
 
@@ -134,44 +155,45 @@ weak sample password, it must be updated to a strong value.
 ### `TAXII_XUUID`
 
 It is possible, when using multiple servers, to have those
-servers share a single Elasticsearch instance, for instance
+servers share a single Opensearch instance, for instance
 by adding additional services based on the TAXII Docker
 image into `docker-compose.yml`.  However, these TAXII
-services should each override the `TAXII_XUUID` value
-instance providing a unique UUID.  For
-inquiring minds, this configuration item is used as a
-prefix for indices within the referenced Elasticsearch
+services must each override the `TAXII_XUUID` value
+instance providing a unique UUID.  This configuration item is used as a
+prefix for indices within the referenced Opensearch
 (as well as for localizing other items for each unique
-server).  If this configuration item is **not** overridden, then there will
-be dire conflicts on the Elasticsearch...like I said,
-this is an expert-only venture that can reduce resource
-footprint, but is not for the faint of heart...
+server). 
 
 ### `GITHUB_TOKEN`
 
+If enabling mirroring of STIX objects from public 
+github repositories, add an API token to this variable. 
 GitHub rate-limits API calls.  Without an authentication token, the
 limit is low enough that the server schema / object mirroring
 may not work.  Authenticated API calls have a large adequate
-rate limit.
-Create a private token for GitHub and set it here...
+rate limit. 
 
 ### `Analyst1`
 
-`A1_HOST`, `A1_USER`, and `A1_PASS` define the API endpoint
-and credentials for your Analyst1 install.  They are optional
-and often set for you by scripts that wrap the server install...
+Optional parameters `A1_HOST`, `A1_USER`, and `A1_PASS` define the API endpoint
+and credentials for your Analyst1 install.  
 
 ## HTTPS certificates
 
 To deploy using a custom certificate, the certificate
-and private key should be in a PKCS12 keystore. Place the keystore
-in the `keystore` directory. In the standard `docker-compose.yml`, this
-directory is mounted into the container as /opt/keystore. In the `.env`
+and private key should be in a PKCS12 keystore. In the standard `docker-compose.yml`, 
+a local directory in the `TAXII_KEYSTORE_DIR` variable
+is mounted into the container as /opt/keystore. In the `.env`
 file, update the following environment variables as appropriate.
+
+### `TAXII_KEYSTORE_DIR`
+
+The local directory containing the keystore, to be mounted to 
+the contaner at /opt/keystore. Defaults to ./keystore.
 
 ### `TAXII_KEYSTORE`
 
-The full path in the container of the keystore.
+The full path in the container of the keystore. This should include /opt/keystore.
 
 ### `TAXII_KEYSTORE_PASSWORD`
 
@@ -308,3 +330,11 @@ individaully be sent to the `POST /admin/v1.0/user` endpoint.
 	]
 }
 ```
+
+## License
+
+Copyright 2026 Cybersecurity and Infrastructure Security Agency (CISA)
+
+This software is released to the public domain under 17 U.S.C. § 105.
+The [Apache 2.0 license](LICENSE) applies to the extent permitted by applicable law,
+and for the benefit of international users.

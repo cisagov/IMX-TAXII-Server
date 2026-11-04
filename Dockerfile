@@ -152,4 +152,5 @@ RUN mkdir /tmp/schema
 RUN chgrp -R 0 /tmp/schema && chmod -R g=u /tmp/schema
 
 ENTRYPOINT [ "java", "-cp", "/opt/taxii4j2/taxii4j2-main-th-0.1-SNAPSHOT.jar", "com.cisa.taxii4j2.servlet.THMicroService", "--config", "server.es.properties" ]
+# For remote debugging access to the server, uncomment this entrypoint and allow port 8000 in the docker-compose.yml
 #ENTRYPOINT [ "java", "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000", "-cp", "/opt/taxii4j2/taxii4j2-main-th-0.1-SNAPSHOT.jar", "com.cisa.taxii4j2.servlet.THMicroService", "--config", "server.es.properties" ]
