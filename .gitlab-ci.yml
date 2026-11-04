@@ -54,10 +54,11 @@ dependencies:
   cache: []
   before_script:
     - test -d "$CI_PROJECT_DIR/.m2/repository"
-    # MAVEN_OPTS configures Maven, but Trivy reads the user's Maven settings.
-    - mkdir -p "$HOME/.m2"
-    - printf '<settings><localRepository>%s/.m2/repository</localRepository></settings>\n' "$CI_PROJECT_DIR" > "$HOME/.m2/settings.xml"
+    # The runner UID has no writable home; Trivy also reads global Maven settings.
+    - mkdir -p "$MAVEN_HOME/conf"
+    - printf '<settings><localRepository>%s/.m2/repository</localRepository></settings>\n' "$CI_PROJECT_DIR" > "$MAVEN_HOME/conf/settings.xml"
   variables:
+    MAVEN_HOME: "$CI_PROJECT_DIR/.m2/trivy"
     # Resolve POMs from the repository without scanning the cache as application code.
     TRIVY_SKIP_DIRS: .m2
 
@@ -84,6 +85,9 @@ trivy-sbom:
 .build-image-test:
   extends: .build-image
   stage: test
+  variables:
+    # Exercise the public build without the release registry's credentials or CA.
+    TEST_BASE_REGISTRY: docker.io/library
   needs:
     - job: dependencies
       artifacts: false
@@ -101,10 +105,7 @@ trivy-sbom:
       if [ -n "$BUILD_TARGET" ]; then
         ARGS+=(--target "$BUILD_TARGET")
       fi
-      if [ -n "$REGISTRY" ]; then
-        ARGS+=(--build-arg "REGISTRY=${REGISTRY}")
-      fi
-      buildah bud "${ARGS[@]}" --volume /dev:/dev \
+      buildah bud "${ARGS[@]}" --build-arg "REGISTRY=${TEST_BASE_REGISTRY}" --volume /dev:/dev \
         -f "$DOCKERFILE_PATH" \
         -t "localhost/taxii-${IMAGE_NAME}:ci-${CI_COMMIT_SHORT_SHA}" \
         "$CONTEXT_DIR"
