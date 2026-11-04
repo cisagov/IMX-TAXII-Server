@@ -37,6 +37,29 @@ dependencies:
   stage: .pre
   script:
     - mvn package dependency:go-offline -DskipTests
+  # Kubernetes jobs cannot rely on another pod's local runner cache.
+  artifacts:
+    expire_in: 1 day
+    paths:
+      - .m2/repository/
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: '$CI_COMMIT_BRANCH'
+    - if: '$CI_COMMIT_TAG'
+
+.trivy-maven:
+  needs:
+    - job: dependencies
+      artifacts: true
+  cache: []
+  before_script:
+    - test -d "$CI_PROJECT_DIR/.m2/repository"
+    # MAVEN_OPTS configures Maven, but Trivy reads the user's Maven settings.
+    - mkdir -p "$HOME/.m2"
+    - printf '<settings><localRepository>%s/.m2/repository</localRepository></settings>\n' "$CI_PROJECT_DIR" > "$HOME/.m2/settings.xml"
+  variables:
+    # Resolve POMs from the repository without scanning the cache as application code.
+    TRIVY_SKIP_DIRS: .m2
 
 gitleaks:
   variables:
@@ -50,7 +73,59 @@ gitleaks:
     GIT_COMMITTER_EMAIL: "semantic-release-bot@martynus.net"
 
 trivy-fs:
+  extends: .trivy-maven
   allow_failure: true
+
+trivy-sbom:
+  extends: .trivy-maven
+
+# Exercise the release Dockerfiles on main and MRs without registry credentials
+# or a push. The shared .build-image jobs below still publish only on tags.
+.build-image-test:
+  extends: .build-image
+  stage: test
+  needs:
+    - job: dependencies
+      artifacts: false
+  cache: []
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+  before_script:
+    - mkdir -p "$XDG_RUNTIME_DIR"
+    - printf '{"auths":{}}\n' > "$REGISTRY_AUTH_FILE"
+    - buildah --version
+  script:
+    - |
+      ARGS=()
+      if [ -n "$BUILD_TARGET" ]; then
+        ARGS+=(--target "$BUILD_TARGET")
+      fi
+      if [ -n "$REGISTRY" ]; then
+        ARGS+=(--build-arg "REGISTRY=${REGISTRY}")
+      fi
+      buildah bud "${ARGS[@]}" --volume /dev:/dev \
+        -f "$DOCKERFILE_PATH" \
+        -t "localhost/taxii-${IMAGE_NAME}:ci-${CI_COMMIT_SHORT_SHA}" \
+        "$CONTEXT_DIR"
+
+test-build-server:
+  extends: .build-image-test
+  variables:
+    IMAGE_NAME: server
+
+test-build-proxy:
+  extends: .build-image-test
+  variables:
+    IMAGE_NAME: proxy
+    DOCKERFILE_PATH: proxy.Dockerfile
+
+test-build-validator:
+  extends: .build-image-test
+  variables:
+    IMAGE_NAME: stix2-validator
+    CONTEXT_DIR: stix2-validator
+    DOCKERFILE_PATH: ./stix2-validator/Dockerfile
 
 build-server:
   extends: .build-image
