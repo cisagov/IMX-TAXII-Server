@@ -9,7 +9,7 @@
 # taxii-binding-es-th
 
 This module provides
-extended Elasticsearch persistence
+extended OpenSearch persistence
 for the TAXII server.
 
 Refer to either `taxii4j2-ce-sqlite` or `taxii4j2-th-es`
