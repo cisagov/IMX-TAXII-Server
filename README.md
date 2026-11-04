@@ -27,6 +27,15 @@ for validation of STIX 2.1 objects against published schemas.
 | STIX 2 Validation | Python stix2-validator |
 | Standards | STIX 2.1, TAXII 2.1 |
 
+## Prerequisites
+
+The IMX TAXII server runs in a docker container. **Docker** and **docker compose**
+must be installed to build and run the server.  All other requirements
+will be downloaded by the build process.
+
+Remote debugging can be enabled within the TAXII server container. Using 
+remote debugging requires installing **Java** and the IDE of your choice.
+
 ## Deployment
 
 This module binds together all submodules developed by CISA
