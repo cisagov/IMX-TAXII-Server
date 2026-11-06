@@ -1,3 +1,10 @@
+## 1.0.0 (2026-11-06)
+
+### Bug Fixes
+
+* stabilize legacy CI and validate image builds 74c0ce2
+* support restricted scanner users and public image builds 8e54256
+
 ## 1.4.4 (2026-09-10)
 
 ### Bug Fixes
