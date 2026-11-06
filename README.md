@@ -182,11 +182,6 @@ limit is low enough that the server schema / object mirroring
 may not work.  Authenticated API calls have a large adequate
 rate limit. 
 
-### `Analyst1`
-
-Optional parameters `A1_HOST`, `A1_USER`, and `A1_PASS` define the API endpoint
-and credentials for your Analyst1 install.  
-
 ## HTTPS certificates
 
 To deploy using a custom certificate, the certificate
@@ -339,6 +334,14 @@ individaully be sent to the `POST /admin/v1.0/user` endpoint.
 	]
 }
 ```
+
+
+## `Analyst1` Integration
+
+The IMX TAXII Server can serve as a proxy to an Analyst1 system.
+Optional parameters `A1_HOST`, `A1_USER`, and `A1_PASS` 
+in the `.env` file define the API endpoint
+and credentials for your Analyst1 install.  
 
 ## License
 
