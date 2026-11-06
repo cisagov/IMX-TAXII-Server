@@ -1,0 +1,4 @@
+# CI dependency artifacts and local build output are not image build inputs.
+.git
+.m2
+**/target
